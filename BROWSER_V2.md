@@ -5,13 +5,16 @@ The separate `browser/` application is designed for static Cloudflare Pages,
 without authentication, camera uploads, recordings, or an inference backend.
 The existing person-down-core pilot is not changed by this fork.
 
-## Current checkpoint
+## Current release
+
+Live web app: https://carewatch-v2.pages.dev/
 
 The browser UI, feature port, trained LSTM port, worker integration, and six
-detector tests are implemented. Browser MediaPipe dependency approval is pending.
-**Do not deploy this checkpoint as a functioning detector:** the browser runtime
-and pose asset are not packaged yet. Camera inference/browser runtime verification
-must pass before release.
+detector tests are implemented. MediaPipe Tasks Vision 0.10.32 is pinned and
+approved; the runtime and model are packaged as same-origin static assets.
+The real browser worker passed 40 recurrent pose/classifier frames, and the full
+UI ran on a clearly labeled public-image MediaStream under production CSP.
+This is runtime validation, not physical-camera qualification or fall accuracy.
 
 ## Design
 
@@ -23,7 +26,7 @@ must pass before release.
 - Pose inference runs in a worker with a single frame in flight, targeting 18 Hz.
 - Original LSTM checkpoint and feature order are preserved. The classifier is a
   JavaScript implementation of the two-layer, 48-unit PyTorch LSTM, not new rules.
-- MediaPipe Lite is the proposed browser replacement for OpenPifPaf. This is a
+- MediaPipe Lite is the browser replacement for OpenPifPaf. This is a
   changed perception pipeline, not a claim to reproduce published accuracy.
 - The adapter uses a stricter confidence threshold, short track expiry, gap
   resets, and per-track predictions; it does not reproduce cross-camera matching.
@@ -53,12 +56,26 @@ The feature exporter uses a restricted descriptor-only unpickler and refuses
 any other checkpoint. The manifest records upstream commit, tensor layout, and
 derived binary hash. Browser inference has no PyTorch or ONNX dependency.
 
-## Release gate
+## Build and deploy
 
-After approval: pin/install MediaPipe Tasks Vision, package the approved existing
-pose model, run the build, verify actual browser-worker inference and camera
-lifecycle, inspect mobile/desktop rendering, then publish the `browser/` folder
-to a separate Cloudflare Pages project. Do not overwrite person-down-pilot.
+```sh
+npm ci
+npm test
+npm run build
+wrangler pages deploy browser --project-name carewatch-v2 --branch browser-v2
+```
+
+The build retrieves the official MediaPipe license and the SHA256-pinned pose
+model when missing. Runtime files and licenses are copied from reviewed sources;
+no private runtime assets or secrets are required. Publish only `browser/`;
+Python upstream sources and local QA routes are not deployed. The Pages project
+uses the separate `carewatch-v2` name, not `person-down-pilot`.
+
+Local browser QA: download Google's public `pose.jpg` fixture into
+`tests/fixtures/generated/pose.jpg`, run `python3 tests/fixture_server.py`, open
+`http://127.0.0.1:8769/browser/index.html?fixture`, and use Enable/Stop and toggles.
+The server injects a prominently marked public-image test stream; the production
+app never substitutes fake camera footage. The `&denied` query tests denial UI.
 
 Upstream license: `LICENSE`. Keep the upstream MIT notice in the web deployment
-and include MediaPipe's Apache 2.0 notice if that dependency is approved.
+and include MediaPipe's Apache 2.0 notice.

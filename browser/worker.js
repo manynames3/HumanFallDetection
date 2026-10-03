@@ -1,9 +1,10 @@
-import {PoseLandmarker,FilesetResolver} from './vendor/vision_bundle.mjs';
-import {Detector} from './detector.js';
-import {poseFromLandmarks} from './features.js';
-
-let model, detector;
+// Classic worker is required by the Emscripten loader's importScripts path.
+// App/model modules remain ES modules, dynamically imported within this worker.
+let model, detector, poseFromLandmarks;
 async function load() {
+  const [{PoseLandmarker,FilesetResolver},{Detector},featureModule]=await Promise.all([
+    import('./vendor/vision_bundle.mjs'),import('./detector.js'),import('./features.js')]);
+  poseFromLandmarks=featureModule.poseFromLandmarks;
   const [manifestResponse,weightsResponse,vision]=await Promise.all([
     fetch('./models/lstm.json'),fetch('./models/lstm.bin'),FilesetResolver.forVisionTasks('./vendor/wasm')]);
   if (!manifestResponse.ok || !weightsResponse.ok) throw new Error('Classifier download failed');

@@ -22,10 +22,12 @@
         <div class="viewer-footer"><span id="people">0 people tracked</span><span id="coverage">Not monitoring</span></div>
       </section>
       <aside class="controls" aria-label="Camera controls">
+        <div class="setup">
         <h2>Start a camera session</h2><p class="muted">Place the camera still, with the whole body and nearby floor in view.</p>
         <label class="field" for="camera">Camera<select id="camera"><option value="environment">Back camera / default webcam</option><option value="user">Front camera</option></select></label>
         <button id="start" class="primary">Enable camera</button><button id="stop" class="secondary" disabled>Stop camera</button>
         <p id="message" role="status" aria-live="polite" class="message">Your browser will ask for camera permission.</p>
+        </div><div class="display-controls">
         <div class="divider"></div><h3>Display &amp; sound</h3>
         <label class="switch"><span>Skeletons</span><input id="skeleton" type="checkbox" checked role="switch"><span class="switch-ui" aria-hidden="true"></span></label>
         <label class="switch"><span>Tracking boxes</span><input id="boxes" type="checkbox" checked role="switch"><span class="switch-ui" aria-hidden="true"></span></label>
@@ -33,6 +35,7 @@
         <label class="switch"><span>Local alert sound</span><input id="sound" type="checkbox" role="switch"><span class="switch-ui" aria-hidden="true"></span></label>
         <button id="test-sound" class="text-button">Test sound</button>
         <div class="legend"><span><i class="green"></i>Tracking</span><span><i class="amber"></i>Evaluating</span><span><i class="red"></i>Possible fall</span></div>
+        </div>
       </aside>
     </div>
     <section id="alert" class="alert" hidden role="alert"><div><strong>Possible fall detected</strong><p>This is an experimental model prediction. Check on the person; it is not a confirmed emergency.</p></div><button id="dismiss" class="secondary">Dismiss alert</button></section>

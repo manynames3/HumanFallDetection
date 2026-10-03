@@ -92,10 +92,14 @@ async function start(){
     const track=stream.getVideoTracks()[0];track.addEventListener('ended',()=>{if(session===epoch)stop('Camera disconnected. Reconnect it and start again.');});
     const devices=(await navigator.mediaDevices.enumerateDevices()).filter(d=>d.kind==='videoinput');
     if(session!==epoch)return;
-    if(devices.length){$('camera').replaceChildren(...devices.map((d,i)=>new Option(d.label||`Camera ${i+1}`,d.deviceId)));$('camera').value=track.getSettings().deviceId||devices[0].deviceId;}
+    if(devices.length){
+      $('camera').replaceChildren(...devices.map((d,i)=>new Option(d.label||`Camera ${i+1}`,d.deviceId)));
+      const active=track.getSettings().deviceId;
+      $('camera').value=devices.some(d=>d.deviceId===active)?active:devices[0].deviceId;
+    }
     $('stage').classList.add('active');$('empty').hidden=true;
     status('Loading detector');message('Loading the pose model and MIT classifier. First load may take a moment.');
-    worker=new Worker('./worker.js',{type:'module'});
+    worker=new Worker('./worker.js?v=2');
     await new Promise((resolve,reject)=>{
       const timeout=setTimeout(()=>reject(new Error('Detector loading timed out. Check your connection and try again.')),90000);
       const finish=(fn,value)=>{clearTimeout(timeout);readyReject=null;fn(value);};
