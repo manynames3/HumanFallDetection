@@ -1,0 +1,93 @@
+{
+  "upstream": "taufeeque9/HumanFallDetection",
+  "commit": "0f9fa0066d4305c65ef1f024d1297c7b5e35c535",
+  "source_sha256": "87bc1abd5828d8d2e0e91ef203a7f1b76df7c77c0d5fbd41bef765058221661b",
+  "binary_sha256": "b9cf86eb764ae1f15fd3584470bbf422c70423abb576a1ba932f068995537f98",
+  "feature_order": [
+    "ratio_bbox",
+    "log_angle",
+    "re",
+    "ratio_derivative",
+    "gf"
+  ],
+  "hidden_size": 48,
+  "layers": 2,
+  "classes": 7,
+  "tensors": {
+    "LSTM.weight_ih_l0": {
+      "shape": [
+        192,
+        5
+      ],
+      "offset": 0,
+      "length": 960
+    },
+    "LSTM.weight_hh_l0": {
+      "shape": [
+        192,
+        48
+      ],
+      "offset": 960,
+      "length": 9216
+    },
+    "LSTM.bias_ih_l0": {
+      "shape": [
+        192
+      ],
+      "offset": 10176,
+      "length": 192
+    },
+    "LSTM.bias_hh_l0": {
+      "shape": [
+        192
+      ],
+      "offset": 10368,
+      "length": 192
+    },
+    "LSTM.weight_ih_l1": {
+      "shape": [
+        192,
+        48
+      ],
+      "offset": 10560,
+      "length": 9216
+    },
+    "LSTM.weight_hh_l1": {
+      "shape": [
+        192,
+        48
+      ],
+      "offset": 19776,
+      "length": 9216
+    },
+    "LSTM.bias_ih_l1": {
+      "shape": [
+        192
+      ],
+      "offset": 28992,
+      "length": 192
+    },
+    "LSTM.bias_hh_l1": {
+      "shape": [
+        192
+      ],
+      "offset": 29184,
+      "length": 192
+    },
+    "fc1.weight": {
+      "shape": [
+        7,
+        48
+      ],
+      "offset": 29376,
+      "length": 336
+    },
+    "fc1.bias": {
+      "shape": [
+        7
+      ],
+      "offset": 29712,
+      "length": 7
+    }
+  }
+}

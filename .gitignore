@@ -3,4 +3,10 @@ keypoints.csv
 Fall_Detection_Documents/
 .vscode/
 *.mp4
-
+node_modules/
+browser/vendor/
+browser/MEDIAPIPE-LICENSE.txt
+browser/LICENSE.txt
+browser/models/pose_landmarker_lite.task
+.wrangler/
+tests/fixtures/generated/

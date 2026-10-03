@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101724">
+  <meta name="description" content="Private, on-device camera fall-detection prototype. No account or video upload.">
+  <title>Carewatch v2 · Camera test</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <main>
+    <header><div class="brand"><span class="brandmark" aria-hidden="true">C</span><span>Carewatch <small>v2</small></span></div><span class="privacy-tag">On-device · No login</span></header>
+    <section class="intro"><div><p class="eyebrow">LIVE CAMERA TEST</p><h1>A clearer view of movement.</h1><p>Start your camera to see body tracking and experimental fall detection.</p></div><span class="prototype">Research prototype</span></section>
+    <div class="workspace">
+      <section class="viewer" aria-label="Camera view">
+        <div class="viewer-bar"><span id="status" role="status" aria-live="polite"><i></i>Camera is off</span><span id="fps">— FPS</span></div>
+        <div class="stage" id="stage">
+          <video id="video" autoplay muted playsinline aria-label="Live camera"></video><canvas id="overlay" aria-hidden="true"></canvas>
+          <div class="empty" id="empty"><svg viewBox="0 0 48 48" width="52" height="52" aria-hidden="true"><rect x="6" y="13" width="28" height="24" rx="5"/><path d="m34 21 9-5v18l-9-5M15 13l3-5h9l3 5"/><circle cx="20" cy="25" r="6"/></svg><h2>Your camera, your device.</h2><p>No video is uploaded or recorded.<br>Camera access starts only when you choose.</p></div>
+        </div>
+        <div class="viewer-footer"><span id="people">0 people tracked</span><span id="coverage">Not monitoring</span></div>
+      </section>
+      <aside class="controls" aria-label="Camera controls">
+        <h2>Start a camera session</h2><p class="muted">Place the camera still, with the whole body and nearby floor in view.</p>
+        <label class="field" for="camera">Camera<select id="camera"><option value="environment">Back camera / default webcam</option><option value="user">Front camera</option></select></label>
+        <button id="start" class="primary">Enable camera</button><button id="stop" class="secondary" disabled>Stop camera</button>
+        <p id="message" role="status" aria-live="polite" class="message">Your browser will ask for camera permission.</p>
+        <div class="divider"></div><h3>Display &amp; sound</h3>
+        <label class="switch"><span>Skeletons</span><input id="skeleton" type="checkbox" checked role="switch"><span class="switch-ui" aria-hidden="true"></span></label>
+        <label class="switch"><span>Tracking boxes</span><input id="boxes" type="checkbox" checked role="switch"><span class="switch-ui" aria-hidden="true"></span></label>
+        <label class="switch"><span>Mirror view</span><input id="mirror" type="checkbox" role="switch"><span class="switch-ui" aria-hidden="true"></span></label>
+        <label class="switch"><span>Local alert sound</span><input id="sound" type="checkbox" role="switch"><span class="switch-ui" aria-hidden="true"></span></label>
+        <button id="test-sound" class="text-button">Test sound</button>
+        <div class="legend"><span><i class="green"></i>Tracking</span><span><i class="amber"></i>Evaluating</span><span><i class="red"></i>Possible fall</span></div>
+      </aside>
+    </div>
+    <section id="alert" class="alert" hidden role="alert"><div><strong>Possible fall detected</strong><p>This is an experimental model prediction. Check on the person; it is not a confirmed emergency.</p></div><button id="dismiss" class="secondary">Dismiss alert</button></section>
+    <section class="details"><div><h3>Private by design</h3><p>Camera frames and predictions stay in this browser. No recordings, accounts, analytics, or remote alerts.</p></div><div><h3>Keep this page open</h3><p>Switching tabs, locking your phone, or leaving this page stops the camera. This is not unattended monitoring.</p></div><div><h3>Detection is not yet validated</h3><p>Uses the MIT HumanFallDetection classifier with a browser pose adapter. Do not rely on it as an emergency service.</p></div></section>
+    <footer><a href="./about.html">Model, limitations &amp; licenses</a><a href="https://github.com/manynames3/HumanFallDetection" target="_blank" rel="noopener noreferrer">Source code</a><span>Safe tests only. Never ask an older adult to stage a fall.</span></footer>
+  </main>
+</body>
+</html>

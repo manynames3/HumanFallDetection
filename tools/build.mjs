@@ -1,0 +1,18 @@
+import {cp,mkdir,readFile,stat} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import {resolve,dirname} from 'node:path';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+await mkdir(resolve(root,'browser/vendor'),{recursive:true});
+await cp(resolve(root,'node_modules/@mediapipe/tasks-vision/vision_bundle.mjs'),resolve(root,'browser/vendor/vision_bundle.mjs'));
+await cp(resolve(root,'node_modules/@mediapipe/tasks-vision/wasm'),resolve(root,'browser/vendor/wasm'),{recursive:true});
+await cp(resolve(root,'LICENSE'),resolve(root,'browser/LICENSE.txt'));
+await cp(resolve(root,'node_modules/@mediapipe/tasks-vision/LICENSE'),resolve(root,'browser/MEDIAPIPE-LICENSE.txt'));
+const manifest=JSON.parse(await readFile(resolve(root,'browser/models/lstm.json')));
+const hash=createHash('sha256').update(await readFile(resolve(root,'browser/models/lstm.bin'))).digest('hex');
+if(hash!==manifest.binary_sha256)throw new Error('Classifier weights integrity mismatch');
+const pose=resolve(root,'browser/models/pose_landmarker_lite.task');
+const poseHash=createHash('sha256').update(await readFile(pose)).digest('hex');
+if(poseHash!=='59929e1d1ee95287735ddd833b19cf4ac46d29bc7afddbbf6753c459690d574a')throw new Error('Pose model integrity mismatch');
+for(const file of ['vision_wasm_internal.wasm','vision_wasm_internal.js'])await stat(resolve(root,'browser/vendor/wasm',file));
+console.log('Built self-hosted static browser app; classifier and pose-model hashes verified.');
