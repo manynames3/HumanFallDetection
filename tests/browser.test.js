@@ -5,6 +5,7 @@ import {createHash} from 'node:crypto';
 import {LSTM} from '../browser/lstm.js';
 import {features,poseFromLandmarks} from '../browser/features.js';
 import {Detector} from '../browser/detector.js';
+import {PersonDownMonitor,validPolygon,floorEvidence} from '../browser/person-down.js';
 const manifest=JSON.parse(readFileSync(new URL('../browser/models/lstm.json',import.meta.url)));
 const bytes=readFileSync(new URL('../browser/models/lstm.bin',import.meta.url));
 const buffer=bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength);
@@ -57,4 +58,53 @@ test('Low confidence and degenerate body input cannot silently produce green tra
   assert.throws(()=>features({...pose(.5,1),N:[.5,.5],B:[.5,.5],H:[.5,.5]},[pose(.5,0)]));
   const detector=new Detector(manifest,buffer);
   const invalid={...pose(.5,1),box:[0,0,0,0]};assert.equal(detector.update([invalid],1)[0].state,'unavailable');
+});
+const floor={kind:'floor',points:[[.01,.01],[.99,.01],[.99,.99],[.01,.99]]};
+function floorPerson(id=1){
+  const landmarks=Array.from({length:33},()=>({x:.5,y:.5,visibility:.9,presence:.9}));
+  for(const i of [11,12])landmarks[i]={...landmarks[i],x:.25,y:.55};
+  for(const i of [23,24])landmarks[i]={...landmarks[i],x:.55,y:.57};
+  for(const i of [25,26])landmarks[i]={...landmarks[i],x:.7,y:.58};
+  for(const i of [27,28])landmarks[i]={...landmarks[i],x:.85,y:.6};
+  return {id,state:'monitoring',landmarks};
+}
+test('Person already down warns only after 8 seconds, independent of classifier at 5 and 18 Hz',()=>{
+  for(const hz of [5,18]){
+    const m=new PersonDownMonitor();m.configure([floor]);let output;
+    for(let i=0;i<=hz*8;i++){
+      output=m.update([floorPerson()],i/hz,640,480)[0];
+      assert.equal(output.state,'monitoring');
+      assert.equal(output.down.state,i<hz*8?'down-evaluating':'person-down');
+    }
+  }
+});
+test('Uncalibrated, outside floor, upright, obscured and excluded bodies do not warn',()=>{
+  const p=floorPerson();assert.equal(floorEvidence(p,[],640,480).eligible,false);
+  const bed={kind:'bed',points:[[.2,.4],[.65,.4],[.65,.7],[.2,.7]]};
+  assert.equal(floorEvidence(p,[floor,bed],640,480).eligible,false);
+  assert.equal(floorEvidence(p,[floor,{...bed,kind:'sofa'}],640,480).eligible,false);
+  assert.equal(floorEvidence(p,[{kind:'floor',points:[[0,0],[.1,0],[.1,.1],[0,.1]]}],640,480).eligible,false);
+  const upright=floorPerson();for(const i of [11,12])upright.landmarks[i]={...upright.landmarks[i],x:.55,y:.2};
+  assert.equal(floorEvidence(upright,[floor],640,480).eligible,false);
+  const partial=floorPerson();for(const i of [27,28])partial.landmarks[i].visibility=.1;
+  assert.equal(floorEvidence(partial,[floor],640,480).eligible,false);
+});
+test('Down timer resets after occlusion, gap, track change, calibration change and upright posture',()=>{
+  const m=new PersonDownMonitor();m.configure([floor]);
+  for(let i=0;i<40;i++)m.update([floorPerson()],i/5,640,480);
+  assert.equal(m.update([floorPerson()],9,640,480)[0].down.elapsed,0);
+  m.update([],9.1,640,480);assert.equal(m.update([floorPerson()],9.2,640,480)[0].down.elapsed,0);
+  assert.equal(m.update([floorPerson(2)],9.3,640,480)[0].down.elapsed,0);
+  m.configure([floor]);assert.equal(m.update([floorPerson(2)],9.4,640,480)[0].down.elapsed,0);
+  const upright=floorPerson(2);for(const i of [11,12])upright.landmarks[i].x=.55;
+  m.update([upright],9.5,640,480);assert.equal(m.update([floorPerson(2)],9.6,640,480)[0].down.elapsed,0);
+});
+test('Calibration rejects crossing, tiny and malformed polygons; angle uses pixel aspect ratio',()=>{
+  assert.equal(validPolygon(floor.points),true);
+  assert.equal(validPolygon([[0,0],[1,1],[0,1],[1,0]]),false);
+  assert.equal(validPolygon([[0,0],[.01,0],[.01,.01]]),false);
+  assert.equal(validPolygon([[0,0],[1,0],[NaN,1]]),false);
+  const p=floorPerson();for(const i of [11,12])p.landmarks[i].y=.37;
+  assert.equal(floorEvidence(p,[floor],640,480).eligible,true);
+  assert.equal(floorEvidence(p,[floor],480,640).eligible,false);
 });

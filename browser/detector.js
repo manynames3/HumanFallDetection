@@ -32,6 +32,7 @@ export class Detector {
         candidate.samples++;
         // Original post-filter, including raw logit threshold (not a probability).
         let state='monitoring';
+        let reason='Classifier did not predict a fall';
         if ([1,2,3,5].includes(prediction.prediction)) {
           candidate.fallFrames=Math.max(0,candidate.fallFrames-1);
           const height=pose.box[3]-pose.box[1];
@@ -40,20 +41,23 @@ export class Detector {
             candidate.height=(candidate.height*(candidate.heightSamples-1)+height)/candidate.heightSamples;
           } else candidate.height=(1-1/109)*height+(1/109)*candidate.height;
         } else if (prediction.prediction===0) {
-          if ((candidate.height!==0 && Math.abs(feature.theta)<Math.PI/4) || prediction.score<.4) state='evaluating';
+          if ((candidate.height!==0 && Math.abs(feature.theta)<Math.PI/4) || prediction.score<.4) {
+            state='evaluating';reason=prediction.score<.4?'Fall raw score below 0.4':'Upstream body-angle filter blocked warning';
+          }
           else {
             candidate.fallFrames++;
             state=candidate.fallFrames>=9 ? 'possible-fall' : 'evaluating';
+            reason=`Fall evidence count ${candidate.fallFrames}/9`;
           }
         } else candidate.fallFrames=Math.max(0,candidate.fallFrames-1);
-        if (candidate.samples<36) state='warming-up';
+        if (candidate.samples<36) {state='warming-up';reason=`Movement history ${candidate.samples}/36 observations`;}
         candidate.history.push(pose);candidate.history=candidate.history.slice(-2);
         candidate.last=pose;
         result.push({id:candidate.id,state,box:pose.box,landmarks:pose.landmarks,
-          theta:feature.theta,rawClass:prediction.prediction,rawScore:prediction.score,samples:candidate.samples});
+          theta:feature.theta,rawClass:prediction.prediction,rawScore:prediction.score,samples:candidate.samples,reason});
       } catch {
         candidate.model.reset();candidate.history=[];candidate.samples=0;candidate.fallFrames=0;candidate.last=pose;
-        result.push({id:candidate.id,state:'unavailable',box:pose.box,landmarks:pose.landmarks,samples:0});
+        result.push({id:candidate.id,state:'unavailable',box:pose.box,landmarks:pose.landmarks,samples:0,reason:'Invalid pose geometry; history reset'});
       }
     }
     return result;

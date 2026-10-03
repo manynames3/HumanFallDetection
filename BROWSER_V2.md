@@ -9,7 +9,7 @@ The existing person-down-core pilot is not changed by this fork.
 
 Live web app: https://carewatch-v2.pages.dev/
 
-The browser UI, feature port, trained LSTM port, worker integration, and six
+The browser UI, feature port, trained LSTM port, worker integration, and ten
 detector tests are implemented. MediaPipe Tasks Vision 0.10.32 is pinned and
 approved; the runtime and model are packaged as same-origin static assets.
 The real browser worker passed 40 recurrent pose/classifier frames, and the full
@@ -18,6 +18,22 @@ This is runtime validation, not physical-camera qualification or fall accuracy.
 
 ## Design
 
+- Experimental person-down check is separate from the original LSTM. Users draw
+  floor polygons and bed/sofa exclusions on the camera view. Session-only zones
+  clear on Stop, camera change, page hide, or changed camera aspect ratio.
+  Moving a camera without changing aspect ratio cannot be detected: recalibrate.
+- The check requires visible torso and one knee/ankle chain, a pixel-corrected
+  torso angle of at least 60 degrees from vertical, and torso/hip/support in the
+  floor zone with no torso overlap in excluded regions. Eight continuous seconds
+  triggers a local "Person may be down" warning, even if the LSTM says non-fall.
+  Missing tracks, invalid posture, >0.5-second observation gaps, and edits reset
+  evidence. No floor calibration means this check is disabled.
+- This is 2D posture, not depth/floor-contact measurement. Intentional floor
+  lying, bent sitting, incorrect zones, and hallucinated poses can false-trigger;
+  occlusion, foreshortening, and camera angles can miss a down person. Eight
+  seconds and thresholds are unvalidated experimental defaults.
+- Per-person diagnostics expose movement-history progress, LSTM raw class/logit,
+  fall-filter reason, and person-down reason/timer. Scores are not probabilities.
 - Enable camera asks for video permission only; phones can select front/back
   cameras and computers can select connected webcams after permission.
 - Stop, page hide, tab switching, or detector failure releases camera tracks.
@@ -76,6 +92,9 @@ Local browser QA: download Google's public `pose.jpg` fixture into
 `http://127.0.0.1:8769/browser/index.html?fixture`, and use Enable/Stop and toggles.
 The server injects a prominently marked public-image test stream; the production
 app never substitutes fake camera footage. The `&denied` query tests denial UI.
+The `&down` query additionally substitutes explicitly labeled synthetic pose
+output using the actual PersonDownMonitor to test warning rendering, timing,
+exclusion editing, and dismissal. It is not evidence of model accuracy.
 
 Upstream license: `LICENSE`. Keep the upstream MIT notice in the web deployment
 and include MediaPipe's Apache 2.0 notice.

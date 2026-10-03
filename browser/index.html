@@ -20,6 +20,14 @@
           <div class="empty" id="empty"><svg viewBox="0 0 48 48" width="52" height="52" aria-hidden="true"><rect x="6" y="13" width="28" height="24" rx="5"/><path d="m34 21 9-5v18l-9-5M15 13l3-5h9l3 5"/><circle cx="20" cy="25" r="6"/></svg><h2>Your camera, your device.</h2><p>No video is uploaded or recorded.<br>Camera access starts only when you choose.</p></div>
         </div>
         <div class="viewer-footer"><span id="people">0 people tracked</span><span id="coverage">Not monitoring</span></div>
+        <div class="calibration">
+          <h3>Room calibration · experimental</h3>
+          <p>Keep the camera fixed. Mark the visible floor, then exclude beds and sofas. Zones are only for this session. Recalibrate after moving the camera.</p>
+          <label for="zone-kind">Region type</label><select id="zone-kind"><option value="floor">Floor</option><option value="bed">Bed exclusion</option><option value="sofa">Sofa exclusion</option></select>
+          <div class="zone-buttons"><button id="zone-start" class="secondary" disabled>Draw region</button><button id="zone-save" class="secondary" disabled>Save region</button><button id="zone-undo" class="secondary" disabled>Undo point</button><button id="zone-cancel" class="secondary" disabled>Cancel</button><button id="zone-clear" class="secondary" disabled>Clear all regions</button></div>
+          <p id="zone-message" role="status">Start the camera to calibrate. Person-down checks are currently off.</p>
+          <ul id="zone-list"></ul>
+        </div>
       </section>
       <aside class="controls" aria-label="Camera controls">
         <div class="setup">
@@ -38,7 +46,8 @@
         </div>
       </aside>
     </div>
-    <section id="alert" class="alert" hidden role="alert"><div><strong>Possible fall detected</strong><p>This is an experimental model prediction. Check on the person; it is not a confirmed emergency.</p></div><button id="dismiss" class="secondary">Dismiss alert</button></section>
+    <section id="alert" class="alert" hidden role="alert"><div><strong id="alert-title">Possible fall detected</strong><p id="alert-description">This is an experimental model prediction. Check on the person; it is not a confirmed emergency.</p></div><button id="dismiss" class="secondary">Dismiss alert</button></section>
+    <details class="diagnostics"><summary>Detection diagnostics · why no warning?</summary><p>Raw classifier scores are not probabilities. Floor posture is a separate heuristic, not a confirmed fall. Neither check proves safety.</p><div id="diagnostics">Start the camera to see per-person evidence.</div></details>
     <section class="details"><div><h3>Private by design</h3><p>Camera frames and predictions stay in this browser. No recordings, accounts, analytics, or remote alerts.</p></div><div><h3>Keep this page open</h3><p>Switching tabs, locking your phone, or leaving this page stops the camera. This is not unattended monitoring.</p></div><div><h3>Detection is not yet validated</h3><p>Uses the MIT HumanFallDetection classifier with a browser pose adapter. Do not rely on it as an emergency service.</p></div></section>
     <footer><a href="./about.html">Model, limitations &amp; licenses</a><a href="https://github.com/manynames3/HumanFallDetection/tree/browser-v2" target="_blank" rel="noopener noreferrer">Source code</a><span>Safe tests only. Never ask an older adult to stage a fall.</span></footer>
   </main>
