@@ -1,5 +1,5 @@
-// DECISION: Separate experimental floor-posture warnings from the retained
-// MIT fall classifier. A down posture is not proof that a fall occurred.
+// DECISION: Keep unvalidated movement/posture rules separate from the MIT model.
+// No mandatory zones. 2D geometry cannot establish impact or floor contact.
 export function validPolygon(points) {
   if (!Array.isArray(points) || points.length<3 || points.length>20 || points.some(p=>!Array.isArray(p)||p.length!==2||p.some(v=>!Number.isFinite(v)||v<0||v>1))) return false;
   const cross=(a,b,c)=>(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);
@@ -19,35 +19,84 @@ export function inside(point,polygon) {
   }
   return hit;
 }
-const visible=p=>p&&Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=0&&p.x<=1&&p.y>=0&&p.y<=1&&Math.min(p.visibility??0,p.presence??1)>=.6;
+const visible=p=>p&&Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=0&&p.x<=1&&p.y>=0&&p.y<=1&&Math.min(p.visibility??0,p.presence??1)>=.55;
+const angleFromVertical=(a,b,w,h)=>Math.atan2(Math.abs((a[0]-b[0])*w),Math.abs((a[1]-b[1])*h))*180/Math.PI;
+const distance=(a,b,w,h)=>Math.hypot((a[0]-b[0])*w,(a[1]-b[1])*h);
 export function floorEvidence(person,zones,width,height) {
-  if(!zones.some(z=>z.kind==='floor'))return {eligible:false,reason:'Mark a floor region to enable person-down checks'};
   const lm=person.landmarks;
-  if(!lm || ![11,12,23,24].every(i=>visible(lm[i])) || ![[25,27],[26,28]].some(side=>side.every(i=>visible(lm[i]))))return {eligible:false,reason:'Torso and at least one knee/ankle must be visible'};
+  const unknown=reason=>({eligible:false,posture:'unknown',reason});
+  if(!lm || ![11,12,23,24].every(i=>visible(lm[i])))return unknown('Shoulders and hips must be visible');
   const midpoint=(a,b)=>[(lm[a].x+lm[b].x)/2,(lm[a].y+lm[b].y)/2];
   const shoulder=midpoint(11,12),hip=midpoint(23,24),torso=[(shoulder[0]+hip[0])/2,(shoulder[1]+hip[1])/2];
-  const length=Math.hypot((shoulder[0]-hip[0])*width,(shoulder[1]-hip[1])*height);
-  if(length<height*.06)return {eligible:false,reason:'Body too small or torso geometry unclear'};
-  const angle=Math.atan2(Math.abs((shoulder[0]-hip[0])*width),Math.abs((shoulder[1]-hip[1])*height))*180/Math.PI;
-  if(zones.some(z=>z.kind!=='floor'&&[shoulder,hip,torso].some(p=>inside(p,z.points))))return {eligible:false,reason:'Bed/sofa exclusion overlaps torso',angle};
-  if(angle<60)return {eligible:false,reason:'Torso is not sufficiently horizontal',angle};
-  const support=[25,26,27,28].filter(i=>visible(lm[i])).map(i=>[lm[i].x,lm[i].y]);
-  if(!zones.some(z=>z.kind==='floor'&&inside(torso,z.points)&&inside(hip,z.points)&&support.some(p=>inside(p,z.points))))return {eligible:false,reason:'Body is outside the marked floor region',angle};
-  return {eligible:true,reason:'Horizontal body in marked floor region',angle};
+  if(zones.some(z=>z.kind!=='floor'&&[shoulder,hip,torso].some(p=>inside(p,z.points))))return {eligible:false,posture:'excluded',reason:'Bed/sofa exclusion overlaps torso'};
+  const length=distance(shoulder,hip,width,height);
+  if(length<height*.045)return unknown('Body too small or torso geometry unclear');
+  const chains=[[23,25,27],[24,26,28]].filter(side=>side.every(i=>visible(lm[i])));
+  if(!chains.length)return unknown('At least one complete hip/knee/ankle chain must be visible');
+  const angle=angleFromVertical(shoulder,hip,width,height);
+  const body=[shoulder,hip,...chains.flatMap(side=>side.slice(1).map(i=>[lm[i].x,lm[i].y]))];
+  const bodyHeight=(Math.max(...body.map(p=>p[1]))-Math.min(...body.map(p=>p[1])))*height;
+  const legs=chains.map(([hi,ki,ai])=>{
+    const a=[lm[hi].x,lm[hi].y],b=[lm[ki].x,lm[ki].y],c=[lm[ai].x,lm[ai].y];
+    const upper=distance(a,b,width,height),lower=distance(b,c,width,height);
+    const u=[(a[0]-b[0])*width,(a[1]-b[1])*height],v=[(c[0]-b[0])*width,(c[1]-b[1])*height];
+    const kneeAngle=Math.acos(Math.max(-1,Math.min(1,(u[0]*v[0]+u[1]*v[1])/(upper*lower))))*180/Math.PI;
+    return {upper,lower,kneeAngle,axis:angleFromVertical(a,c,width,height),lowerAngle:angleFromVertical(b,c,width,height),ankle:c,knee:b};
+  });
+  if(legs.some(l=>l.upper<length*.2||l.lower<length*.2||l.upper>length*3||l.lower>length*3||!Number.isFinite(l.kneeAngle)))return unknown('Leg proportions unclear');
+  const details={angle,hipY:hip[1]*height,bodyHeight,torsoLength:length};
+  const uprightLegs=legs.every(l=>l.lowerAngle<35&&(l.ankle[1]-hip[1])*height>length*.6);
+  if(angle<35&&uprightLegs&&legs.every(l=>l.kneeAngle>150&&l.axis<35))return {...details,eligible:false,posture:'standing',reason:'Upright torso and extended supporting legs'};
+  if(angle<55&&uprightLegs&&legs.some(l=>l.kneeAngle<145))return {...details,eligible:false,posture:'sitting',reason:'Upright torso with bent knees and supporting lower legs'};
+  // A bent torso alone is not enough: legs must also support a down posture.
+  const extendedDown=angle>=60&&legs.some(l=>l.axis>=45&&l.lowerAngle>=45)&&!uprightLegs&&bodyHeight<length*1.5;
+  const curledDown=angle>=70&&bodyHeight<length*.95&&legs.every(l=>distance(hip,l.ankle,width,height)<length*1.5);
+  const down=extendedDown||curledDown;
+  if(!down)return {...details,eligible:false,posture:'other',reason:'Not a consistent down posture (torso plus legs required)'};
+  const floors=zones.filter(z=>z.kind==='floor');
+  if(floors.length&&!floors.some(z=>inside(torso,z.points)&&inside(hip,z.points)&&legs.some(l=>inside(l.knee,z.points)||inside(l.ankle,z.points))))return {...details,eligible:false,posture:'excluded',reason:'Body is outside the optional floor region'};
+  return {...details,eligible:true,posture:'lying',reason:floors.length?'Down posture in marked floor region':'Down posture; floor contact is not established'};
 }
 export class PersonDownMonitor {
   constructor(){this.configure([]);}
-  configure(zones){this.zones=zones.filter(z=>['floor','bed','sofa'].includes(z.kind)&&validPolygon(z.points)).map(z=>({kind:z.kind,points:z.points.map(p=>[...p])}));this.tracks=new Map();}
+  configure(zones){this.zones=zones.filter(z=>['floor','bed','sofa'].includes(z.kind)&&validPolygon(z.points)).map(z=>({kind:z.kind,points:z.points.map(p=>[...p])}));this.tracks=new Map();this.lastTime=null;}
   update(people,time,width,height){
+    if(this.lastTime!==null&&(time<=this.lastTime||time-this.lastTime>1))this.tracks.clear();
+    this.lastTime=time;
     const present=new Set(people.map(p=>p.id));
-    for(const id of this.tracks.keys())if(!present.has(id))this.tracks.delete(id);
+    for(const [id,t] of this.tracks){
+      if(time-t.time>.75)this.tracks.delete(id);
+      else if(!present.has(id))t.positive=false;
+    }
     return people.map(person=>{
-      const evidence=floorEvidence(person,this.zones,width,height),last=this.tracks.get(person.id);
-      const continuous=last&&time>last.time&&time-last.time<=.5;
-      const since=evidence.eligible?(continuous&&last.since!==null?last.since:time):null;
-      const elapsed=since===null?0:time-since;
-      this.tracks.set(person.id,{time,since});
-      const down={...evidence,elapsed,required:8,state:evidence.eligible?(elapsed>=8?'person-down':'down-evaluating'):'inactive'};
+      const evidence=floorEvidence(person,this.zones,width,height);
+      const t=this.tracks.get(person.id)??{time,elapsed:0,positive:false,lastPositive:null,recovery:null,baseline:[],transition:false};
+      const dt=Math.max(0,time-t.time);
+      t.baseline=t.baseline.filter(p=>time-p.time<=3);
+      if(evidence.posture==='excluded'){t.elapsed=0;t.transition=false;t.baseline=[];t.lastPositive=null;}
+      else if(evidence.eligible){
+        if(t.lastPositive===null||time-t.lastPositive>.75){
+          t.elapsed=0;t.transition=false;
+          const refs=t.baseline.filter(p=>time-p.time<=1.5);
+          if(refs.length>=4&&refs.at(-1).time-refs[0].time>=.6){
+            const median=key=>refs.map(p=>p[key]).sort((a,b)=>a-b)[Math.floor(refs.length/2)];
+            t.transition=evidence.hipY-median('hipY')>median('torsoLength')*.35&&evidence.bodyHeight<median('bodyHeight')*.65&&evidence.angle-median('angle')>35;
+          }
+        }
+        if(t.positive&&dt<=.5)t.elapsed+=dt;
+        t.lastPositive=time;t.recovery=null;
+      }else{
+        if(['standing','sitting'].includes(evidence.posture)){
+          t.recovery??=time;t.baseline.push({...evidence,time});
+          if(time-t.recovery>=1){t.elapsed=0;t.transition=false;t.lastPositive=null;}
+        }else t.recovery=null;
+        if(t.lastPositive!==null&&time-t.lastPositive>.75){t.elapsed=0;t.transition=false;t.lastPositive=null;}
+      }
+      t.time=time;t.positive=evidence.eligible;this.tracks.set(person.id,t);
+      const required=t.transition?2:8;
+      const held=t.lastPositive!==null&&time-t.lastPositive<=.75;
+      const state=held?(t.elapsed+1e-8>=required?(t.transition?'possible-fall':'person-down'):'down-evaluating'):'inactive';
+      const down={...evidence,elapsed:t.elapsed,required,state,source:t.transition?'movement-transition':'sustained-posture',reason:t.transition?'Rapid standing/sitting-to-down transition; impact not established':evidence.reason};
       return {...person,down};
     });
   }

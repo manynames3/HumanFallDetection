@@ -9,14 +9,14 @@ export function calibration(canvas,onChange,getFrameSize) {
     $('zone-cancel').disabled=!editing;
     $('zone-clear').disabled=!zones.length&&!editing;
     canvas.classList.toggle('editing',editing);
-    $('zone-message').textContent=editing?`Tap corners around ${names[kind].toLowerCase()} in the camera image (${points.length} points), then Save region. New person-down warnings are paused while drawing.`:zones.some(z=>z.kind==='floor')?'Person-down check enabled: 8 seconds of continuous horizontal floor posture. Recalibrate after moving the camera.':'Person-down check off: mark a floor region. Existing fall classifier remains active.';
+    $('zone-message').textContent=editing?`Tap corners around ${names[kind].toLowerCase()} in the camera image (${points.length} points), then Save region. New movement/posture warnings are paused while drawing.`:!active?'Start the camera. Room marking is optional.':zones.length?'Optional regions applied. Excluded furniture suppresses warnings when the torso overlaps it. Redraw after moving the camera.':'Automatic movement and down-posture checks are on. No room marking required. Add furniture exclusions only if needed.';
     $('zone-list').replaceChildren(...zones.map((z,i)=>{
       const li=document.createElement('li'),button=document.createElement('button');
       button.className='text-button';button.textContent=`Remove ${names[z.kind]} ${i+1}`;
       button.addEventListener('click',()=>{zones.splice(i,1);notify();sync();});li.append(button);return li;
     }));
   };
-  const notify=()=>onChange(editing?[]:zones);
+  const notify=()=>onChange(zones,editing);
   $('zone-start').addEventListener('click',()=>{editing=true;points=[];kind=$('zone-kind').value;notify();sync();$('stage').scrollIntoView({block:'center',behavior:'instant'});});
   $('zone-save').addEventListener('click',()=>{
     if(!validPolygon(points)){$('zone-message').textContent='Use at least 3 distinct corners enclosing an area, without crossing edges. Undo a point or Cancel to retry.';return;}

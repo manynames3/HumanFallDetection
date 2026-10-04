@@ -42,7 +42,7 @@ test('Separate IDs, classifier state, expiry and time-gap reset',()=>{
   const a=detector.update([pose(.2,0),pose(.8,0)],0);
   assert.deepEqual(a.map(p=>p.id),[1,2]);assert.notEqual(detector.tracks[0].model,detector.tracks[1].model);
   const b=detector.update([pose(.8,.06),pose(.2,.06)],.06);assert.deepEqual(b.map(p=>p.id),[2,1]);
-  const c=detector.update([pose(.2,.8)],.8);assert.equal(c[0].id,3);assert.equal(c[0].samples,1);
+  const c=detector.update([pose(.2,1)],1);assert.equal(c[0].id,3);assert.equal(c[0].samples,1);
   const d=detector.update([pose(.2,3)],3);assert.equal(d[0].samples,1);
 });
 test('Fall filter requires history and nine fall samples; overlays are not confirmation of impact',()=>{
@@ -78,8 +78,8 @@ test('Person already down warns only after 8 seconds, independent of classifier 
     }
   }
 });
-test('Uncalibrated, outside floor, upright, obscured and excluded bodies do not warn',()=>{
-  const p=floorPerson();assert.equal(floorEvidence(p,[],640,480).eligible,false);
+test('Automatic down checks work without zones; optional regions and unclear bodies gate evidence',()=>{
+  const p=floorPerson();assert.equal(floorEvidence(p,[],640,480).eligible,true);
   const bed={kind:'bed',points:[[.2,.4],[.65,.4],[.65,.7],[.2,.7]]};
   assert.equal(floorEvidence(p,[floor,bed],640,480).eligible,false);
   assert.equal(floorEvidence(p,[floor,{...bed,kind:'sofa'}],640,480).eligible,false);
@@ -89,7 +89,7 @@ test('Uncalibrated, outside floor, upright, obscured and excluded bodies do not 
   const partial=floorPerson();for(const i of [27,28])partial.landmarks[i].visibility=.1;
   assert.equal(floorEvidence(partial,[floor],640,480).eligible,false);
 });
-test('Down timer resets after occlusion, gap, track change, calibration change and upright posture',()=>{
+test('Down timer pauses after brief occlusion and resets for long gaps, new tracks and calibration changes',()=>{
   const m=new PersonDownMonitor();m.configure([floor]);
   for(let i=0;i<40;i++)m.update([floorPerson()],i/5,640,480);
   assert.equal(m.update([floorPerson()],9,640,480)[0].down.elapsed,0);

@@ -9,7 +9,7 @@ export class Detector {
   update(poses, time) {
     if (this.lastTime !== null && (time-this.lastTime>1 || time<=this.lastTime)) this.reset();
     this.lastTime=time;
-    this.tracks=this.tracks.filter(t=>time-t.last.time<.6);
+    this.tracks=this.tracks.filter(t=>time-t.last.time<.85);
     const assigned=new Set(), result=[];
     for (const pose of poses) {
       let candidate=null, distance=.35;
@@ -19,6 +19,14 @@ export class Detector {
         const d=Math.hypot(p.N[0]-pose.N[0],p.N[1]-pose.N[1],p.B[0]-pose.B[0],p.B[1]-pose.B[1]);
         if (d<distance) {distance=d;candidate=track;}
       }
+      // Relax matching only for a single person with overlapping image boxes:
+      // a collapse can move hips beyond the normal nearest-pose radius.
+      if(!candidate&&poses.length===1&&this.tracks.length===1){
+        const track=this.tracks[0],p=track.last,a=p.trackingBox??p.box,b=pose.trackingBox??pose.box;
+        const overlaps=Math.min(a[2],b[2])>Math.max(a[0],b[0])&&Math.min(a[3],b[3])>Math.max(a[1],b[1]);
+        const d=Math.hypot(p.N[0]-pose.N[0],p.N[1]-pose.N[1],p.B[0]-pose.B[0],p.B[1]-pose.B[1]);
+        if(overlaps&&d<.75)candidate=track;
+      }
       if (!candidate) {
         candidate={id:this.nextId++,model:new LSTM(this.manifest,this.buffer),history:[],samples:0,height:0,heightSamples:0,fallFrames:0};
         this.tracks.push(candidate);
@@ -27,6 +35,7 @@ export class Detector {
       const dt=candidate.last ? time-candidate.last.time : 0;
       if (dt>.3) { candidate.model.reset();candidate.history=[];candidate.samples=0;candidate.fallFrames=0;candidate.height=0;candidate.heightSamples=0; }
       try {
+        if(pose.classifierReady===false)throw new Error('Head landmarks unavailable');
         const feature=features(pose,candidate.history);
         const prediction=candidate.model.step(feature.values);
         candidate.samples++;
@@ -57,7 +66,7 @@ export class Detector {
           theta:feature.theta,rawClass:prediction.prediction,rawScore:prediction.score,samples:candidate.samples,reason});
       } catch {
         candidate.model.reset();candidate.history=[];candidate.samples=0;candidate.fallFrames=0;candidate.last=pose;
-        result.push({id:candidate.id,state:'unavailable',box:pose.box,landmarks:pose.landmarks,samples:0,reason:'Invalid pose geometry; history reset'});
+        result.push({id:candidate.id,state:'unavailable',box:pose.box,landmarks:pose.landmarks,samples:0,reason:pose.classifierReady===false?'Head unclear: classifier paused, body-posture check remains active':'Invalid pose geometry; history reset'});
       }
     }
     return result;

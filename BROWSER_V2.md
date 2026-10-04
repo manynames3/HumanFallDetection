@@ -9,7 +9,7 @@ The existing person-down-core pilot is not changed by this fork.
 
 Live web app: https://carewatch-v2.pages.dev/
 
-The browser UI, feature port, trained LSTM port, worker integration, and ten
+The browser UI, feature port, trained LSTM port, worker integration, and twenty-two
 detector tests are implemented. MediaPipe Tasks Vision 0.10.32 is pinned and
 approved; the runtime and model are packaged as same-origin static assets.
 The real browser worker passed 40 recurrent pose/classifier frames, and the full
@@ -18,20 +18,37 @@ This is runtime validation, not physical-camera qualification or fall accuracy.
 
 ## Design
 
-- Experimental person-down check is separate from the original LSTM. Users draw
-  floor polygons and bed/sofa exclusions on the camera view. Session-only zones
+- Experimental posture/transition checks are separate from the original LSTM
+  and run by default without room marking. Users may optionally draw floor
+  polygons and bed/sofa exclusions on the camera view. Session-only zones
   clear on Stop, camera change, page hide, or changed camera aspect ratio.
   Moving a camera without changing aspect ratio cannot be detected: recalibrate.
-- The check requires visible torso and one knee/ankle chain, a pixel-corrected
-  torso angle of at least 60 degrees from vertical, and torso/hip/support in the
-  floor zone with no torso overlap in excluded regions. Eight continuous seconds
-  triggers a local "Person may be down" warning, even if the LSTM says non-fall.
-  Missing tracks, invalid posture, >0.5-second observation gaps, and edits reset
-  evidence. No floor calibration means this check is disabled.
-- This is 2D posture, not depth/floor-contact measurement. Intentional floor
-  lying, bent sitting, incorrect zones, and hallucinated poses can false-trigger;
-  occlusion, foreshortening, and camera angles can miss a down person. Eight
-  seconds and thresholds are unvalidated experimental defaults.
+- Posture labels use visible shoulders/hips and at least one complete leg chain,
+  pixel-corrected angles, knee bend and body proportions. A horizontal torso
+  alone is insufficient. Extended or curled down-body geometry supplies evidence.
+  Eight seconds of observed down evidence triggers "Person may be down", even
+  when already down at startup or when the LSTM says non-fall.
+- A stable standing/sitting baseline followed within 1.5 seconds by hip drop,
+  collapsed vertical body span and torso rotation selects the transition path.
+  Two seconds of observed down evidence then triggers "Possible fall". A single
+  frame or a brief low movement does not trigger this path. Thresholds are
+  experimental defaults, not clinically validated response times.
+- Brief unclear/missing observations up to 0.75 seconds preserve evidence but
+  add no time. Long gaps, exclusions, region edits, new IDs, and sustained
+  recovery reset it. Exclusions suppress displayed warnings from either path;
+  raw classifier outputs remain available in diagnostics. Drawing pauses new
+  posture/transition checks, not the original classifier.
+- Single-person tracking permits a larger displacement only with overlapping
+  full-body boxes; multi-person matching is not relaxed. Hidden head landmarks
+  pause/reset the LSTM but do not suppress independently valid torso/leg checks.
+  Tiny torso/body geometry is rejected; this is not a guarantee against a pose
+  hallucination. Original classifier weights and feature formulas are unchanged.
+- This is 2D posture, not depth/floor-contact measurement. Intentional lying,
+  including on beds/sofas without exclusions, may trigger warnings. Occlusion,
+  foreshortening, kneeling/crouching, incorrect zones, movement toward the camera,
+  and camera motion can cause misses or false warnings. An ideal camera position
+  does not eliminate these limitations. No measured sensitivity or false-alarm
+  rate is claimed; real-world representative recordings are still required.
 - Per-person diagnostics expose movement-history progress, LSTM raw class/logit,
   fall-filter reason, and person-down reason/timer. Scores are not probabilities.
 - Enable camera asks for video permission only; phones can select front/back
@@ -46,7 +63,8 @@ This is runtime validation, not physical-camera qualification or fall accuracy.
   changed perception pipeline, not a claim to reproduce published accuracy.
 - The adapter uses a stricter confidence threshold, short track expiry, gap
   resets, and per-track predictions; it does not reproduce cross-camera matching.
-- Green means tracked, not clinically safe. Red is a possible-fall prediction.
+- Green means a tracked/inferred posture, not clinically safe. Red is a possible
+  fall or sustained-down warning. Local sound is enabled initially and optional.
   The app cannot confirm physical impact or contact emergency services.
 - Model assets are self-hosted, hashed, and contain no camera imagery. Hosting
   receives normal asset-request metadata but no camera frames/predictions.
@@ -57,6 +75,11 @@ This is runtime validation, not physical-camera qualification or fall accuracy.
 The parity fixture is generated from the original feature function bodies and
 an independent NumPy float32 LSTM reference. It covers 80 recurrent steps with
 unchanged checkpoint weights. This is numerical parity, not a real fall test.
+Synthetic movement tests drive the actual adapter, tracker, retained classifier,
+posture monitor and UI warning policy at 5 and 18 Hz. They cover no-region startup,
+standing/sitting-to-down, visibility gaps, hidden heads, curled posture, recovery,
+exclusions and invalid timing. They do not exercise a real MediaPipe fall video
+or prove that any particular user-reported miss is fixed.
 
 Regenerate derived assets with:
 

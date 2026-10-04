@@ -52,14 +52,25 @@ export function poseFromLandmarks(landmarks, width, height, time) {
   const score = p => Math.min(p?.visibility ?? 0,p?.presence ?? 1);
   const coco = COCO.map(i => landmarks[i]);
   const core = [coco[1],coco[2],coco[3],coco[4],coco[5],coco[6],coco[11],coco[12]];
-  if (core.some(p => !p || !Number.isFinite(p.x) || !Number.isFinite(p.y) || score(p)<.5)) return null;
+  const valid=p=>p&&Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=0&&p.x<=1&&p.y>=0&&p.y<=1&&score(p)>=.5;
+  if (core.slice(4).some(p=>!valid(p))) return null;
   const mean = (a,b) => [(a.x+b.x)/2,(a.y+b.y)/2];
+  const N=mean(coco[5],coco[6]),B=mean(coco[11],coco[12]);
+  if(Math.hypot((N[0]-B[0])*width,(N[1]-B[1])*height)<height*.045)return null;
+  const body=[coco[5],coco[6],coco[11],coco[12],...coco.slice(13).filter(valid)];
+  const span=Math.max((Math.max(...body.map(p=>p.x))-Math.min(...body.map(p=>p.x)))*width,(Math.max(...body.map(p=>p.y))-Math.min(...body.map(p=>p.y)))*height);
+  if(span<height*.16)return null;
+  // Never feed a fabricated head into the trained classifier. A hidden head
+  // pauses that classifier, but should not suppress the body-posture check.
+  const classifierReady=core.slice(0,4).every(valid);
   const head = core.slice(0,4), sum = head.reduce((s,p)=>s+score(p),0);
   const H = [0,0];
-  for (const p of head) { H[0]+=p.x*score(p)/sum;H[1]+=p.y*score(p)/sum; }
-  const visible = coco.slice(0,15).filter(p=>score(p)>=.5);
+  if(classifierReady)for (const p of head) { H[0]+=p.x*score(p)/sum;H[1]+=p.y*score(p)/sum; }
+  const visible = coco.slice(0,15).filter(valid);
   const xs = visible.map(p=>p.x*width), ys = visible.map(p=>p.y*height);
   const box = [Math.min(...xs),Math.min(...ys),Math.max(...xs),Math.max(...ys)];
   if (box[3]-box[1]<5 || box[2]-box[0]<3) return null;
-  return {H,N:mean(coco[5],coco[6]),B:mean(coco[11],coco[12]),box,time,landmarks};
+  const tracked=coco.filter(valid);
+  const trackingBox=[Math.min(...tracked.map(p=>p.x))*width,Math.min(...tracked.map(p=>p.y))*height,Math.max(...tracked.map(p=>p.x))*width,Math.max(...tracked.map(p=>p.y))*height];
+  return {H:classifierReady?H:null,N,B,box,trackingBox,time,landmarks,classifierReady};
 }
