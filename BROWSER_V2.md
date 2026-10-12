@@ -9,8 +9,8 @@ The existing person-down-core pilot is not changed by this fork.
 
 Live web app: https://carewatch-v2.pages.dev/
 
-The browser UI, feature port, trained LSTM port, worker integration, and twenty-two
-detector tests are implemented. MediaPipe Tasks Vision 0.10.32 is pinned and
+The browser UI, feature port, trained LSTM port, worker integration, twenty-two
+detector tests, and eight UI-helper/contract tests are implemented. MediaPipe Tasks Vision 0.10.32 is pinned and
 approved; the runtime and model are packaged as same-origin static assets.
 The real browser worker passed 40 recurrent pose/classifier frames, and the full
 UI ran on a clearly labeled public-image MediaStream under production CSP.
@@ -51,7 +51,7 @@ This is runtime validation, not physical-camera qualification or fall accuracy.
   rate is claimed; real-world representative recordings are still required.
 - Per-person diagnostics expose movement-history progress, LSTM raw class/logit,
   fall-filter reason, and person-down reason/timer. Scores are not probabilities.
-- Enable camera asks for video permission only; phones can select front/back
+- Start camera asks for video permission only; phones can select front/back
   cameras and computers can select connected webcams after permission.
 - Stop, page hide, tab switching, or detector failure releases camera tracks.
 - Skeletons, tracking boxes, mirror view, and local alert sound are independent
@@ -69,7 +69,42 @@ This is runtime validation, not physical-camera qualification or fall accuracy.
 - Model assets are self-hosted, hashed, and contain no camera imagery. Hosting
   receives normal asset-request metadata but no camera frames/predictions.
 
+## Interface and branding
+
+This release includes the Supreme AI Ventures brand refresh and the streamlined
+camera-first interface described below.
+
+Plain HTML/CSS/JS with no new dependencies. Styling follows the Supreme AI Ventures
+palette (dark teal, off-white, mint) and the self-hosted Instrument Sans variable font
+(SIL OFL; license in `browser/assets/`). No remote fonts, scripts, or images are loaded,
+so the production CSP is unchanged. The company logo is the unmodified first-party
+asset, linked from a small "by Supreme AI Ventures" attribution; Carewatch keeps its own mark.
+
+- The camera is the main workspace. Idle shows only a camera picker and Start; Stop
+  replaces Start while a session is pending or active, so cancelling a permission or
+  model-load wait stays possible. Skeleton and box toggles stay visible; sound, mirror,
+  placement tips, optional room tuning and diagnostics sit in collapsed `<details>`.
+- State is shown by text plus a dot tone (`#status[data-tone]`): off, waiting for
+  permission, loading detector, looking, tracking, evaluating, warning, error. Tracking
+  is never labelled safe. Privacy and experimental/no-emergency-service copy is always
+  visible beside the controls.
+- The warning (`#alert`, `role="alert"`) is fixed above the iOS safe area, red, and sits
+  inside `#viewer` so it also shows in full-screen view. Dismiss only hides it.
+  Fullscreen also retains an experimental/no-emergency-dispatch notice.
+- Full screen of the camera view (`browser/ui.js`) is feature-detected and hidden where
+  unsupported (e.g. iPhone Safari). It is only offered while the camera is active and is
+  exited on Stop. `tests/ui.test.js` covers the helper.
+- The stage takes the camera's aspect ratio (`--video-ratio`), so video is not cropped;
+  overlay and region-drawing math are unchanged (contain-fit, mirror-aware).
+
 ## Verification
+
+The UI refresh passes 30 Node tests (22 detector, 8 UI/contract), build and syntax
+checks. Browser QA under production CSP used labeled public-image and synthetic
+fixtures: permission denial, active Start/Stop, independent overlay/mirror toggles,
+fullscreen warning visibility, dismissal and a drawn furniture exclusion. Layout
+has no horizontal overflow at 320px or 390px. Desktop and phone previews were
+visually inspected. No physical-camera or real-fall accuracy claim follows.
 
 `npm test` uses Node's built-in test runner; it needs no installed dependencies.
 The parity fixture is generated from the original feature function bodies and
@@ -112,7 +147,7 @@ uses the separate `carewatch-v2` name, not `person-down-pilot`.
 
 Local browser QA: download Google's public `pose.jpg` fixture into
 `tests/fixtures/generated/pose.jpg`, run `python3 tests/fixture_server.py`, open
-`http://127.0.0.1:8769/browser/index.html?fixture`, and use Enable/Stop and toggles.
+`http://127.0.0.1:8769/browser/index.html?fixture`, and use Start/Stop and toggles.
 The server injects a prominently marked public-image test stream; the production
 app never substitutes fake camera footage. The `&denied` query tests denial UI.
 The `&down` query additionally substitutes explicitly labeled synthetic pose
