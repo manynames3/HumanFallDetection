@@ -1,0 +1,18 @@
+{
+  "contract": "9a6f0fbcf1bd476254f494e2669587af846866795351bd75e03f5317c0d2c4e3",
+  "selectedEpoch": 20,
+  "selectionCurve": [
+    {
+      "epoch": 20,
+      "selectionLoss": 0.7561711567662028
+    },
+    {
+      "epoch": 40,
+      "selectionLoss": 1.5605405307339448
+    }
+  ],
+  "trainingSamples": 17372,
+  "selectionSamples": 5906,
+  "parameters": 5809,
+  "deploy": false
+}

@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "deployed": false,
+  "productionImported": false,
+  "designation": "Seen-data exploratory trained models; broader false alarms fail qualification. Source videos/frames and raw landmark traces excluded.",
+  "nativeArchiveSha256": "cdf4e2382d6b90f3f172ebb878b81c10baf26d95ea7d1f35cb573e3684977d31",
+  "files": {
+    "crop/cropped-evaluation.json": {
+      "sha256": "0b113bbac142f1cfa8e14735d6a0b2fece773ffc1a5eb520820d3be11bca6f58",
+      "bytes": 245978
+    },
+    "crop/freeze.json": {
+      "sha256": "6c286ec467124c51b440c48a62634c80e146ef6eeae23ce68750208cb5676117",
+      "bytes": 1030
+    },
+    "lag/evaluation.json": {
+      "sha256": "d01c8efb12a44daf8da39a3548b28857d804cd6ae85e97a1641134ea12ed155a",
+      "bytes": 183287
+    },
+    "lag/freeze.json": {
+      "sha256": "41ee9a0ed5fc74a11f28dd4234ddae9d9d3ade217f3d908eee6cb2e652ca461e",
+      "bytes": 887
+    },
+    "estimated-depth/evaluation.json": {
+      "sha256": "f96e993185295466b7e477b21f0b5801723059625c79d361f382d741a76d4f35",
+      "bytes": 161244
+    },
+    "estimated-depth/model-freeze.json": {
+      "sha256": "deb6efe31eb413a03f624635002c1f89ca98b649319770b9b9927a6dfe2c0807",
+      "bytes": 737
+    },
+    "estimated-depth/model.json": {
+      "sha256": "8a5cfb0caf95ba243f9e18b4597a5ad8bb5c059255f3f80d551514b2bc6a12fc",
+      "bytes": 151622
+    },
+    "estimated-depth/recipe.json": {
+      "sha256": "6f1c7d86f6b60474d771f8d067ad4e98bc58a95814179ff0253cc4cb11196d9b",
+      "bytes": 1469
+    },
+    "estimated-depth/training-report.json": {
+      "sha256": "f4f6cfc6fe541615609ca384b01b936f7960ba2ea26f0a15ff33a285a418d731",
+      "bytes": 379
+    },
+    "estimated-depth/train-provenance.json": {
+      "sha256": "edb326821b11e1c417b8b1338f82ad9917716d6cbafb2118bb6e795ad9840d17",
+      "bytes": 2187834
+    },
+    "estimated-depth/selection-provenance.json": {
+      "sha256": "ca58fb23b22f1d1ac509c5c91a96f3c0df2f6c563b728f012bb6f3973bbfdef2",
+      "bytes": 761507
+    },
+    "zero-depth-coordinate/evaluation.json": {
+      "sha256": "b8e1b4f57f1f14d3450aab0a971543b8031fd8bcdf82eaedd60f3242df6c01ab",
+      "bytes": 160107
+    },
+    "zero-depth-coordinate/model-freeze.json": {
+      "sha256": "90ea1baea07171a34ddfdfeb564be381ba9d7756efefd570436e73e2fcbc8888",
+      "bytes": 918
+    },
+    "zero-depth-coordinate/model.json": {
+      "sha256": "e8b051fd838264f73fab95ba8aa0b6202e4a5e1aff61d456c7f80825979a66b3",
+      "bytes": 151430
+    },
+    "zero-depth-coordinate/recipe.json": {
+      "sha256": "97bd0b5c82461f4e01cef9a6a56a4606b44ead1881a35fb15435de210c1b1c50",
+      "bytes": 1730
+    },
+    "zero-depth-coordinate/training-report.json": {
+      "sha256": "04e0bede57323eff39c89520e25cdddac9c27f31cb367ab4429e8341329c0332",
+      "bytes": 378
+    },
+    "zero-depth-coordinate/train-provenance.json": {
+      "sha256": "95f20d917a6fbcdfdff4d95e67198fabf82d4517803ac776ad759ae2d3863ca3",
+      "bytes": 2187834
+    },
+    "zero-depth-coordinate/selection-provenance.json": {
+      "sha256": "bafc2f0f4001f9e3e6871ec6b9980acb79e480f726b72475af1d2d42bb124c41",
+      "bytes": 761507
+    },
+    "upright-guard/evaluation.json": {
+      "sha256": "c57541c4cd16c9dd59250d87294edff22e304b7464f4dc9b220ef9d9bd2fc929",
+      "bytes": 250867
+    },
+    "upright-guard/freeze.json": {
+      "sha256": "96d0609d92108b19e8fd168b18ecb2c779b67356d46d64b78308c9e9a6928c8e",
+      "bytes": 1203
+    },
+    "calibration/selection.json": {
+      "sha256": "5830a2dbb48390aac72b4c5b39af22774ba272b8e38e0d6fe4f513324020f53c",
+      "bytes": 955
+    },
+    "calibration/freeze.json": {
+      "sha256": "457b4412feabcf20f3ab567f5db949950141d837a3b7a94c0fddc7b69f811934",
+      "bytes": 554
+    },
+    "source/browser/pose-tracker-v6.js": {
+      "sha256": "8f3d3ce5d244dea4b6bbada11137de36f87ffdce6d00b87ecb60adb9090418e3",
+      "bytes": 5737
+    },
+    "source/tools/video_sequence_v6.mjs": {
+      "sha256": "093557ab974d99e931d5d6622ffc66c0e8da825543eaba678a90b1c7cfb23ade",
+      "bytes": 1198
+    },
+    "source/tools/video_sequence_lag_v6.mjs": {
+      "sha256": "2960afbb3d965783404b861a0e5112dae39c5b7809fd7675db238a72c55d6afe",
+      "bytes": 1861
+    },
+    "source/tools/video_tcn_v6.mjs": {
+      "sha256": "6080af5d561415d87a523eb8d037dbe5a498bd1a1318edf6987c780917577ca2",
+      "bytes": 3897
+    },
+    "source/tools/video_tcn_guard_v6.mjs": {
+      "sha256": "f3eac19fee06e0f5946237320c503937384db05dc48e06ccb2dbd1baffda3cd3",
+      "bytes": 1072
+    },
+    "source/tools/video_policy_v4.mjs": {
+      "sha256": "c648a16826fc30eaa84810b7682f93ff4556f88383e22776132e69d6c4467884",
+      "bytes": 6647
+    },
+    "source/tools/prepare_tcn_cycle6.mjs": {
+      "sha256": "3afe742d733e872e5e65d6f9afe64007e193605b5ba0737dca5d2ce6b821dea1",
+      "bytes": 4280
+    },
+    "source/tools/train_tcn_cycle6.py": {
+      "sha256": "e30cf804381b630bdf83b19a607efef54573dd7012a90eb233dc79be944781bf",
+      "bytes": 10034
+    },
+    "source/tools/prepare_tcn_depth_control_v6.mjs": {
+      "sha256": "bc437ab3abdab724416b333dd46d2496ff5cdd30b448ac21471ac0e7eeb38fed",
+      "bytes": 1755
+    },
+    "source/tools/evaluate_cropped_cycle6.mjs": {
+      "sha256": "49724010aabbf404887aa0c0b271b2684d338496eecfc3fe61261710b7ced8a5",
+      "bytes": 4682
+    },
+    "source/tools/evaluate_lag_cycle6.mjs": {
+      "sha256": "aa1c556d2a9249a0683fff14bb79a5404aa1d81973863a1d2c14debb52c0ad90",
+      "bytes": 2909
+    },
+    "source/tools/evaluate_tcn_cycle6.mjs": {
+      "sha256": "de7fdf7146198b5c202aa5507212bc781daff7908c1869cf376edb4201fdfba2",
+      "bytes": 5271
+    },
+    "source/tools/evaluate_tcn_depth_control_v6.mjs": {
+      "sha256": "4b381eb7c40b278a89feef3e6bdc9e0eed2fd321f453297d6369be03a4c2c33f",
+      "bytes": 4367
+    },
+    "source/tools/evaluate_tcn_guard_cycle6.mjs": {
+      "sha256": "fc98810b2c1570e89fa64eae9e756715a5479254c1146da3912cdc08829e139a",
+      "bytes": 4497
+    },
+    "source/tools/calibrate_tcn_cycle6.mjs": {
+      "sha256": "27d65f62c6fae88f6e045f4fbcafaf8865f11c648622d93080d1de178d13641c",
+      "bytes": 3980
+    },
+    "source/tools/video_event_metrics.mjs": {
+      "sha256": "009e5231a976f7da7094f29338593d3e4414b6cfbbc4ed1dc2745069a12131aa",
+      "bytes": 2037
+    },
+    "source/tools/video_checkpoint.mjs": {
+      "sha256": "9f9cdb883574c7aa405cb85fc52d7a7374f215a68c6a6087eadc47ad81bbaace",
+      "bytes": 3325
+    },
+    "source/tools/video_diagnostics_v6.mjs": {
+      "sha256": "2b454955efefccb49b7546a7cd9ad59aae96dd32bdedc6b1868531c8e1469412",
+      "bytes": 11243
+    },
+    "source/tools/video_features_v2.mjs": {
+      "sha256": "a92fa567682050e5a151195bae07278f7e3506bfec671365b0c35e355eef569b",
+      "bytes": 3907
+    },
+    "source/tools/prepare_ai_clip_review_v6.mjs": {
+      "sha256": "3b7384d22887e45eaf1e06f53c11721672a1ee9af3be108226192367eb787306",
+      "bytes": 3112
+    },
+    "source/tools/reserve_cycle6_ursul.mjs": {
+      "sha256": "fbed23985986e2378944ea271032d5d2b9fc43e05c66faf58f1b0d283bec2ecb",
+      "bytes": 4050
+    },
+    "source/tests/train-tcn-resume.test.py": {
+      "sha256": "0fc2917cb851d63a3cb4536f9edfb511f28575fb7097c54cb98f412fef33bc0d",
+      "bytes": 3789
+    },
+    "source/research/candidates/native-sequence-v5/inference/browser/pose-tracker-v4.js": {
+      "sha256": "50656a9f82f5ea7df41aa7ed10c039aaccba849cb4ef2cd3ceee9ba3a5292a32",
+      "bytes": 4864
+    },
+    "source/research/candidates/native-sequence-v5/inference/tools/video_sequence_v5.mjs": {
+      "sha256": "72fda4fb9b01ed5530df46271f37ea71d072dac3218aaf6753d41ca1276757e4",
+      "bytes": 3940
+    },
+    "source/research/candidates/native-sequence-v5/inference/tools/video_temporal_features.mjs": {
+      "sha256": "e681714bd222753b019ecce7d9c88d96fda6b674ed0064d4218fa656a10db628",
+      "bytes": 3941
+    },
+    "source-review-ledger.json": {
+      "sha256": "7b5a024c5ef3c21596f7b67df18116855ade5fde0767ca321bb85d58c7dd78ed",
+      "bytes": 15649
+    },
+    "reserved-data.json": {
+      "sha256": "9da6e901b2f29ff87ed891ff4c113d535bf1a26b0d053df8f09e61fdf1eb1730",
+      "bytes": 4718
+    }
+  }
+}

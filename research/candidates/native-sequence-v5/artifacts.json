@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "productionImported": false,
+  "deployed": false,
+  "purpose": "Frozen local research candidates and complete evidence, not an approved release.",
+  "files": {
+    "continuous-evaluation.json": {
+      "sha256": "307e786d76c6ce31215a563415f25ef9e3fae29cdaf9a4499ed2eb2cd3a32337",
+      "bytes": 247690
+    },
+    "continuous-manifest.json": {
+      "sha256": "146aa5b6b6702fa4fa6614f38617252fdc7aa887aae4e63444e13b4e16183208",
+      "bytes": 26309
+    },
+    "bottleneck-report.json": {
+      "sha256": "a4ff0c15baa412adeebae342342077e699e4d6b75d2e3b10fdc4be739193eb47",
+      "bytes": 43769
+    },
+    "failure-attribution.json": {
+      "sha256": "c9b1a5290fb1ef17cacb15cf3affb38f5d055aa5fb4256f724ed41c260a690a1",
+      "bytes": 49209
+    },
+    "identity-counterfactual.json": {
+      "sha256": "0e2366a4fce4575e03d1f2feb629ca14b32d82e0ac21370ae431282617a944ec",
+      "bytes": 55441
+    },
+    "previous-holdout-evaluation.json": {
+      "sha256": "f6d1bdb3a3652b921ca713750a71b021231e737fe4e2f002f4dc4207983ae20b",
+      "bytes": 26939
+    },
+    "cycle5/model.json": {
+      "sha256": "a969a27b83b15489cb8cf86162084f433c59a01d9b16d8697ebc7681109b2ba4",
+      "bytes": 230687
+    },
+    "cycle5/selection.json": {
+      "sha256": "ddda476c1f9ebe4eab090e3803ad804ef0e10e69cb72a3f1ed8ddaa1dffa9613",
+      "bytes": 123032
+    },
+    "inference/browser/pose-tracker-v4.js": {
+      "sha256": "50656a9f82f5ea7df41aa7ed10c039aaccba849cb4ef2cd3ceee9ba3a5292a32",
+      "bytes": 4864
+    },
+    "inference/tools/video_sequence_v5.mjs": {
+      "sha256": "72fda4fb9b01ed5530df46271f37ea71d072dac3218aaf6753d41ca1276757e4",
+      "bytes": 3940
+    },
+    "inference/tools/video_temporal_features.mjs": {
+      "sha256": "e681714bd222753b019ecce7d9c88d96fda6b674ed0064d4218fa656a10db628",
+      "bytes": 3941
+    },
+    "cycle5-weak/model.json": {
+      "sha256": "6fb1b556903633862710960fe2872def1b748488109873c86048282d0b83ec37",
+      "bytes": 230594
+    },
+    "cycle5-weak/selection.json": {
+      "sha256": "4d92a1d3abcca076997d43366f94380c392cf8774c3d9f81cf09d7576eaeca58",
+      "bytes": 123149
+    },
+    "matched-control/candidate-sequence.json": {
+      "sha256": "0fcd8efcbc4e776430f69545992fff69c9e8b85e80c0ad3c8944eec65acffee4",
+      "bytes": 230994
+    },
+    "matched-control/sequence-selection.json": {
+      "sha256": "6b0b2ce6ccca3a9f18c4865fc941da2b64630edb614965b1703211603475215c",
+      "bytes": 123143
+    }
+  }
+}

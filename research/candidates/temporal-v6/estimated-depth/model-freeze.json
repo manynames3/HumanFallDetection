@@ -1,0 +1,17 @@
+{
+  "recipeSha256": "6f1c7d86f6b60474d771f8d067ad4e98bc58a95814179ff0253cc4cb11196d9b",
+  "modelSha256": "8a5cfb0caf95ba243f9e18b4597a5ad8bb5c059255f3f80d551514b2bc6a12fc",
+  "policy": {
+    "windowSeconds": 0.6,
+    "evidenceSeconds": 0.15
+  },
+  "threshold": 0.98,
+  "codeHashes": {
+    "browser/pose-tracker-v6.js": "8f3d3ce5d244dea4b6bbada11137de36f87ffdce6d00b87ecb60adb9090418e3",
+    "tools/video_tcn_v6.mjs": "6080af5d561415d87a523eb8d037dbe5a498bd1a1318edf6987c780917577ca2",
+    "tools/prepare_tcn_cycle6.mjs": "3afe742d733e872e5e65d6f9afe64007e193605b5ba0737dca5d2ce6b821dea1",
+    "tools/train_tcn_cycle6.py": "e30cf804381b630bdf83b19a607efef54573dd7012a90eb233dc79be944781bf"
+  },
+  "selectedEpoch": 20,
+  "deploy": false
+}

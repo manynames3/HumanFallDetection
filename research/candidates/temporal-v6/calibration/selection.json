@@ -1,0 +1,47 @@
+{
+  "modelSha256": "8a5cfb0caf95ba243f9e18b4597a5ad8bb5c059255f3f80d551514b2bc6a12fc",
+  "originalSelection": {
+    "baseline": {
+      "missed": 22,
+      "false": 4
+    },
+    "points": {
+      "0.98": {
+        "missed": 18,
+        "false": 10
+      },
+      "0.995": {
+        "missed": 26,
+        "false": 7
+      },
+      "0.999": {
+        "missed": 31,
+        "false": 4
+      }
+    }
+  },
+  "edfSelection": {
+    "baseline": {
+      "missed": 9,
+      "falseEpisodes": 4
+    },
+    "points": {
+      "0.98": {
+        "missed": 8,
+        "falseEpisodes": 2
+      },
+      "0.995": {
+        "missed": 7,
+        "falseEpisodes": 0
+      },
+      "0.999": {
+        "missed": 7,
+        "falseEpisodes": 0
+      }
+    }
+  },
+  "eligible": [],
+  "selectedThreshold": null,
+  "designation": "Seen selection calibration only; no retest or reserved subjects opened; failed operating points do not authorize threshold changes",
+  "deploy": false
+}

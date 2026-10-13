@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "steps": 18,
+  "dim": 56,
+  "hidden": 16,
+  "kernel": 5,
+  "dilation": 3,
+  "seed": 61107,
+  "epochs": 40,
+  "batchSize": 128,
+  "rate": 0.001,
+  "threshold": 0.98,
+  "policy": {
+    "windowSeconds": 0.6,
+    "evidenceSeconds": 0.15
+  },
+  "codeHashes": {
+    "browser/pose-tracker-v6.js": "8f3d3ce5d244dea4b6bbada11137de36f87ffdce6d00b87ecb60adb9090418e3",
+    "tools/video_tcn_v6.mjs": "6080af5d561415d87a523eb8d037dbe5a498bd1a1318edf6987c780917577ca2",
+    "tools/prepare_tcn_cycle6.mjs": "3afe742d733e872e5e65d6f9afe64007e193605b5ba0737dca5d2ce6b821dea1",
+    "tools/train_tcn_cycle6.py": "e30cf804381b630bdf83b19a607efef54573dd7012a90eb233dc79be944781bf"
+  },
+  "archiveSha256": "cdf4e2382d6b90f3f172ebb878b81c10baf26d95ea7d1f35cb573e3684977d31",
+  "split": {
+    "edfTraining": [
+      "edf-jianjun",
+      "edf-jinhui",
+      "edf-peter"
+    ],
+    "edfSelection": [
+      "edf-songsong"
+    ],
+    "edfSeenRetest": [
+      "edf-zhong"
+    ],
+    "reservedUrsulSubjects": [
+      16,
+      17,
+      18,
+      24,
+      25,
+      26
+    ]
+  },
+  "supervision": "Publisher event/frame/clip labels only. Unknown onsets omitted. EDF post-process .75s is causal recent-event target; reviewed normal prefix/tail labels0. Ambiguous intermediate intervals omitted.",
+  "selectionRule": "Two fixed epoch checkpoints20/40; minimum weighted selection BCE. No threshold/policy search. EDF is seen development, not a fresh holdout.",
+  "deploy": false
+}

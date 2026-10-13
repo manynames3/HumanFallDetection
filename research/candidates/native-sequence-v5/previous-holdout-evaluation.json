@@ -1,0 +1,857 @@
+{
+  "cycle": 4,
+  "evaluatedAt": "2026-10-13T07:34:33.324Z",
+  "freeze": {
+    "frozenAt": "2026-10-13T05:25:55.118Z",
+    "models": [
+      {
+        "name": "reused",
+        "file": "candidate-fusion.json",
+        "selectionFile": "selection.json",
+        "modelSha256": "545920d91994b2c4f053cf487ed8ee81ceaf54b3c79857c0219f74bed8611970",
+        "codeFiles": [
+          "browser/pose-tracker-v4.js",
+          "tools/video_policy_v4.mjs",
+          "tools/video_temporal_features.mjs",
+          "tools/video_fusion_v4.mjs"
+        ],
+        "codeSha256": "48e755f7195778cbfd420cbe80a2485a426ac10e1ce8d6144b27e6c4847042bd",
+        "policy": {
+          "windowSeconds": 0.9,
+          "evidenceSeconds": 0.35,
+          "eventSeconds": 1.5
+        }
+      },
+      {
+        "name": "trained",
+        "file": "candidate-trained-fusion.json",
+        "selectionFile": "training-selection.json",
+        "modelSha256": "1b8ae0527b01829a0f79305e42f894cd7cc67a0d6f35e08dce27e23db6e1a1c3",
+        "codeFiles": [
+          "browser/pose-tracker-v4.js",
+          "tools/video_policy_v4.mjs",
+          "tools/video_temporal_features.mjs",
+          "tools/video_fusion_v4.mjs"
+        ],
+        "codeSha256": "48e755f7195778cbfd420cbe80a2485a426ac10e1ce8d6144b27e6c4847042bd",
+        "policy": {
+          "windowSeconds": 0.9,
+          "evidenceSeconds": 0.25,
+          "eventSeconds": 1.5
+        }
+      }
+    ],
+    "manifests": [
+      {
+        "source": "assist",
+        "file": "cycle4-assist-manifest.json",
+        "sha256": "1ae395cf167f76e9ae1f9af2dca961e54850bce944e23eef9135ae5ef9dabeab",
+        "ids": [
+          "assist-adl-01-walking-slowly",
+          "assist-adl-02-walking-quickly",
+          "assist-adl-03-jogging-slowly",
+          "assist-adl-04-jogging-quickly",
+          "assist-adl-05-walking-stairs-slowly",
+          "assist-adl-06-walking-stairs-quickly",
+          "assist-adl-07-sitting-high-chair",
+          "assist-adl-08-low-chair-sitting-slowly",
+          "assist-adl-09-low-chair-sitting-quickly",
+          "assist-adl-10-collapsing-onto-chair",
+          "assist-adl-11-sitting-laying-down-slowly",
+          "assist-adl-12-sitting-laying-down-quickly",
+          "assist-adl-13-bending-at-knees",
+          "assist-adl-14-bending-wo-knees",
+          "assist-adl-15-stumbling",
+          "assist-adl-16-jumping-reaching",
+          "assist-adl-17-crawling",
+          "assist-adl-18-multiple-jumps",
+          "assist-adl-19-raising-hands",
+          "assist-fall-01-forward-fall-walking",
+          "assist-fall-02-fall-backward",
+          "assist-fall-03-lateral-fall-walking",
+          "assist-fall-04-forward-fall-jogging",
+          "assist-fall-05-vertical-fall-faint",
+          "assist-fall-06-fall-sitting",
+          "assist-fall-07-fall-to-knees-forward"
+        ]
+      },
+      {
+        "source": "ursul",
+        "file": "cycle4-ursul-manifest.json",
+        "sha256": "424490d0bd4916bd69670fdee3d56338d763113e63fab2500b39910c3ca2e9a3",
+        "ids": [
+          "ursul-s11-fall-act1-b-1",
+          "ursul-s11-fall-act4-b-1",
+          "ursul-s11-fall-act8-b-1",
+          "ursul-s11-fall-act11-b-1",
+          "ursul-s12-fall-act1-b-1",
+          "ursul-s12-fall-act4-b-1",
+          "ursul-s12-fall-act8-b-1",
+          "ursul-s12-fall-act11-b-1",
+          "ursul-s19-adl-act13-b-1",
+          "ursul-s19-adl-act16-b-1",
+          "ursul-s19-adl-act19-b-1",
+          "ursul-s19-adl-act20-f-1",
+          "ursul-s23-adl-act13-b-1",
+          "ursul-s23-adl-act16-b-1",
+          "ursul-s23-adl-act19-b-1",
+          "ursul-s23-adl-act20-b-1"
+        ]
+      }
+    ],
+    "priorSha256": "a0c0d5242405bc2f1660dc3c28f6afa7cf64248a5654b335666c3c1c041a04ba",
+    "deploy": false,
+    "finalLabels": "Unknown event onsets; clip warning coverage only. No post-test weight/policy changes permitted."
+  },
+  "groups": [
+    {
+      "source": "assist",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://github.com/ASSIST-IoT-SRIPAS/multimodal-fall-detection-dataset/tree/7a11c96b9a3576cef92f0795a19b3786c69a3335",
+      "attribution": "Anastasiya Danilenka, Piotr Sowiński, Monika Kobus, Anna Dąbrowska, Kajetan Rachwał, Karolina Bogacka, Krzysztof Baszczyński; ASSIST-IoT/CIOP-PIB (2023)",
+      "results": {
+        "productionLite": {
+          "fallClips": 7,
+          "detectedFallClips": 4,
+          "ordinaryClips": 19,
+          "falseWarningClips": 1,
+          "recall": 0.5714285714285714,
+          "precision": 0.8,
+          "f1": 0.6666666666666666,
+          "adlSeconds": 160.29953100000003,
+          "missedIds": [
+            "assist-fall-02-fall-backward",
+            "assist-fall-03-lateral-fall-walking",
+            "assist-fall-04-forward-fall-jogging"
+          ],
+          "falseIds": [
+            "assist-adl-03-jogging-slowly"
+          ],
+          "earlyKnownClips": 0
+        },
+        "productionFull": {
+          "fallClips": 7,
+          "detectedFallClips": 6,
+          "ordinaryClips": 19,
+          "falseWarningClips": 4,
+          "recall": 0.8571428571428571,
+          "precision": 0.6,
+          "f1": 0.7058823529411765,
+          "adlSeconds": 160.29953100000003,
+          "missedIds": [
+            "assist-fall-03-lateral-fall-walking"
+          ],
+          "falseIds": [
+            "assist-adl-03-jogging-slowly",
+            "assist-adl-07-sitting-high-chair",
+            "assist-adl-09-low-chair-sitting-quickly",
+            "assist-adl-19-raising-hands"
+          ],
+          "earlyKnownClips": 0
+        },
+        "prior": {
+          "fallClips": 7,
+          "detectedFallClips": 5,
+          "ordinaryClips": 19,
+          "falseWarningClips": 1,
+          "recall": 0.7142857142857143,
+          "precision": 0.8333333333333334,
+          "f1": 0.7692307692307693,
+          "adlSeconds": 160.29953100000003,
+          "missedIds": [
+            "assist-fall-01-forward-fall-walking",
+            "assist-fall-06-fall-sitting"
+          ],
+          "falseIds": [
+            "assist-adl-11-sitting-laying-down-slowly"
+          ],
+          "earlyKnownClips": 0
+        },
+        "cycle3": {
+          "fallClips": 7,
+          "detectedFallClips": 6,
+          "ordinaryClips": 19,
+          "falseWarningClips": 0,
+          "recall": 0.8571428571428571,
+          "precision": 1,
+          "f1": 0.9230769230769231,
+          "adlSeconds": 160.29953100000003,
+          "missedIds": [
+            "assist-fall-06-fall-sitting"
+          ],
+          "falseIds": [],
+          "earlyKnownClips": 0
+        },
+        "reused": {
+          "fallClips": 7,
+          "detectedFallClips": 6,
+          "ordinaryClips": 19,
+          "falseWarningClips": 0,
+          "recall": 0.8571428571428571,
+          "precision": 1,
+          "f1": 0.9230769230769231,
+          "adlSeconds": 160.29953100000003,
+          "missedIds": [
+            "assist-fall-06-fall-sitting"
+          ],
+          "falseIds": [],
+          "earlyKnownClips": 0
+        },
+        "reused6Hz": {
+          "fallClips": 7,
+          "detectedFallClips": 6,
+          "ordinaryClips": 19,
+          "falseWarningClips": 0,
+          "recall": 0.8571428571428571,
+          "precision": 1,
+          "f1": 0.9230769230769231,
+          "adlSeconds": 160.29953100000003,
+          "missedIds": [
+            "assist-fall-06-fall-sitting"
+          ],
+          "falseIds": [],
+          "earlyKnownClips": 0
+        },
+        "trained": {
+          "fallClips": 7,
+          "detectedFallClips": 6,
+          "ordinaryClips": 19,
+          "falseWarningClips": 0,
+          "recall": 0.8571428571428571,
+          "precision": 1,
+          "f1": 0.9230769230769231,
+          "adlSeconds": 160.29953100000003,
+          "missedIds": [
+            "assist-fall-06-fall-sitting"
+          ],
+          "falseIds": [],
+          "earlyKnownClips": 0
+        },
+        "trained6Hz": {
+          "fallClips": 7,
+          "detectedFallClips": 4,
+          "ordinaryClips": 19,
+          "falseWarningClips": 0,
+          "recall": 0.5714285714285714,
+          "precision": 1,
+          "f1": 0.7272727272727273,
+          "adlSeconds": 160.29953100000003,
+          "missedIds": [
+            "assist-fall-03-lateral-fall-walking",
+            "assist-fall-04-forward-fall-jogging",
+            "assist-fall-06-fall-sitting"
+          ],
+          "falseIds": [],
+          "earlyKnownClips": 0
+        }
+      },
+      "diagnostics": [
+        {
+          "id": "assist-fall-06-fall-sitting",
+          "label": "fall",
+          "duration": 20.1,
+          "frames": 361,
+          "eligibleFrames": 361,
+          "multipleRawPoseFrames": 323,
+          "sourceMember": "videos/fall/06_fall_sitting.mp4",
+          "peakScores": {
+            "reused": 0.9996859238851895,
+            "trained": 0.9988458763715047
+          }
+        }
+      ]
+    },
+    {
+      "source": "ursul",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://figshare.com/articles/dataset/28596332/2",
+      "attribution": "Ivan Ursul (2025)",
+      "results": {
+        "productionLite": {
+          "fallClips": 8,
+          "detectedFallClips": 0,
+          "ordinaryClips": 8,
+          "falseWarningClips": 0,
+          "recall": 0,
+          "precision": 0,
+          "f1": 0,
+          "adlSeconds": 15.101867,
+          "missedIds": [
+            "ursul-s11-fall-act1-b-1",
+            "ursul-s11-fall-act4-b-1",
+            "ursul-s11-fall-act8-b-1",
+            "ursul-s11-fall-act11-b-1",
+            "ursul-s12-fall-act1-b-1",
+            "ursul-s12-fall-act4-b-1",
+            "ursul-s12-fall-act8-b-1",
+            "ursul-s12-fall-act11-b-1"
+          ],
+          "falseIds": [],
+          "earlyKnownClips": 0
+        },
+        "productionFull": {
+          "fallClips": 8,
+          "detectedFallClips": 0,
+          "ordinaryClips": 8,
+          "falseWarningClips": 0,
+          "recall": 0,
+          "precision": 0,
+          "f1": 0,
+          "adlSeconds": 15.101867,
+          "missedIds": [
+            "ursul-s11-fall-act1-b-1",
+            "ursul-s11-fall-act4-b-1",
+            "ursul-s11-fall-act8-b-1",
+            "ursul-s11-fall-act11-b-1",
+            "ursul-s12-fall-act1-b-1",
+            "ursul-s12-fall-act4-b-1",
+            "ursul-s12-fall-act8-b-1",
+            "ursul-s12-fall-act11-b-1"
+          ],
+          "falseIds": [],
+          "earlyKnownClips": 0
+        },
+        "prior": {
+          "fallClips": 8,
+          "detectedFallClips": 0,
+          "ordinaryClips": 8,
+          "falseWarningClips": 0,
+          "recall": 0,
+          "precision": 0,
+          "f1": 0,
+          "adlSeconds": 15.101867,
+          "missedIds": [
+            "ursul-s11-fall-act1-b-1",
+            "ursul-s11-fall-act4-b-1",
+            "ursul-s11-fall-act8-b-1",
+            "ursul-s11-fall-act11-b-1",
+            "ursul-s12-fall-act1-b-1",
+            "ursul-s12-fall-act4-b-1",
+            "ursul-s12-fall-act8-b-1",
+            "ursul-s12-fall-act11-b-1"
+          ],
+          "falseIds": [],
+          "earlyKnownClips": 0
+        },
+        "cycle3": {
+          "fallClips": 8,
+          "detectedFallClips": 0,
+          "ordinaryClips": 8,
+          "falseWarningClips": 0,
+          "recall": 0,
+          "precision": 0,
+          "f1": 0,
+          "adlSeconds": 15.101867,
+          "missedIds": [
+            "ursul-s11-fall-act1-b-1",
+            "ursul-s11-fall-act4-b-1",
+            "ursul-s11-fall-act8-b-1",
+            "ursul-s11-fall-act11-b-1",
+            "ursul-s12-fall-act1-b-1",
+            "ursul-s12-fall-act4-b-1",
+            "ursul-s12-fall-act8-b-1",
+            "ursul-s12-fall-act11-b-1"
+          ],
+          "falseIds": [],
+          "earlyKnownClips": 0
+        },
+        "reused": {
+          "fallClips": 8,
+          "detectedFallClips": 0,
+          "ordinaryClips": 8,
+          "falseWarningClips": 0,
+          "recall": 0,
+          "precision": 0,
+          "f1": 0,
+          "adlSeconds": 15.101867,
+          "missedIds": [
+            "ursul-s11-fall-act1-b-1",
+            "ursul-s11-fall-act4-b-1",
+            "ursul-s11-fall-act8-b-1",
+            "ursul-s11-fall-act11-b-1",
+            "ursul-s12-fall-act1-b-1",
+            "ursul-s12-fall-act4-b-1",
+            "ursul-s12-fall-act8-b-1",
+            "ursul-s12-fall-act11-b-1"
+          ],
+          "falseIds": [],
+          "earlyKnownClips": 0
+        },
+        "reused6Hz": {
+          "fallClips": 8,
+          "detectedFallClips": 0,
+          "ordinaryClips": 8,
+          "falseWarningClips": 0,
+          "recall": 0,
+          "precision": 0,
+          "f1": 0,
+          "adlSeconds": 15.101867,
+          "missedIds": [
+            "ursul-s11-fall-act1-b-1",
+            "ursul-s11-fall-act4-b-1",
+            "ursul-s11-fall-act8-b-1",
+            "ursul-s11-fall-act11-b-1",
+            "ursul-s12-fall-act1-b-1",
+            "ursul-s12-fall-act4-b-1",
+            "ursul-s12-fall-act8-b-1",
+            "ursul-s12-fall-act11-b-1"
+          ],
+          "falseIds": [],
+          "earlyKnownClips": 0
+        },
+        "trained": {
+          "fallClips": 8,
+          "detectedFallClips": 0,
+          "ordinaryClips": 8,
+          "falseWarningClips": 0,
+          "recall": 0,
+          "precision": 0,
+          "f1": 0,
+          "adlSeconds": 15.101867,
+          "missedIds": [
+            "ursul-s11-fall-act1-b-1",
+            "ursul-s11-fall-act4-b-1",
+            "ursul-s11-fall-act8-b-1",
+            "ursul-s11-fall-act11-b-1",
+            "ursul-s12-fall-act1-b-1",
+            "ursul-s12-fall-act4-b-1",
+            "ursul-s12-fall-act8-b-1",
+            "ursul-s12-fall-act11-b-1"
+          ],
+          "falseIds": [],
+          "earlyKnownClips": 0
+        },
+        "trained6Hz": {
+          "fallClips": 8,
+          "detectedFallClips": 0,
+          "ordinaryClips": 8,
+          "falseWarningClips": 0,
+          "recall": 0,
+          "precision": 0,
+          "f1": 0,
+          "adlSeconds": 15.101867,
+          "missedIds": [
+            "ursul-s11-fall-act1-b-1",
+            "ursul-s11-fall-act4-b-1",
+            "ursul-s11-fall-act8-b-1",
+            "ursul-s11-fall-act11-b-1",
+            "ursul-s12-fall-act1-b-1",
+            "ursul-s12-fall-act4-b-1",
+            "ursul-s12-fall-act8-b-1",
+            "ursul-s12-fall-act11-b-1"
+          ],
+          "falseIds": [],
+          "earlyKnownClips": 0
+        }
+      },
+      "diagnostics": [
+        {
+          "id": "ursul-s11-fall-act1-b-1",
+          "label": "fall",
+          "duration": 1.9,
+          "frames": 34,
+          "eligibleFrames": 26,
+          "multipleRawPoseFrames": 1,
+          "sourceMember": "VideoDataset/Fall/SBJ_11_LOC3/ACT1_B_1/20240916195540.mp4",
+          "peakScores": {
+            "reused": 0.9777866285992722,
+            "trained": 0.9762317193547079
+          }
+        },
+        {
+          "id": "ursul-s11-fall-act4-b-1",
+          "label": "fall",
+          "duration": 1.866667,
+          "frames": 33,
+          "eligibleFrames": 28,
+          "multipleRawPoseFrames": 0,
+          "sourceMember": "VideoDataset/Fall/SBJ_11_LOC3/ACT4_B_1/20240916195735.mp4",
+          "peakScores": {
+            "reused": 0.9990341272651229,
+            "trained": 0.9972777359131727
+          }
+        },
+        {
+          "id": "ursul-s11-fall-act8-b-1",
+          "label": "fall",
+          "duration": 1.875,
+          "frames": 34,
+          "eligibleFrames": 28,
+          "multipleRawPoseFrames": 8,
+          "sourceMember": "VideoDataset/Fall/SBJ_11_LOC3/ACT8_B_1/20240916200054.mp4",
+          "peakScores": {
+            "reused": 0.9998471798146813,
+            "trained": 0.9997981947720254
+          }
+        },
+        {
+          "id": "ursul-s11-fall-act11-b-1",
+          "label": "fall",
+          "duration": 1.9,
+          "frames": 34,
+          "eligibleFrames": 31,
+          "multipleRawPoseFrames": 0,
+          "sourceMember": "VideoDataset/Fall/SBJ_11_LOC3/ACT11_B_1/20240916200432.mp4",
+          "peakScores": {
+            "reused": 0.9995441896725847,
+            "trained": 0.9967677918926887
+          }
+        },
+        {
+          "id": "ursul-s12-fall-act1-b-1",
+          "label": "fall",
+          "duration": 1.9,
+          "frames": 34,
+          "eligibleFrames": 32,
+          "multipleRawPoseFrames": 2,
+          "sourceMember": "VideoDataset/Fall/SBJ_12_LOC2/ACT1_B_1/20240917121950.mp4",
+          "peakScores": {
+            "reused": 0.9991157104716379,
+            "trained": 0.9988499546107616
+          }
+        },
+        {
+          "id": "ursul-s12-fall-act4-b-1",
+          "label": "fall",
+          "duration": 1.866667,
+          "frames": 33,
+          "eligibleFrames": 31,
+          "multipleRawPoseFrames": 0,
+          "sourceMember": "VideoDataset/Fall/SBJ_12_LOC2/ACT4_B_1/20240917122140.mp4",
+          "peakScores": {
+            "reused": 0.9899863726355111,
+            "trained": 0.9988864285919948
+          }
+        },
+        {
+          "id": "ursul-s12-fall-act8-b-1",
+          "label": "fall",
+          "duration": 1.866667,
+          "frames": 33,
+          "eligibleFrames": 30,
+          "multipleRawPoseFrames": 0,
+          "sourceMember": "VideoDataset/Fall/SBJ_12_LOC2/ACT8_B_1/20240917122352.mp4",
+          "peakScores": {
+            "reused": 0.999827381953518,
+            "trained": 0.99985360970273
+          }
+        },
+        {
+          "id": "ursul-s12-fall-act11-b-1",
+          "label": "fall",
+          "duration": 1.9,
+          "frames": 34,
+          "eligibleFrames": 33,
+          "multipleRawPoseFrames": 0,
+          "sourceMember": "VideoDataset/Fall/SBJ_12_LOC2/ACT11_B_1/20240917122846.mp4",
+          "peakScores": {
+            "reused": 0.9899897283681953,
+            "trained": 0.9821588421922646
+          }
+        }
+      ]
+    }
+  ],
+  "aggregate": {
+    "productionLite": {
+      "falls": 15,
+      "warnedFalls": 4,
+      "ordinary": 27,
+      "falseOrdinary": 1,
+      "adlSeconds": 175.40139800000003
+    },
+    "productionFull": {
+      "falls": 15,
+      "warnedFalls": 6,
+      "ordinary": 27,
+      "falseOrdinary": 4,
+      "adlSeconds": 175.40139800000003
+    },
+    "prior": {
+      "falls": 15,
+      "warnedFalls": 5,
+      "ordinary": 27,
+      "falseOrdinary": 1,
+      "adlSeconds": 175.40139800000003
+    },
+    "cycle3": {
+      "falls": 15,
+      "warnedFalls": 6,
+      "ordinary": 27,
+      "falseOrdinary": 0,
+      "adlSeconds": 175.40139800000003
+    },
+    "reused": {
+      "falls": 15,
+      "warnedFalls": 6,
+      "ordinary": 27,
+      "falseOrdinary": 0,
+      "adlSeconds": 175.40139800000003
+    },
+    "reused6Hz": {
+      "falls": 15,
+      "warnedFalls": 6,
+      "ordinary": 27,
+      "falseOrdinary": 0,
+      "adlSeconds": 175.40139800000003
+    },
+    "trained": {
+      "falls": 15,
+      "warnedFalls": 6,
+      "ordinary": 27,
+      "falseOrdinary": 0,
+      "adlSeconds": 175.40139800000003
+    },
+    "trained6Hz": {
+      "falls": 15,
+      "warnedFalls": 4,
+      "ordinary": 27,
+      "falseOrdinary": 0,
+      "adlSeconds": 175.40139800000003
+    }
+  },
+  "development": {
+    "prior": {
+      "fallClips": 176,
+      "detectedFallClips": 133,
+      "ordinaryClips": 183,
+      "falseWarningClips": 8,
+      "recall": 0.7556818181818182,
+      "precision": 0.9432624113475178,
+      "f1": 0.8391167192429022,
+      "adlSeconds": 1741.8704030000029,
+      "missedIds": [
+        "gmdcsa-s1-fall-01",
+        "gmdcsa-s1-fall-02",
+        "gmdcsa-s1-fall-09",
+        "gmdcsa-s2-fall-09",
+        "gmdcsa-s3-fall-02",
+        "gmdcsa-s3-fall-09",
+        "gmdcsa-s3-fall-17",
+        "gmdcsa-s3-fall-18",
+        "gmdcsa-s3-fall-19",
+        "gmdcsa-s4-fall-02",
+        "gmdcsa-s4-fall-08",
+        "gmdcsa-s4-fall-09",
+        "gmdcsa-s4-fall-10",
+        "gmdcsa-s4-fall-12",
+        "gmdcsa-s4-fall-15",
+        "cauca-s1-fall-forward",
+        "cauca-s2-fall-sitting",
+        "cauca-s3-fall-forward",
+        "cauca-s6-fall-left",
+        "cauca-s8-fall-forward",
+        "cauca-s8-fall-right",
+        "ursul-s3-fall-act4-b-1",
+        "ursul-s3-fall-act8-f-1",
+        "ursul-s4-fall-act1-b-1",
+        "ursul-s4-fall-act4-b-1",
+        "ursul-s4-fall-act8-b-1",
+        "ursul-s5-fall-act4-b-1",
+        "ursul-s5-fall-act11-b-1",
+        "ursul-s6-fall-act1-b-1",
+        "ursul-s6-fall-act5-b-1",
+        "ursul-s7-fall-act4-f-1",
+        "ursul-s7-fall-act8-b-1",
+        "ursul-s8-fall-act4-b-1",
+        "ursul-s8-fall-act8-b-1",
+        "ursul-s8-fall-act11-b-1",
+        "ursul-s9-fall-act8-b-1",
+        "ursul-s10-fall-act1-b-1",
+        "ursul-s10-fall-act4-b-1",
+        "ursul-s14-fall-act1-b-1",
+        "ursul-s14-fall-act4-b-1",
+        "ursul-s20-fall-act1-b-1",
+        "ursul-s20-fall-act4-b-1",
+        "ursul-s20-fall-act8-b-1"
+      ],
+      "falseIds": [
+        "gmdcsa-s3-adl-08",
+        "gmdcsa-s4-adl-10",
+        "gmdcsa-s4-adl-15",
+        "gmdcsa-s4-adl-16",
+        "gmdcsa-s4-adl-19",
+        "gmdcsa-s4-adl-20",
+        "uma-adl-lying-down-and-getting-up-from-a-bed",
+        "uma-adl-walking"
+      ],
+      "earlyKnownClips": 1
+    },
+    "reused": {
+      "fallClips": 176,
+      "detectedFallClips": 120,
+      "ordinaryClips": 183,
+      "falseWarningClips": 2,
+      "recall": 0.6818181818181818,
+      "precision": 0.9836065573770492,
+      "f1": 0.8053691275167785,
+      "adlSeconds": 1741.8704030000029,
+      "missedIds": [
+        "gmdcsa-s1-fall-09",
+        "gmdcsa-s2-fall-09",
+        "gmdcsa-s2-fall-10",
+        "gmdcsa-s3-fall-14",
+        "gmdcsa-s3-fall-15",
+        "gmdcsa-s3-fall-17",
+        "gmdcsa-s3-fall-18",
+        "gmdcsa-s3-fall-19",
+        "gmdcsa-s4-fall-02",
+        "gmdcsa-s4-fall-06",
+        "gmdcsa-s4-fall-08",
+        "gmdcsa-s4-fall-09",
+        "gmdcsa-s4-fall-10",
+        "gmdcsa-s4-fall-12",
+        "gmdcsa-s4-fall-15",
+        "cauca-s1-fall-forward",
+        "cauca-s1-fall-right",
+        "cauca-s6-fall-left",
+        "cauca-s8-fall-forward",
+        "cauca-s8-fall-left",
+        "cauca-s8-fall-right",
+        "ursul-s3-fall-act4-b-1",
+        "ursul-s3-fall-act8-f-1",
+        "ursul-s3-fall-act11-b-1",
+        "ursul-s4-fall-act1-b-1",
+        "ursul-s4-fall-act4-b-1",
+        "ursul-s4-fall-act8-b-1",
+        "ursul-s4-fall-act11-b-1",
+        "ursul-s5-fall-act1-b-1",
+        "ursul-s5-fall-act4-b-1",
+        "ursul-s5-fall-act8-b-1",
+        "ursul-s5-fall-act11-b-1",
+        "ursul-s6-fall-act1-b-1",
+        "ursul-s6-fall-act5-b-1",
+        "ursul-s6-fall-act8-b-1",
+        "ursul-s6-fall-act11-b-1",
+        "ursul-s7-fall-act1-b-1",
+        "ursul-s7-fall-act4-f-1",
+        "ursul-s7-fall-act8-b-1",
+        "ursul-s7-fall-act11-b-1",
+        "ursul-s8-fall-act8-b-1",
+        "ursul-s8-fall-act11-b-1",
+        "ursul-s9-fall-act5-b-1",
+        "ursul-s9-fall-act8-b-1",
+        "ursul-s10-fall-act1-b-1",
+        "ursul-s10-fall-act4-b-1",
+        "ursul-s10-fall-act11-b-1",
+        "ursul-s13-fall-act4-b-1",
+        "ursul-s13-fall-act8-b-1",
+        "ursul-s14-fall-act1-b-1",
+        "ursul-s14-fall-act4-b-1",
+        "ursul-s14-fall-act8-b-1",
+        "ursul-s20-fall-act1-b-1",
+        "ursul-s20-fall-act4-b-1",
+        "ursul-s20-fall-act8-b-1",
+        "ursul-s20-fall-act11-b-1"
+      ],
+      "falseIds": [
+        "gmdcsa-s3-adl-08",
+        "gmdcsa-s4-adl-07"
+      ],
+      "earlyKnownClips": 1
+    },
+    "trained": {
+      "fallClips": 176,
+      "detectedFallClips": 118,
+      "ordinaryClips": 183,
+      "falseWarningClips": 5,
+      "recall": 0.6704545454545454,
+      "precision": 0.959349593495935,
+      "f1": 0.7892976588628763,
+      "adlSeconds": 1741.8704030000029,
+      "missedIds": [
+        "gmdcsa-s1-fall-01",
+        "gmdcsa-s1-fall-02",
+        "gmdcsa-s1-fall-09",
+        "gmdcsa-s1-fall-13",
+        "gmdcsa-s1-fall-14",
+        "gmdcsa-s2-fall-02",
+        "gmdcsa-s2-fall-09",
+        "gmdcsa-s2-fall-12",
+        "gmdcsa-s3-fall-02",
+        "gmdcsa-s3-fall-14",
+        "gmdcsa-s3-fall-17",
+        "gmdcsa-s3-fall-18",
+        "gmdcsa-s3-fall-19",
+        "gmdcsa-s4-fall-02",
+        "gmdcsa-s4-fall-08",
+        "gmdcsa-s4-fall-09",
+        "gmdcsa-s4-fall-10",
+        "gmdcsa-s4-fall-12",
+        "gmdcsa-s4-fall-15",
+        "cauca-s1-fall-forward",
+        "cauca-s6-fall-left",
+        "cauca-s8-fall-forward",
+        "cauca-s8-fall-right",
+        "ursul-s3-fall-act4-b-1",
+        "ursul-s3-fall-act8-f-1",
+        "ursul-s3-fall-act11-b-1",
+        "ursul-s4-fall-act1-b-1",
+        "ursul-s4-fall-act4-b-1",
+        "ursul-s4-fall-act8-b-1",
+        "ursul-s4-fall-act11-b-1",
+        "ursul-s5-fall-act1-b-1",
+        "ursul-s5-fall-act4-b-1",
+        "ursul-s5-fall-act8-b-1",
+        "ursul-s5-fall-act11-b-1",
+        "ursul-s6-fall-act1-b-1",
+        "ursul-s6-fall-act5-b-1",
+        "ursul-s6-fall-act8-b-1",
+        "ursul-s6-fall-act11-b-1",
+        "ursul-s7-fall-act1-b-1",
+        "ursul-s7-fall-act4-f-1",
+        "ursul-s7-fall-act8-b-1",
+        "ursul-s7-fall-act11-b-1",
+        "ursul-s8-fall-act4-b-1",
+        "ursul-s8-fall-act8-b-1",
+        "ursul-s8-fall-act11-b-1",
+        "ursul-s9-fall-act5-b-1",
+        "ursul-s9-fall-act8-b-1",
+        "ursul-s10-fall-act1-b-1",
+        "ursul-s10-fall-act4-b-1",
+        "ursul-s10-fall-act11-b-1",
+        "ursul-s13-fall-act4-b-1",
+        "ursul-s13-fall-act8-b-1",
+        "ursul-s14-fall-act1-b-1",
+        "ursul-s14-fall-act4-b-1",
+        "ursul-s20-fall-act1-b-1",
+        "ursul-s20-fall-act4-b-1",
+        "ursul-s20-fall-act8-b-1",
+        "ursul-s20-fall-act11-b-1"
+      ],
+      "falseIds": [
+        "gmdcsa-s3-adl-08",
+        "gmdcsa-s3-adl-16",
+        "gmdcsa-s4-adl-06",
+        "gmdcsa-s4-adl-07",
+        "gmdcsa-s4-adl-10"
+      ],
+      "earlyKnownClips": 0
+    }
+  },
+  "gates": [
+    {
+      "candidate": "reused",
+      "freshFewerMisses": true,
+      "freshFewerFalse": true,
+      "developmentFewerMisses": false,
+      "developmentFewerFalse": true
+    },
+    {
+      "candidate": "trained",
+      "freshFewerMisses": true,
+      "freshFewerFalse": true,
+      "developmentFewerMisses": false,
+      "developmentFewerFalse": true
+    }
+  ],
+  "deploy": false,
+  "limitations": [
+    "All42 fresh fall labels are clip-level: warnings are not verified during a fall transition.",
+    "Four unused Ursul people are verified, but their phone source/rooms were seen; ASSIST is a new study/viewpoint without camera/actor IDs.",
+    "Reference videos and short staged clips do not establish older-adult sensitivity, clinical reliability or false alerts per camera-day.",
+    "Tracking ambiguity is safer than mixing histories, but loose-box continuity still has a small residual regression.",
+    "No live phone throughput, background monitoring or notification qualification.",
+    "Both candidate variants were frozen before final inference; no model is selected or tuned using this final report."
+  ]
+}

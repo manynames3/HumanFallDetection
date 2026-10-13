@@ -1,0 +1,151 @@
+{
+  "manifestSha256": "8e76284c989784a53da325839fdc10ac78f8a9a2414d0d8360439facbd339b3b",
+  "predictionsOpened": false,
+  "poseInferenceRun": false,
+  "clips": [
+    {
+      "id": "cycle6-ursul-s16-fall-act1",
+      "subject": "ursul-16",
+      "label": "fall",
+      "sha256": "e09ab9adf715dffda5216d5ae15e52f7a5f5e3632452ac2ca1b2e844968cfda3"
+    },
+    {
+      "id": "cycle6-ursul-s16-fall-act4",
+      "subject": "ursul-16",
+      "label": "fall",
+      "sha256": "e9b6c9d5947f1674ccf3d8e88876430a9f29bc8e09c3d3fa78367e492257379e"
+    },
+    {
+      "id": "cycle6-ursul-s16-fall-act8",
+      "subject": "ursul-16",
+      "label": "fall",
+      "sha256": "d3b26939f9d6da701d64bea14317750bc6622323ab6a44aab7c543ff665bf4bb"
+    },
+    {
+      "id": "cycle6-ursul-s16-fall-act11",
+      "subject": "ursul-16",
+      "label": "fall",
+      "sha256": "b169124927b02fc618256fd6ce62a99ee6383b56c048fe138b80ef28e3ec90ce"
+    },
+    {
+      "id": "cycle6-ursul-s17-fall-act1",
+      "subject": "ursul-17",
+      "label": "fall",
+      "sha256": "9ea0849bbff52c1c9471f742120cc179984753bf10e64cfd024fee568d3f2999"
+    },
+    {
+      "id": "cycle6-ursul-s17-fall-act4",
+      "subject": "ursul-17",
+      "label": "fall",
+      "sha256": "ecf093650d708b1dfbe4ab8570a363293203538e62f4de6149eb85fe17b5d154"
+    },
+    {
+      "id": "cycle6-ursul-s17-fall-act8",
+      "subject": "ursul-17",
+      "label": "fall",
+      "sha256": "e1cbfb11b87dfdbfe205fc81643b8b35746e470d3254b97cbbad67d9b7b8cc7d"
+    },
+    {
+      "id": "cycle6-ursul-s17-fall-act11",
+      "subject": "ursul-17",
+      "label": "fall",
+      "sha256": "abd965726597c395314850861a1014e9e85838cfb00168810cd147ad3f011888"
+    },
+    {
+      "id": "cycle6-ursul-s18-fall-act1",
+      "subject": "ursul-18",
+      "label": "fall",
+      "sha256": "31e974aa86b05df6eafa4061852410052709e646bb326aa10dd6ca7ebe3715f7"
+    },
+    {
+      "id": "cycle6-ursul-s18-fall-act4",
+      "subject": "ursul-18",
+      "label": "fall",
+      "sha256": "1b38137e8297c78ba79e821be98182ea1539ce6c862eef24ebabfcd1d82ea161"
+    },
+    {
+      "id": "cycle6-ursul-s18-fall-act8",
+      "subject": "ursul-18",
+      "label": "fall",
+      "sha256": "c56c4e32bff9812945dfc1073cfc27999199a3ab8f1b176408eab3a35d82e916"
+    },
+    {
+      "id": "cycle6-ursul-s18-fall-act11",
+      "subject": "ursul-18",
+      "label": "fall",
+      "sha256": "7eb46be111ac971bc1d1d2bd2ec8726037f16c4aa1e162558811c24ddb38f0c8"
+    },
+    {
+      "id": "cycle6-ursul-s24-adl-act13",
+      "subject": "ursul-24",
+      "label": "adl",
+      "sha256": "364c6a8ffc48f7c7d13f0e9f1e1f9be0478f7deceee9afab9dd9d279fa1fcf5a"
+    },
+    {
+      "id": "cycle6-ursul-s24-adl-act16",
+      "subject": "ursul-24",
+      "label": "adl",
+      "sha256": "e260659ea99eb2477a161b0d924df6bb3e81139f7458222281a7bcc45a416218"
+    },
+    {
+      "id": "cycle6-ursul-s24-adl-act19",
+      "subject": "ursul-24",
+      "label": "adl",
+      "sha256": "3de039a6d26ebe1ea84d680065565e9655864b1121178f8fe9640130b711ed14"
+    },
+    {
+      "id": "cycle6-ursul-s24-adl-act20",
+      "subject": "ursul-24",
+      "label": "adl",
+      "sha256": "6cbe86e64665890921ed8b4404c56c3fb2b9191914e73d40941c388e06ddd6d8"
+    },
+    {
+      "id": "cycle6-ursul-s25-adl-act13",
+      "subject": "ursul-25",
+      "label": "adl",
+      "sha256": "f3e356cca198ff544acbec860969e60d29b3c9ef2b33475f6aa5fd7ce2f7b5e9"
+    },
+    {
+      "id": "cycle6-ursul-s25-adl-act16",
+      "subject": "ursul-25",
+      "label": "adl",
+      "sha256": "51a09e6cde8c9f8f280d297b054f72cf8bda4bc13c86b813d0adb87757e97663"
+    },
+    {
+      "id": "cycle6-ursul-s25-adl-act19",
+      "subject": "ursul-25",
+      "label": "adl",
+      "sha256": "e998e1527849a64fcd4fcbcf66ae13f01d3a332ade70d8fea499eaec4d78274e"
+    },
+    {
+      "id": "cycle6-ursul-s25-adl-act20",
+      "subject": "ursul-25",
+      "label": "adl",
+      "sha256": "7dbe55878e989abda81f6ac11750a13622e6677156e71a0a1b5374094360def0"
+    },
+    {
+      "id": "cycle6-ursul-s26-adl-act13",
+      "subject": "ursul-26",
+      "label": "adl",
+      "sha256": "6766d76209afc13424669453f974bb537c224e577737258994bd75602e5808a7"
+    },
+    {
+      "id": "cycle6-ursul-s26-adl-act16",
+      "subject": "ursul-26",
+      "label": "adl",
+      "sha256": "5f64e20d1e5415ef30740882f1289203ab024ddf8696af76e36bfc34babb16dc"
+    },
+    {
+      "id": "cycle6-ursul-s26-adl-act19",
+      "subject": "ursul-26",
+      "label": "adl",
+      "sha256": "ecabb7d21a40017e12daf1c917a01690cef30741acaef41dc05e5bf6f7eadf01"
+    },
+    {
+      "id": "cycle6-ursul-s26-adl-act20",
+      "subject": "ursul-26",
+      "label": "adl",
+      "sha256": "2d1e9a399d116ce4197a73267ca0520ea1f2d59981bf2b60906e30e54ce1e22c"
+    }
+  ]
+}

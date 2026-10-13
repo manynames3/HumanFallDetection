@@ -1,0 +1,1923 @@
+{
+  "createdAt": "2026-10-13T08:11:41.583Z",
+  "modelSha256": "6fb1b556903633862710960fe2872def1b748488109873c86048282d0b83ec37",
+  "counts": {
+    "detected": 36,
+    "insufficientObservedEvidence": 19,
+    "neverAboveThreshold": 19,
+    "preexistingOrMergedWarning": 3,
+    "noPose": 3
+  },
+  "events": [
+    {
+      "recording": "edf-jianjun-view1",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view1",
+      "id": "jianjun_view1-fall-1",
+      "start": 35.6,
+      "processEnd": 36.53333333333333,
+      "detected": true,
+      "warningAt": 36.44444444444444,
+      "latency": 0.8444444444444414,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 71,
+      "poseFrames": 71,
+      "eligibleFrames": 71,
+      "positiveFrames": 59,
+      "warningFrames": 56,
+      "observedEligibleIds": [
+        7
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view1",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view1",
+      "id": "jianjun_view1-fall-2",
+      "start": 44.5,
+      "processEnd": 45.766666666666666,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 77,
+      "poseFrames": 77,
+      "eligibleFrames": 27,
+      "positiveFrames": 7,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        7,
+        8
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view1",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view1",
+      "id": "jianjun_view1-fall-3",
+      "start": 55.43333333333333,
+      "processEnd": 57.1,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 84,
+      "poseFrames": 38,
+      "eligibleFrames": 26,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view1",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view1",
+      "id": "jianjun_view1-fall-4",
+      "start": 68.43333333333334,
+      "processEnd": 69.96666666666667,
+      "detected": true,
+      "warningAt": 69.38888888888889,
+      "latency": 0.9555555555555486,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 82,
+      "poseFrames": 82,
+      "eligibleFrames": 82,
+      "positiveFrames": 68,
+      "warningFrames": 65,
+      "observedEligibleIds": [
+        17
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view1",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view1",
+      "id": "jianjun_view1-fall-5",
+      "start": 82.4,
+      "processEnd": 83.9,
+      "detected": true,
+      "warningAt": 83.38888888888889,
+      "latency": 0.98888888888888,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 81,
+      "poseFrames": 81,
+      "eligibleFrames": 81,
+      "positiveFrames": 37,
+      "warningFrames": 34,
+      "observedEligibleIds": [
+        17
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view1",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view1",
+      "id": "jianjun_view1-fall-6",
+      "start": 92.26666666666667,
+      "processEnd": 94.03333333333333,
+      "detected": true,
+      "warningAt": 93.38888888888889,
+      "latency": 1.12222222222222,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 86,
+      "poseFrames": 86,
+      "eligibleFrames": 86,
+      "positiveFrames": 15,
+      "warningFrames": 9,
+      "observedEligibleIds": [
+        17
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view1",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view1",
+      "id": "jianjun_view1-fall-7",
+      "start": 105.36666666666666,
+      "processEnd": 107.03333333333333,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 84,
+      "poseFrames": 84,
+      "eligibleFrames": 84,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        19,
+        20
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view1",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view1",
+      "id": "jianjun_view1-fall-8",
+      "start": 115.03333333333333,
+      "processEnd": 116.86666666666666,
+      "detected": true,
+      "warningAt": 116.33333333333333,
+      "latency": 1.2999999999999972,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 87,
+      "poseFrames": 86,
+      "eligibleFrames": 86,
+      "positiveFrames": 15,
+      "warningFrames": 10,
+      "observedEligibleIds": [
+        21
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view2",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view2",
+      "id": "jianjun_view2-fall-1",
+      "start": 29.8,
+      "processEnd": 31.3,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 81,
+      "poseFrames": 17,
+      "eligibleFrames": 16,
+      "positiveFrames": 2,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        2,
+        3
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view2",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view2",
+      "id": "jianjun_view2-fall-2",
+      "start": 38.93333333333333,
+      "processEnd": 40.43333333333333,
+      "detected": true,
+      "warningAt": 39.77777777777778,
+      "latency": 0.8444444444444485,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 81,
+      "poseFrames": 81,
+      "eligibleFrames": 81,
+      "positiveFrames": 69,
+      "warningFrames": 66,
+      "observedEligibleIds": [
+        3
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view2",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view2",
+      "id": "jianjun_view2-fall-3",
+      "start": 49.96666666666667,
+      "processEnd": 51.8,
+      "detected": true,
+      "warningAt": 50.833333333333336,
+      "latency": 0.8666666666666671,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 87,
+      "poseFrames": 87,
+      "eligibleFrames": 87,
+      "positiveFrames": 73,
+      "warningFrames": 70,
+      "observedEligibleIds": [
+        3
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view2",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view2",
+      "id": "jianjun_view2-fall-4",
+      "start": 62.93333333333333,
+      "processEnd": 64.46666666666667,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 82,
+      "poseFrames": 82,
+      "eligibleFrames": 82,
+      "positiveFrames": 6,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        3
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view2",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view2",
+      "id": "jianjun_view2-fall-5",
+      "start": 76.3,
+      "processEnd": 77.8,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 81,
+      "poseFrames": 80,
+      "eligibleFrames": 70,
+      "positiveFrames": 3,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view2",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view2",
+      "id": "jianjun_view2-fall-6",
+      "start": 86.06666666666666,
+      "processEnd": 88.1,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 90,
+      "poseFrames": 86,
+      "eligibleFrames": 16,
+      "positiveFrames": 2,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        16
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view2",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view2",
+      "id": "jianjun_view2-fall-7",
+      "start": 99.23333333333333,
+      "processEnd": 101.03333333333333,
+      "detected": true,
+      "warningAt": 100.22222222222223,
+      "latency": 0.9888888888888943,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 86,
+      "poseFrames": 86,
+      "eligibleFrames": 86,
+      "positiveFrames": 72,
+      "warningFrames": 69,
+      "observedEligibleIds": [
+        19
+      ]
+    },
+    {
+      "recording": "edf-jianjun-view2",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view2",
+      "id": "jianjun_view2-fall-8",
+      "start": 109.1,
+      "processEnd": 110.76666666666667,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 84,
+      "poseFrames": 33,
+      "eligibleFrames": 18,
+      "positiveFrames": 3,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        19
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view1",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view1",
+      "id": "jinhui_view1-fall-1",
+      "start": 22.5,
+      "processEnd": 24.6,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "preexistingOrMergedWarning",
+      "sampledFrames": 92,
+      "poseFrames": 92,
+      "eligibleFrames": 92,
+      "positiveFrames": 18,
+      "warningFrames": 14,
+      "observedEligibleIds": [
+        7,
+        8
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view1",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view1",
+      "id": "jinhui_view1-fall-2",
+      "start": 32.8,
+      "processEnd": 34.6,
+      "detected": true,
+      "warningAt": 33.72222222222222,
+      "latency": 0.9222222222222243,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 86,
+      "poseFrames": 86,
+      "eligibleFrames": 86,
+      "positiveFrames": 42,
+      "warningFrames": 39,
+      "observedEligibleIds": [
+        7,
+        9
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view1",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view1",
+      "id": "jinhui_view1-fall-3",
+      "start": 42.93333333333333,
+      "processEnd": 44.96666666666667,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 91,
+      "poseFrames": 59,
+      "eligibleFrames": 59,
+      "positiveFrames": 5,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        7,
+        10,
+        11
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view1",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view1",
+      "id": "jinhui_view1-fall-4",
+      "start": 52.266666666666666,
+      "processEnd": 54.06666666666667,
+      "detected": true,
+      "warningAt": 53.388888888888886,
+      "latency": 1.12222222222222,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 87,
+      "poseFrames": 87,
+      "eligibleFrames": 86,
+      "positiveFrames": 42,
+      "warningFrames": 39,
+      "observedEligibleIds": [
+        11,
+        12
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view1",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view1",
+      "id": "jinhui_view1-fall-5",
+      "start": 66.13333333333334,
+      "processEnd": 67.83333333333333,
+      "detected": true,
+      "warningAt": 67,
+      "latency": 0.86666666666666,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 85,
+      "poseFrames": 85,
+      "eligibleFrames": 85,
+      "positiveFrames": 23,
+      "warningFrames": 15,
+      "observedEligibleIds": [
+        13
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view1",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view1",
+      "id": "jinhui_view1-fall-6",
+      "start": 76.56666666666666,
+      "processEnd": 78.33333333333333,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "preexistingOrMergedWarning",
+      "sampledFrames": 86,
+      "poseFrames": 86,
+      "eligibleFrames": 86,
+      "positiveFrames": 30,
+      "warningFrames": 24,
+      "observedEligibleIds": [
+        14
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view1",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view1",
+      "id": "jinhui_view1-fall-7",
+      "start": 87.73333333333333,
+      "processEnd": 89.63333333333334,
+      "detected": true,
+      "warningAt": 90,
+      "latency": 2.2666666666666657,
+      "duringProcess": false,
+      "stage": "detected",
+      "sampledFrames": 88,
+      "poseFrames": 88,
+      "eligibleFrames": 81,
+      "positiveFrames": 27,
+      "warningFrames": 19,
+      "observedEligibleIds": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view1",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view1",
+      "id": "jinhui_view1-fall-8",
+      "start": 96.73333333333333,
+      "processEnd": 98.5,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 86,
+      "poseFrames": 68,
+      "eligibleFrames": 66,
+      "positiveFrames": 6,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view2",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view2",
+      "id": "jinhui_view2-fall-1",
+      "start": 27.666666666666668,
+      "processEnd": 29.466666666666665,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 87,
+      "poseFrames": 17,
+      "eligibleFrames": 16,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        6,
+        7
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view2",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view2",
+      "id": "jinhui_view2-fall-2",
+      "start": 37.6,
+      "processEnd": 39.833333333333336,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 95,
+      "poseFrames": 51,
+      "eligibleFrames": 50,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        7,
+        8
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view2",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view2",
+      "id": "jinhui_view2-fall-3",
+      "start": 47.8,
+      "processEnd": 49.8,
+      "detected": true,
+      "warningAt": 48.833333333333336,
+      "latency": 1.0333333333333385,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 90,
+      "poseFrames": 90,
+      "eligibleFrames": 90,
+      "positiveFrames": 14,
+      "warningFrames": 7,
+      "observedEligibleIds": [
+        8
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view2",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view2",
+      "id": "jinhui_view2-fall-4",
+      "start": 57.06666666666667,
+      "processEnd": 58.766666666666666,
+      "detected": true,
+      "warningAt": 58.27777777777778,
+      "latency": 1.2111111111111086,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 84,
+      "poseFrames": 84,
+      "eligibleFrames": 84,
+      "positiveFrames": 19,
+      "warningFrames": 7,
+      "observedEligibleIds": [
+        9
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view2",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view2",
+      "id": "jinhui_view2-fall-5",
+      "start": 69.86666666666666,
+      "processEnd": 72,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 93,
+      "poseFrames": 93,
+      "eligibleFrames": 77,
+      "positiveFrames": 1,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view2",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view2",
+      "id": "jinhui_view2-fall-6",
+      "start": 80.5,
+      "processEnd": 82.5,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 91,
+      "poseFrames": 85,
+      "eligibleFrames": 61,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view2",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view2",
+      "id": "jinhui_view2-fall-7",
+      "start": 91.8,
+      "processEnd": 93.7,
+      "detected": true,
+      "warningAt": 93.05555555555556,
+      "latency": 1.25555555555556,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 88,
+      "poseFrames": 88,
+      "eligibleFrames": 88,
+      "positiveFrames": 33,
+      "warningFrames": 30,
+      "observedEligibleIds": [
+        29
+      ]
+    },
+    {
+      "recording": "edf-jinhui-view2",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view2",
+      "id": "jinhui_view2-fall-8",
+      "start": 100.43333333333334,
+      "processEnd": 102.4,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 90,
+      "poseFrames": 43,
+      "eligibleFrames": 41,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "recording": "edf-peter-view1",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view1",
+      "id": "peter_view1-fall-1",
+      "start": 34.666666666666664,
+      "processEnd": 36.3,
+      "detected": true,
+      "warningAt": 35.388888888888886,
+      "latency": 0.7222222222222214,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 84,
+      "poseFrames": 84,
+      "eligibleFrames": 84,
+      "positiveFrames": 28,
+      "warningFrames": 19,
+      "observedEligibleIds": [
+        6
+      ]
+    },
+    {
+      "recording": "edf-peter-view1",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view1",
+      "id": "peter_view1-fall-2",
+      "start": 45.3,
+      "processEnd": 47.3,
+      "detected": true,
+      "warningAt": 46.166666666666664,
+      "latency": 0.8666666666666671,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 90,
+      "poseFrames": 89,
+      "eligibleFrames": 89,
+      "positiveFrames": 45,
+      "warningFrames": 33,
+      "observedEligibleIds": [
+        6
+      ]
+    },
+    {
+      "recording": "edf-peter-view1",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view1",
+      "id": "peter_view1-fall-3",
+      "start": 57.36666666666667,
+      "processEnd": 59.233333333333334,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 88,
+      "poseFrames": 25,
+      "eligibleFrames": 25,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "recording": "edf-peter-view1",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view1",
+      "id": "peter_view1-fall-4",
+      "start": 68.46666666666667,
+      "processEnd": 70.43333333333334,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 89,
+      "poseFrames": 76,
+      "eligibleFrames": 76,
+      "positiveFrames": 4,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        12,
+        13
+      ]
+    },
+    {
+      "recording": "edf-peter-view1",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view1",
+      "id": "peter_view1-fall-5",
+      "start": 101.83333333333333,
+      "processEnd": 103.3,
+      "detected": true,
+      "warningAt": 102.77777777777777,
+      "latency": 0.9444444444444429,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 81,
+      "poseFrames": 81,
+      "eligibleFrames": 81,
+      "positiveFrames": 18,
+      "warningFrames": 14,
+      "observedEligibleIds": [
+        18
+      ]
+    },
+    {
+      "recording": "edf-peter-view1",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view1",
+      "id": "peter_view1-fall-6",
+      "start": 112.63333333333334,
+      "processEnd": 114.13333333333334,
+      "detected": true,
+      "warningAt": 113.38888888888889,
+      "latency": 0.7555555555555458,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 81,
+      "poseFrames": 80,
+      "eligibleFrames": 80,
+      "positiveFrames": 53,
+      "warningFrames": 50,
+      "observedEligibleIds": [
+        18
+      ]
+    },
+    {
+      "recording": "edf-peter-view1",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view1",
+      "id": "peter_view1-fall-7",
+      "start": 145.06666666666666,
+      "processEnd": 147.2,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 92,
+      "poseFrames": 91,
+      "eligibleFrames": 91,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "recording": "edf-peter-view1",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view1",
+      "id": "peter_view1-fall-8",
+      "start": 157.4,
+      "processEnd": 159.2,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 86,
+      "poseFrames": 65,
+      "eligibleFrames": 64,
+      "positiveFrames": 3,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        45
+      ]
+    },
+    {
+      "recording": "edf-peter-view2",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view2",
+      "id": "peter_view2-fall-1",
+      "start": 12.933333333333334,
+      "processEnd": 14.4,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "noPose",
+      "sampledFrames": 81,
+      "poseFrames": 0,
+      "eligibleFrames": 0,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": []
+    },
+    {
+      "recording": "edf-peter-view2",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view2",
+      "id": "peter_view2-fall-2",
+      "start": 23.733333333333334,
+      "processEnd": 25.466666666666665,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 85,
+      "poseFrames": 36,
+      "eligibleFrames": 35,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        2
+      ]
+    },
+    {
+      "recording": "edf-peter-view2",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view2",
+      "id": "peter_view2-fall-3",
+      "start": 35.7,
+      "processEnd": 37.3,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 83,
+      "poseFrames": 14,
+      "eligibleFrames": 12,
+      "positiveFrames": 1,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        3
+      ]
+    },
+    {
+      "recording": "edf-peter-view2",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view2",
+      "id": "peter_view2-fall-4",
+      "start": 46.96666666666667,
+      "processEnd": 48.46666666666667,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 81,
+      "poseFrames": 48,
+      "eligibleFrames": 31,
+      "positiveFrames": 1,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        6,
+        7
+      ]
+    },
+    {
+      "recording": "edf-peter-view2",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view2",
+      "id": "peter_view2-fall-5",
+      "start": 80.13333333333334,
+      "processEnd": 81.5,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "noPose",
+      "sampledFrames": 79,
+      "poseFrames": 0,
+      "eligibleFrames": 0,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": []
+    },
+    {
+      "recording": "edf-peter-view2",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view2",
+      "id": "peter_view2-fall-6",
+      "start": 90.5,
+      "processEnd": 92.13333333333334,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 84,
+      "poseFrames": 45,
+      "eligibleFrames": 39,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        13
+      ]
+    },
+    {
+      "recording": "edf-peter-view2",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view2",
+      "id": "peter_view2-fall-7",
+      "start": 123.56666666666666,
+      "processEnd": 125.66666666666667,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "noPose",
+      "sampledFrames": 92,
+      "poseFrames": 0,
+      "eligibleFrames": 0,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": []
+    },
+    {
+      "recording": "edf-peter-view2",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view2",
+      "id": "peter_view2-fall-8",
+      "start": 135.4,
+      "processEnd": 137.36666666666667,
+      "detected": true,
+      "warningAt": 136.77777777777777,
+      "latency": 1.3777777777777658,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 89,
+      "poseFrames": 89,
+      "eligibleFrames": 89,
+      "positiveFrames": 26,
+      "warningFrames": 20,
+      "observedEligibleIds": [
+        19
+      ]
+    },
+    {
+      "recording": "edf-songsong-view1",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view1",
+      "id": "songsong_view1-fall-1",
+      "start": 13.1,
+      "processEnd": 14.733333333333333,
+      "detected": true,
+      "warningAt": 15.88888888888889,
+      "latency": 2.7888888888888896,
+      "duringProcess": false,
+      "stage": "detected",
+      "sampledFrames": 84,
+      "poseFrames": 84,
+      "eligibleFrames": 84,
+      "positiveFrames": 14,
+      "warningFrames": 5,
+      "observedEligibleIds": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "recording": "edf-songsong-view1",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view1",
+      "id": "songsong_view1-fall-2",
+      "start": 20.333333333333332,
+      "processEnd": 22.066666666666666,
+      "detected": true,
+      "warningAt": 21.38888888888889,
+      "latency": 1.0555555555555571,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 86,
+      "poseFrames": 84,
+      "eligibleFrames": 84,
+      "positiveFrames": 22,
+      "warningFrames": 16,
+      "observedEligibleIds": [
+        9,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "recording": "edf-songsong-view1",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view1",
+      "id": "songsong_view1-fall-3",
+      "start": 29.433333333333334,
+      "processEnd": 31.2,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 86,
+      "poseFrames": 36,
+      "eligibleFrames": 35,
+      "positiveFrames": 5,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        9,
+        15,
+        16
+      ]
+    },
+    {
+      "recording": "edf-songsong-view1",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view1",
+      "id": "songsong_view1-fall-4",
+      "start": 37.36666666666667,
+      "processEnd": 39.1,
+      "detected": true,
+      "warningAt": 38.22222222222222,
+      "latency": 0.8555555555555543,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 85,
+      "poseFrames": 85,
+      "eligibleFrames": 85,
+      "positiveFrames": 42,
+      "warningFrames": 39,
+      "observedEligibleIds": [
+        19,
+        20
+      ]
+    },
+    {
+      "recording": "edf-songsong-view1",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view1",
+      "id": "songsong_view1-fall-5",
+      "start": 47.9,
+      "processEnd": 49.6,
+      "detected": true,
+      "warningAt": 48.888888888888886,
+      "latency": 0.9888888888888872,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 84,
+      "poseFrames": 80,
+      "eligibleFrames": 80,
+      "positiveFrames": 31,
+      "warningFrames": 24,
+      "observedEligibleIds": [
+        19,
+        21,
+        22
+      ]
+    },
+    {
+      "recording": "edf-songsong-view1",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view1",
+      "id": "songsong_view1-fall-6",
+      "start": 55.46666666666667,
+      "processEnd": 57,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "preexistingOrMergedWarning",
+      "sampledFrames": 82,
+      "poseFrames": 82,
+      "eligibleFrames": 82,
+      "positiveFrames": 53,
+      "warningFrames": 49,
+      "observedEligibleIds": [
+        19,
+        23,
+        24
+      ]
+    },
+    {
+      "recording": "edf-songsong-view1",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view1",
+      "id": "songsong_view1-fall-7",
+      "start": 65.36666666666666,
+      "processEnd": 66.96666666666667,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 83,
+      "poseFrames": 81,
+      "eligibleFrames": 81,
+      "positiveFrames": 9,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "recording": "edf-songsong-view1",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view1",
+      "id": "songsong_view1-fall-8",
+      "start": 72.6,
+      "processEnd": 74.16666666666667,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 83,
+      "poseFrames": 77,
+      "eligibleFrames": 76,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "recording": "edf-songsong-view2",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view2",
+      "id": "songsong_view2-fall-1",
+      "start": 18.433333333333334,
+      "processEnd": 20.2,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 86,
+      "poseFrames": 37,
+      "eligibleFrames": 33,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "recording": "edf-songsong-view2",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view2",
+      "id": "songsong_view2-fall-2",
+      "start": 25.666666666666668,
+      "processEnd": 27.5,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 88,
+      "poseFrames": 35,
+      "eligibleFrames": 32,
+      "positiveFrames": 3,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        5,
+        6
+      ]
+    },
+    {
+      "recording": "edf-songsong-view2",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view2",
+      "id": "songsong_view2-fall-3",
+      "start": 34.56666666666667,
+      "processEnd": 36.4,
+      "detected": true,
+      "warningAt": 35.5,
+      "latency": 0.93333333333333,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 87,
+      "poseFrames": 86,
+      "eligibleFrames": 86,
+      "positiveFrames": 39,
+      "warningFrames": 36,
+      "observedEligibleIds": [
+        6
+      ]
+    },
+    {
+      "recording": "edf-songsong-view2",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view2",
+      "id": "songsong_view2-fall-4",
+      "start": 42.53333333333333,
+      "processEnd": 44.166666666666664,
+      "detected": true,
+      "warningAt": 43.611111111111114,
+      "latency": 1.0777777777777828,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 84,
+      "poseFrames": 79,
+      "eligibleFrames": 79,
+      "positiveFrames": 50,
+      "warningFrames": 46,
+      "observedEligibleIds": [
+        6
+      ]
+    },
+    {
+      "recording": "edf-songsong-view2",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view2",
+      "id": "songsong_view2-fall-5",
+      "start": 53,
+      "processEnd": 54.6,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 83,
+      "poseFrames": 47,
+      "eligibleFrames": 47,
+      "positiveFrames": 1,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        11,
+        12
+      ]
+    },
+    {
+      "recording": "edf-songsong-view2",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view2",
+      "id": "songsong_view2-fall-6",
+      "start": 60.43333333333333,
+      "processEnd": 61.93333333333333,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 81,
+      "poseFrames": 65,
+      "eligibleFrames": 54,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "recording": "edf-songsong-view2",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view2",
+      "id": "songsong_view2-fall-7",
+      "start": 70.03333333333333,
+      "processEnd": 71.7,
+      "detected": true,
+      "warningAt": 71.22222222222223,
+      "latency": 1.188888888888897,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 84,
+      "poseFrames": 84,
+      "eligibleFrames": 84,
+      "positiveFrames": 14,
+      "warningFrames": 11,
+      "observedEligibleIds": [
+        26
+      ]
+    },
+    {
+      "recording": "edf-songsong-view2",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view2",
+      "id": "songsong_view2-fall-8",
+      "start": 77.3,
+      "processEnd": 78.93333333333334,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 83,
+      "poseFrames": 56,
+      "eligibleFrames": 31,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "recording": "edf-zhong-view1",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view1",
+      "id": "zhong_view1-fall-1",
+      "start": 32.166666666666664,
+      "processEnd": 33.7,
+      "detected": true,
+      "warningAt": 33.333333333333336,
+      "latency": 1.1666666666666714,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 82,
+      "poseFrames": 82,
+      "eligibleFrames": 82,
+      "positiveFrames": 15,
+      "warningFrames": 7,
+      "observedEligibleIds": [
+        3,
+        4
+      ]
+    },
+    {
+      "recording": "edf-zhong-view1",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view1",
+      "id": "zhong_view1-fall-2",
+      "start": 45.36666666666667,
+      "processEnd": 46.86666666666667,
+      "detected": true,
+      "warningAt": 46.388888888888886,
+      "latency": 1.0222222222222186,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 81,
+      "poseFrames": 79,
+      "eligibleFrames": 78,
+      "positiveFrames": 51,
+      "warningFrames": 46,
+      "observedEligibleIds": [
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "recording": "edf-zhong-view1",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view1",
+      "id": "zhong_view1-fall-3",
+      "start": 60.3,
+      "processEnd": 62.03333333333333,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 85,
+      "poseFrames": 43,
+      "eligibleFrames": 40,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        5,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "recording": "edf-zhong-view1",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view1",
+      "id": "zhong_view1-fall-4",
+      "start": 79.6,
+      "processEnd": 81.43333333333334,
+      "detected": true,
+      "warningAt": 80.55555555555556,
+      "latency": 0.9555555555555628,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 87,
+      "poseFrames": 87,
+      "eligibleFrames": 82,
+      "positiveFrames": 28,
+      "warningFrames": 22,
+      "observedEligibleIds": [
+        11,
+        12
+      ]
+    },
+    {
+      "recording": "edf-zhong-view1",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view1",
+      "id": "zhong_view1-fall-5",
+      "start": 108.73333333333333,
+      "processEnd": 110.23333333333333,
+      "detected": true,
+      "warningAt": 109.66666666666667,
+      "latency": 0.9333333333333371,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 81,
+      "poseFrames": 81,
+      "eligibleFrames": 81,
+      "positiveFrames": 16,
+      "warningFrames": 12,
+      "observedEligibleIds": [
+        18,
+        19
+      ]
+    },
+    {
+      "recording": "edf-zhong-view1",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view1",
+      "id": "zhong_view1-fall-6",
+      "start": 122.96666666666667,
+      "processEnd": 124.7,
+      "detected": true,
+      "warningAt": 124.38888888888889,
+      "latency": 1.4222222222222172,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 85,
+      "poseFrames": 85,
+      "eligibleFrames": 85,
+      "positiveFrames": 43,
+      "warningFrames": 30,
+      "observedEligibleIds": [
+        18
+      ]
+    },
+    {
+      "recording": "edf-zhong-view1",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view1",
+      "id": "zhong_view1-fall-7",
+      "start": 154.06666666666666,
+      "processEnd": 155.46666666666667,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 79,
+      "poseFrames": 78,
+      "eligibleFrames": 71,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        24,
+        25
+      ]
+    },
+    {
+      "recording": "edf-zhong-view1",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view1",
+      "id": "zhong_view1-fall-8",
+      "start": 167.9,
+      "processEnd": 169.43333333333334,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 81,
+      "poseFrames": 58,
+      "eligibleFrames": 58,
+      "positiveFrames": 3,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        30,
+        31
+      ]
+    },
+    {
+      "recording": "edf-zhong-view2",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view2",
+      "id": "zhong_view2-fall-1",
+      "start": 32.333333333333336,
+      "processEnd": 33.96666666666667,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 84,
+      "poseFrames": 17,
+      "eligibleFrames": 14,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        3
+      ]
+    },
+    {
+      "recording": "edf-zhong-view2",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view2",
+      "id": "zhong_view2-fall-2",
+      "start": 45.6,
+      "processEnd": 47.166666666666664,
+      "detected": true,
+      "warningAt": 46.888888888888886,
+      "latency": 1.2888888888888843,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 83,
+      "poseFrames": 33,
+      "eligibleFrames": 21,
+      "positiveFrames": 5,
+      "warningFrames": 1,
+      "observedEligibleIds": [
+        6
+      ]
+    },
+    {
+      "recording": "edf-zhong-view2",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view2",
+      "id": "zhong_view2-fall-3",
+      "start": 60.666666666666664,
+      "processEnd": 62.3,
+      "detected": true,
+      "warningAt": 61.77777777777778,
+      "latency": 1.1111111111111143,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 84,
+      "poseFrames": 84,
+      "eligibleFrames": 84,
+      "positiveFrames": 66,
+      "warningFrames": 63,
+      "observedEligibleIds": [
+        7
+      ]
+    },
+    {
+      "recording": "edf-zhong-view2",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view2",
+      "id": "zhong_view2-fall-4",
+      "start": 79.8,
+      "processEnd": 81.33333333333333,
+      "detected": true,
+      "warningAt": 83.72222222222223,
+      "latency": 3.9222222222222314,
+      "duringProcess": false,
+      "stage": "detected",
+      "sampledFrames": 82,
+      "poseFrames": 82,
+      "eligibleFrames": 81,
+      "positiveFrames": 11,
+      "warningFrames": 1,
+      "observedEligibleIds": [
+        9
+      ]
+    },
+    {
+      "recording": "edf-zhong-view2",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view2",
+      "id": "zhong_view2-fall-5",
+      "start": 108.23333333333333,
+      "processEnd": 109.9,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "insufficientObservedEvidence",
+      "sampledFrames": 84,
+      "poseFrames": 70,
+      "eligibleFrames": 65,
+      "positiveFrames": 2,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        14
+      ]
+    },
+    {
+      "recording": "edf-zhong-view2",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view2",
+      "id": "zhong_view2-fall-6",
+      "start": 123,
+      "processEnd": 124.63333333333334,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 84,
+      "poseFrames": 78,
+      "eligibleFrames": 52,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        16
+      ]
+    },
+    {
+      "recording": "edf-zhong-view2",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view2",
+      "id": "zhong_view2-fall-7",
+      "start": 153.4,
+      "processEnd": 154.96666666666667,
+      "detected": true,
+      "warningAt": 154.5,
+      "latency": 1.0999999999999943,
+      "duringProcess": true,
+      "stage": "detected",
+      "sampledFrames": 82,
+      "poseFrames": 82,
+      "eligibleFrames": 82,
+      "positiveFrames": 65,
+      "warningFrames": 60,
+      "observedEligibleIds": [
+        23
+      ]
+    },
+    {
+      "recording": "edf-zhong-view2",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view2",
+      "id": "zhong_view2-fall-8",
+      "start": 166.6,
+      "processEnd": 168.33333333333334,
+      "detected": false,
+      "warningAt": null,
+      "latency": null,
+      "duringProcess": false,
+      "stage": "neverAboveThreshold",
+      "sampledFrames": 86,
+      "poseFrames": 15,
+      "eligibleFrames": 15,
+      "positiveFrames": 0,
+      "warningFrames": 0,
+      "observedEligibleIds": [
+        26
+      ]
+    }
+  ],
+  "recordings": [
+    {
+      "id": "edf-jianjun-view1",
+      "falseEpisodes": [
+        {
+          "episodeStart": 128.16666666666666,
+          "firstNormalWarning": 133.05555555555554,
+          "lastNormalWarning": 133.33333333333334
+        },
+        {
+          "episodeStart": 141.55555555555554,
+          "firstNormalWarning": 141.55555555555554,
+          "lastNormalWarning": 146.66666666666666
+        }
+      ]
+    },
+    {
+      "id": "edf-jianjun-view2",
+      "falseEpisodes": [
+        {
+          "episodeStart": 125.61111111111111,
+          "firstNormalWarning": 125.77777777777777,
+          "lastNormalWarning": 126.94444444444444
+        }
+      ]
+    },
+    {
+      "id": "edf-jinhui-view1",
+      "falseEpisodes": [
+        {
+          "episodeStart": 18,
+          "firstNormalWarning": 18,
+          "lastNormalWarning": 19.166666666666668
+        },
+        {
+          "episodeStart": 123.72222222222223,
+          "firstNormalWarning": 123.72222222222223,
+          "lastNormalWarning": 133.72222222222223
+        }
+      ]
+    },
+    {
+      "id": "edf-jinhui-view2",
+      "falseEpisodes": [
+        {
+          "episodeStart": 130,
+          "firstNormalWarning": 130,
+          "lastNormalWarning": 135.94444444444446
+        }
+      ]
+    },
+    {
+      "id": "edf-peter-view1",
+      "falseEpisodes": [
+        {
+          "episodeStart": 180,
+          "firstNormalWarning": 180,
+          "lastNormalWarning": 180.22222222222223
+        },
+        {
+          "episodeStart": 200.27777777777777,
+          "firstNormalWarning": 200.27777777777777,
+          "lastNormalWarning": 207.16666666666666
+        }
+      ]
+    },
+    {
+      "id": "edf-peter-view2",
+      "falseEpisodes": [
+        {
+          "episodeStart": 179.33333333333334,
+          "firstNormalWarning": 179.33333333333334,
+          "lastNormalWarning": 180.66666666666666
+        },
+        {
+          "episodeStart": 190,
+          "firstNormalWarning": 190,
+          "lastNormalWarning": 197.11111111111111
+        }
+      ]
+    },
+    {
+      "id": "edf-songsong-view1",
+      "falseEpisodes": [
+        {
+          "episodeStart": 4.888888888888889,
+          "firstNormalWarning": 4.888888888888889,
+          "lastNormalWarning": 8.666666666666666
+        },
+        {
+          "episodeStart": 95.22222222222223,
+          "firstNormalWarning": 95.22222222222223,
+          "lastNormalWarning": 103.88888888888889
+        },
+        {
+          "episodeStart": 112.44444444444444,
+          "firstNormalWarning": 112.44444444444444,
+          "lastNormalWarning": 112.55555555555556
+        },
+        {
+          "episodeStart": 121.94444444444444,
+          "firstNormalWarning": 121.94444444444444,
+          "lastNormalWarning": 122.33333333333333
+        }
+      ]
+    },
+    {
+      "id": "edf-songsong-view2",
+      "falseEpisodes": []
+    },
+    {
+      "id": "edf-zhong-view1",
+      "falseEpisodes": [
+        {
+          "episodeStart": 190.72222222222223,
+          "firstNormalWarning": 190.72222222222223,
+          "lastNormalWarning": 198.66666666666666
+        }
+      ]
+    },
+    {
+      "id": "edf-zhong-view2",
+      "falseEpisodes": [
+        {
+          "episodeStart": 191.61111111111111,
+          "firstNormalWarning": 191.61111111111111,
+          "lastNormalWarning": 197.38888888888889
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Post-evaluation diagnosis on now-seen EDF data; not another independent accuracy test.",
+    "Accepted poses may still be anatomically wrong; there are no independent ground-truth landmark annotations.",
+    "Observed IDs are tracker output, not annotated identity-switch counts.",
+    "Preexisting/merged warning means the frame-level output was active but did not start a new event-specific episode.",
+    "No threshold, label, fitting data, or candidate weight was changed after opening the holdout."
+  ],
+  "deploy": false
+}

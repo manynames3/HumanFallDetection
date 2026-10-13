@@ -1,0 +1,5823 @@
+{
+  "frozenAt": "2026-10-13T07:23:01.075Z",
+  "modelSha256": "a969a27b83b15489cb8cf86162084f433c59a01d9b16d8697ebc7681109b2ba4",
+  "codeFiles": [
+    "browser/pose-tracker-v4.js",
+    "tools/video_sequence_v5.mjs",
+    "tools/video_temporal_features.mjs"
+  ],
+  "codeSha256": "a3c645da9187e2f6c612043ac35fe1fa001132de43f42e543967d9cb1162d113",
+  "trainingFileSha256": "21b106cf47a980cb9ba166a0fa6d8cc9f0cb2d791d70c67372c42fab7535afa9",
+  "policy": {
+    "windowSeconds": 0.6,
+    "evidenceSeconds": 0.25
+  },
+  "selectedEpoch": 50,
+  "baseline": {
+    "falls": 72,
+    "missed": 24,
+    "ordinary": 79,
+    "false": 6,
+    "early": 1,
+    "predictions": [
+      {
+        "id": "gmdcsa-s3-adl-01",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-02",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-03",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-04",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-05",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-06",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-07",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-08",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-09",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-10",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-11",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-12",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-13",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-14",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-15",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-16",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-17",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-18",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-19",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-20",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-21",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-22",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-01",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-02",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-03",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-04",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-05",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-06",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-07",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-08",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-09",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-10",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-11",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-12",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-13",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-14",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-15",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-16",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-17",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-18",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-19",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-20",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-21",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-01",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-02",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-03",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-04",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-05",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-06",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-07",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-08",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-09",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-10",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-11",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-12",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-13",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-14",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-15",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-16",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-17",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-18",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-19",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-20",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-01",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-02",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-03",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-04",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-05",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-06",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-07",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-08",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-09",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-10",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-11",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-12",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-13",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-14",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-15",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-16",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-17",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-fall-forward",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-fall-right",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-forward",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-right",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-fall-forward",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-fall-right",
+        "label": "fall",
+        "warning": true,
+        "early": true
+      },
+      {
+        "id": "cauca-s9-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-fall-act1-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-fall-act8-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-fall-act11-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-adl-act17-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-adl-act21-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-fall-act1-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-fall-act8-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-fall-act11-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-adl-act17-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-adl-act21-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-fall-act1-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-fall-act8-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-fall-act11-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-adl-act17-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-adl-act21-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-fall-act1-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-fall-act8-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-fall-act11-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-adl-act16-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-adl-act22-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-bending",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-climbing-stairs-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-climbing-stairs-up",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-hopping",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-jogging",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-sitting-down-and-up-on-from-a-chair",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "uma-fall-forward",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "uma-fall-lateral",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      }
+    ]
+  },
+  "selection": {
+    "falls": 72,
+    "missed": 24,
+    "ordinary": 79,
+    "false": 7,
+    "early": 1,
+    "predictions": [
+      {
+        "id": "gmdcsa-s3-adl-01",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-02",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-03",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-04",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-05",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-06",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-07",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-08",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-09",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-10",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-11",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-12",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-13",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-14",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-15",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-16",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-17",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-18",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-19",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-20",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-21",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-22",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-01",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-02",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-03",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-04",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-05",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-06",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-07",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-08",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-09",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-10",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-11",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-12",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-13",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-14",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-15",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-16",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-17",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-18",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-19",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-20",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-21",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-01",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-02",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-03",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-04",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-05",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-06",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-07",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-08",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-09",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-10",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-11",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-12",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-13",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-14",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-15",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-16",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-17",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-18",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-19",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-20",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-01",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-02",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-03",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-04",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-05",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-06",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-07",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-08",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-09",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-10",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-11",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-12",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-13",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-14",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-15",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-16",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-17",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-fall-backwards",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-fall-forward",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-fall-right",
+        "label": "fall",
+        "warning": true,
+        "early": true
+      },
+      {
+        "id": "cauca-s1-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-forward",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-right",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-fall-forward",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-fall-right",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-fall-act1-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-fall-act8-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-fall-act11-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-adl-act17-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-adl-act21-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-fall-act1-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-fall-act8-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-fall-act11-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-adl-act17-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-adl-act21-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-fall-act1-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-fall-act8-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-fall-act11-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-adl-act17-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-adl-act21-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-fall-act1-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-fall-act8-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-fall-act11-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-adl-act16-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-adl-act22-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-bending",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-climbing-stairs-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-climbing-stairs-up",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-hopping",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-jogging",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-sitting-down-and-up-on-from-a-chair",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "uma-fall-forward",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "uma-fall-lateral",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      }
+    ]
+  },
+  "bothImproveOnSelection": false,
+  "development": {
+    "falls": 176,
+    "missed": 46,
+    "ordinary": 183,
+    "false": 7,
+    "early": 1,
+    "predictions": [
+      {
+        "id": "gmdcsa-s1-adl-01",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-02",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-03",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-04",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-05",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-06",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-07",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-08",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-09",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-10",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-11",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-12",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-13",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-14",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-15",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-adl-16",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-01",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-02",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-03",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-04",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-05",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-06",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-07",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-08",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-09",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-10",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-11",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-12",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-13",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-14",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-15",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s1-fall-16",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-01",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-02",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-03",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-04",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-05",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-06",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-07",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-08",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-09",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-10",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-11",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-12",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-13",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-14",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-15",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-16",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-17",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-18",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-19",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-20",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-21",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-22",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-adl-23",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-01",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-02",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-03",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-04",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-05",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-06",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-07",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-08",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-09",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-10",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-11",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-12",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-13",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-14",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-15",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-16",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-17",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-18",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-19",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-20",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-21",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-22",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-23",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-24",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s2-fall-25",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-01",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-02",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-03",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-04",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-05",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-06",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-07",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-08",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-09",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-10",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-11",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-12",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-13",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-14",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-15",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-16",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-17",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-18",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-19",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-20",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-21",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-adl-22",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-01",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-02",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-03",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-04",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-05",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-06",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-07",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-08",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-09",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-10",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-11",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-12",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-13",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-14",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-15",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-16",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-17",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-18",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-19",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-20",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s3-fall-21",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-01",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-02",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-03",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-04",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-05",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-06",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-07",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-08",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-09",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-10",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-11",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-12",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-13",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-14",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-15",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-16",
+        "label": "adl",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-17",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-18",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-19",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-adl-20",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-01",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-02",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-03",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-04",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-05",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-06",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-07",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-08",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-09",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-10",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-11",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-12",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-13",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-14",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-15",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-16",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "gmdcsa-s4-fall-17",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-fall-backwards",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-fall-forward",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-fall-right",
+        "label": "fall",
+        "warning": true,
+        "early": true
+      },
+      {
+        "id": "cauca-s1-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s1-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s10-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s10-fall-forward",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s10-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s10-fall-right",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s10-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s10-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s10-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s10-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s10-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s10-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s2-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s2-fall-forward",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s2-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s2-fall-right",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s2-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s2-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s2-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s2-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s2-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s2-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s3-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s3-fall-forward",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s3-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s3-fall-right",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s3-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s3-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s3-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s3-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s3-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s3-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s4-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s4-fall-forward",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s4-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s4-fall-right",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s4-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s4-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s4-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s4-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s4-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s4-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s5-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s5-fall-forward",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s5-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s5-fall-right",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s5-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s5-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s5-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s5-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s5-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s5-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s6-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s6-fall-forward",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s6-fall-left",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s6-fall-right",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s6-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s6-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s6-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s6-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s6-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s6-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s7-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s7-fall-forward",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s7-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s7-fall-right",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s7-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s7-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s7-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s7-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s7-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s7-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-forward",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-right",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s8-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-fall-forward",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-fall-left",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-fall-right",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-fall-sitting",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-hop",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-kneel",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-pick-up-object",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-sit-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "cauca-s9-walk",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s3-fall-act1-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s3-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s3-fall-act8-f-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s3-fall-act11-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s3-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s3-adl-act16-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s3-adl-act20-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s3-adl-act25-l-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s4-fall-act1-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s4-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s4-fall-act8-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s4-fall-act11-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s4-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s4-adl-act17-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s4-adl-act21-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s4-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s5-fall-act1-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s5-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s5-fall-act8-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s5-fall-act11-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s5-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s5-adl-act13-r-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s5-adl-act15-f-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s5-adl-act15-r-3",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s6-fall-act1-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s6-fall-act5-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s6-fall-act8-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s6-fall-act11-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s6-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s6-adl-act17-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s6-adl-act21-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s6-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s7-fall-act1-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s7-fall-act4-f-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s7-fall-act8-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s7-fall-act11-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s7-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s7-adl-act17-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s7-adl-act21-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s7-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-fall-act1-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-fall-act8-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-fall-act11-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-adl-act17-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-adl-act21-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s8-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s9-fall-act1-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s9-fall-act5-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s9-fall-act8-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s9-fall-act12-f-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s9-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s9-adl-act17-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s9-adl-act21-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s9-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-fall-act1-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-fall-act8-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-fall-act11-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-adl-act17-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-adl-act21-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s10-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s13-fall-act1-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s13-fall-act4-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s13-fall-act8-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s13-fall-act11-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s13-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s13-adl-act15-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s13-adl-act21-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s13-adl-act23-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-fall-act1-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-fall-act8-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-fall-act11-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-adl-act17-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-adl-act21-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s14-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-fall-act1-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-fall-act4-b-1",
+        "label": "fall",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-fall-act8-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-fall-act11-b-1",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-adl-act13-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-adl-act16-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-adl-act22-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "ursul-s20-adl-act25-b-1",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-bending",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-climbing-stairs-down",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-climbing-stairs-up",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-hopping",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-jogging",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-lying-down-and-getting-up-from-a-bed",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-sitting-down-and-up-on-from-a-chair",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-adl-walking",
+        "label": "adl",
+        "warning": false,
+        "early": false
+      },
+      {
+        "id": "uma-fall-backwards",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "uma-fall-forward",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      },
+      {
+        "id": "uma-fall-lateral",
+        "label": "fall",
+        "warning": true,
+        "early": false
+      }
+    ]
+  },
+  "curve": [
+    {
+      "epoch": 10,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 107,
+      "falls": 72,
+      "missed": 5,
+      "ordinary": 79,
+      "false": 26,
+      "early": 8
+    },
+    {
+      "epoch": 10,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 89,
+      "falls": 72,
+      "missed": 11,
+      "ordinary": 79,
+      "false": 22,
+      "early": 4
+    },
+    {
+      "epoch": 10,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 69,
+      "falls": 72,
+      "missed": 18,
+      "ordinary": 79,
+      "false": 14,
+      "early": 3
+    },
+    {
+      "epoch": 10,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 72,
+      "falls": 72,
+      "missed": 12,
+      "ordinary": 79,
+      "false": 15,
+      "early": 5
+    },
+    {
+      "epoch": 10,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 66,
+      "falls": 72,
+      "missed": 21,
+      "ordinary": 79,
+      "false": 11,
+      "early": 4
+    },
+    {
+      "epoch": 10,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 47,
+      "falls": 72,
+      "missed": 23,
+      "ordinary": 79,
+      "false": 8,
+      "early": 0
+    },
+    {
+      "epoch": 10,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 52,
+      "falls": 72,
+      "missed": 16,
+      "ordinary": 79,
+      "false": 10,
+      "early": 2
+    },
+    {
+      "epoch": 10,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 47,
+      "falls": 72,
+      "missed": 23,
+      "ordinary": 79,
+      "false": 7,
+      "early": 1
+    },
+    {
+      "epoch": 10,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 39,
+      "falls": 72,
+      "missed": 27,
+      "ordinary": 79,
+      "false": 4,
+      "early": 0
+    },
+    {
+      "epoch": 10,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 39,
+      "falls": 72,
+      "missed": 24,
+      "ordinary": 79,
+      "false": 5,
+      "early": 0
+    },
+    {
+      "epoch": 10,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 44,
+      "falls": 72,
+      "missed": 32,
+      "ordinary": 79,
+      "false": 4,
+      "early": 0
+    },
+    {
+      "epoch": 10,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 46,
+      "falls": 72,
+      "missed": 37,
+      "ordinary": 79,
+      "false": 3,
+      "early": 0
+    },
+    {
+      "epoch": 10,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 50,
+      "falls": 72,
+      "missed": 47,
+      "ordinary": 79,
+      "false": 1,
+      "early": 0
+    },
+    {
+      "epoch": 10,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 56,
+      "falls": 72,
+      "missed": 53,
+      "ordinary": 79,
+      "false": 1,
+      "early": 0
+    },
+    {
+      "epoch": 10,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 57,
+      "falls": 72,
+      "missed": 57,
+      "ordinary": 79,
+      "false": 0,
+      "early": 0
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 103,
+      "falls": 72,
+      "missed": 10,
+      "ordinary": 79,
+      "false": 24,
+      "early": 7
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 80,
+      "falls": 72,
+      "missed": 14,
+      "ordinary": 79,
+      "false": 18,
+      "early": 4
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 63,
+      "falls": 72,
+      "missed": 18,
+      "ordinary": 79,
+      "false": 12,
+      "early": 3
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 70,
+      "falls": 72,
+      "missed": 13,
+      "ordinary": 79,
+      "false": 15,
+      "early": 4
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 54,
+      "falls": 72,
+      "missed": 15,
+      "ordinary": 79,
+      "false": 11,
+      "early": 2
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 44,
+      "falls": 72,
+      "missed": 20,
+      "ordinary": 79,
+      "false": 7,
+      "early": 1
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 60,
+      "falls": 72,
+      "missed": 18,
+      "ordinary": 79,
+      "false": 12,
+      "early": 2
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 50,
+      "falls": 72,
+      "missed": 23,
+      "ordinary": 79,
+      "false": 7,
+      "early": 2
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 48,
+      "falls": 72,
+      "missed": 27,
+      "ordinary": 79,
+      "false": 6,
+      "early": 1
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 45,
+      "falls": 72,
+      "missed": 21,
+      "ordinary": 79,
+      "false": 7,
+      "early": 1
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 45,
+      "falls": 72,
+      "missed": 27,
+      "ordinary": 79,
+      "false": 5,
+      "early": 1
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 51,
+      "falls": 72,
+      "missed": 36,
+      "ordinary": 79,
+      "false": 4,
+      "early": 1
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 49,
+      "falls": 72,
+      "missed": 37,
+      "ordinary": 79,
+      "false": 3,
+      "early": 1
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 49,
+      "falls": 72,
+      "missed": 43,
+      "ordinary": 79,
+      "false": 2,
+      "early": 0
+    },
+    {
+      "epoch": 20,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 57,
+      "falls": 72,
+      "missed": 51,
+      "ordinary": 79,
+      "false": 2,
+      "early": 0
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 101,
+      "falls": 72,
+      "missed": 11,
+      "ordinary": 79,
+      "false": 23,
+      "early": 7
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 78,
+      "falls": 72,
+      "missed": 15,
+      "ordinary": 79,
+      "false": 18,
+      "early": 3
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 69,
+      "falls": 72,
+      "missed": 18,
+      "ordinary": 79,
+      "false": 14,
+      "early": 3
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 71,
+      "falls": 72,
+      "missed": 14,
+      "ordinary": 79,
+      "false": 16,
+      "early": 3
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 66,
+      "falls": 72,
+      "missed": 18,
+      "ordinary": 79,
+      "false": 13,
+      "early": 3
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 53,
+      "falls": 72,
+      "missed": 20,
+      "ordinary": 79,
+      "false": 8,
+      "early": 3
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 57,
+      "falls": 72,
+      "missed": 15,
+      "ordinary": 79,
+      "false": 12,
+      "early": 2
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 52,
+      "falls": 72,
+      "missed": 19,
+      "ordinary": 79,
+      "false": 9,
+      "early": 2
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 48,
+      "falls": 72,
+      "missed": 24,
+      "ordinary": 79,
+      "false": 7,
+      "early": 1
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 48,
+      "falls": 72,
+      "missed": 18,
+      "ordinary": 79,
+      "false": 8,
+      "early": 2
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 52,
+      "falls": 72,
+      "missed": 25,
+      "ordinary": 79,
+      "false": 7,
+      "early": 2
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 46,
+      "falls": 72,
+      "missed": 31,
+      "ordinary": 79,
+      "false": 5,
+      "early": 0
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 45,
+      "falls": 72,
+      "missed": 27,
+      "ordinary": 79,
+      "false": 5,
+      "early": 1
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 52,
+      "falls": 72,
+      "missed": 37,
+      "ordinary": 79,
+      "false": 4,
+      "early": 1
+    },
+    {
+      "epoch": 30,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 53,
+      "falls": 72,
+      "missed": 44,
+      "ordinary": 79,
+      "false": 3,
+      "early": 0
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 88,
+      "falls": 72,
+      "missed": 10,
+      "ordinary": 79,
+      "false": 21,
+      "early": 5
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 74,
+      "falls": 72,
+      "missed": 14,
+      "ordinary": 79,
+      "false": 18,
+      "early": 2
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 58,
+      "falls": 72,
+      "missed": 16,
+      "ordinary": 79,
+      "false": 12,
+      "early": 2
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 76,
+      "falls": 72,
+      "missed": 13,
+      "ordinary": 79,
+      "false": 17,
+      "early": 4
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 61,
+      "falls": 72,
+      "missed": 16,
+      "ordinary": 79,
+      "false": 13,
+      "early": 2
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 55,
+      "falls": 72,
+      "missed": 22,
+      "ordinary": 79,
+      "false": 10,
+      "early": 1
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 60,
+      "falls": 72,
+      "missed": 15,
+      "ordinary": 79,
+      "false": 13,
+      "early": 2
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 55,
+      "falls": 72,
+      "missed": 19,
+      "ordinary": 79,
+      "false": 10,
+      "early": 2
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 50,
+      "falls": 72,
+      "missed": 23,
+      "ordinary": 79,
+      "false": 8,
+      "early": 1
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 57,
+      "falls": 72,
+      "missed": 18,
+      "ordinary": 79,
+      "false": 11,
+      "early": 2
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 53,
+      "falls": 72,
+      "missed": 26,
+      "ordinary": 79,
+      "false": 7,
+      "early": 2
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 51,
+      "falls": 72,
+      "missed": 33,
+      "ordinary": 79,
+      "false": 5,
+      "early": 1
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 42,
+      "falls": 72,
+      "missed": 27,
+      "ordinary": 79,
+      "false": 4,
+      "early": 1
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 47,
+      "falls": 72,
+      "missed": 32,
+      "ordinary": 79,
+      "false": 4,
+      "early": 1
+    },
+    {
+      "epoch": 40,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 51,
+      "falls": 72,
+      "missed": 42,
+      "ordinary": 79,
+      "false": 2,
+      "early": 1
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 98,
+      "falls": 72,
+      "missed": 11,
+      "ordinary": 79,
+      "false": 20,
+      "early": 9
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 81,
+      "falls": 72,
+      "missed": 15,
+      "ordinary": 79,
+      "false": 18,
+      "early": 4
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 68,
+      "falls": 72,
+      "missed": 17,
+      "ordinary": 79,
+      "false": 13,
+      "early": 4
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 70,
+      "falls": 72,
+      "missed": 13,
+      "ordinary": 79,
+      "false": 17,
+      "early": 2
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 67,
+      "falls": 72,
+      "missed": 16,
+      "ordinary": 79,
+      "false": 15,
+      "early": 2
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 55,
+      "falls": 72,
+      "missed": 22,
+      "ordinary": 79,
+      "false": 10,
+      "early": 1
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 68,
+      "falls": 72,
+      "missed": 14,
+      "ordinary": 79,
+      "false": 16,
+      "early": 2
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 60,
+      "falls": 72,
+      "missed": 18,
+      "ordinary": 79,
+      "false": 12,
+      "early": 2
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 49,
+      "falls": 72,
+      "missed": 25,
+      "ordinary": 79,
+      "false": 7,
+      "early": 1
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 52,
+      "falls": 72,
+      "missed": 16,
+      "ordinary": 79,
+      "false": 10,
+      "early": 2
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 48,
+      "falls": 72,
+      "missed": 24,
+      "ordinary": 79,
+      "false": 7,
+      "early": 1
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 44,
+      "falls": 72,
+      "missed": 29,
+      "ordinary": 79,
+      "false": 4,
+      "early": 1
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 43,
+      "falls": 72,
+      "missed": 25,
+      "ordinary": 79,
+      "false": 5,
+      "early": 1
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 46,
+      "falls": 72,
+      "missed": 31,
+      "ordinary": 79,
+      "false": 4,
+      "early": 1
+    },
+    {
+      "epoch": 50,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 49,
+      "falls": 72,
+      "missed": 43,
+      "ordinary": 79,
+      "false": 2,
+      "early": 0
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 94,
+      "falls": 72,
+      "missed": 13,
+      "ordinary": 79,
+      "false": 20,
+      "early": 7
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 76,
+      "falls": 72,
+      "missed": 16,
+      "ordinary": 79,
+      "false": 15,
+      "early": 5
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.8,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 62,
+      "falls": 72,
+      "missed": 17,
+      "ordinary": 79,
+      "false": 12,
+      "early": 3
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 81,
+      "falls": 72,
+      "missed": 15,
+      "ordinary": 79,
+      "false": 17,
+      "early": 5
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 61,
+      "falls": 72,
+      "missed": 16,
+      "ordinary": 79,
+      "false": 13,
+      "early": 2
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.9,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 56,
+      "falls": 72,
+      "missed": 20,
+      "ordinary": 79,
+      "false": 10,
+      "early": 2
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 60,
+      "falls": 72,
+      "missed": 15,
+      "ordinary": 79,
+      "false": 13,
+      "early": 2
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 53,
+      "falls": 72,
+      "missed": 17,
+      "ordinary": 79,
+      "false": 10,
+      "early": 2
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.95,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 52,
+      "falls": 72,
+      "missed": 22,
+      "ordinary": 79,
+      "false": 9,
+      "early": 1
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 52,
+      "falls": 72,
+      "missed": 19,
+      "ordinary": 79,
+      "false": 9,
+      "early": 2
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": true,
+      "both": false,
+      "cost": 49,
+      "falls": 72,
+      "missed": 22,
+      "ordinary": 79,
+      "false": 7,
+      "early": 2
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.98,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 50,
+      "falls": 72,
+      "missed": 32,
+      "ordinary": 79,
+      "false": 5,
+      "early": 1
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.15
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 45,
+      "falls": 72,
+      "missed": 24,
+      "ordinary": 79,
+      "false": 6,
+      "early": 1
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.25
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 52,
+      "falls": 72,
+      "missed": 34,
+      "ordinary": 79,
+      "false": 5,
+      "early": 1
+    },
+    {
+      "epoch": 60,
+      "threshold": 0.995,
+      "policy": {
+        "windowSeconds": 0.6,
+        "evidenceSeconds": 0.35
+      },
+      "regPass": false,
+      "both": false,
+      "cost": 52,
+      "falls": 72,
+      "missed": 40,
+      "ordinary": 79,
+      "false": 3,
+      "early": 1
+    }
+  ],
+  "provenance": {
+    "trainingClipIds": [
+      "gmdcsa-s1-adl-01",
+      "gmdcsa-s1-adl-02",
+      "gmdcsa-s1-adl-03",
+      "gmdcsa-s1-adl-04",
+      "gmdcsa-s1-adl-05",
+      "gmdcsa-s1-adl-06",
+      "gmdcsa-s1-adl-07",
+      "gmdcsa-s1-adl-08",
+      "gmdcsa-s1-adl-09",
+      "gmdcsa-s1-adl-10",
+      "gmdcsa-s1-adl-11",
+      "gmdcsa-s1-adl-12",
+      "gmdcsa-s1-adl-13",
+      "gmdcsa-s1-adl-14",
+      "gmdcsa-s1-adl-15",
+      "gmdcsa-s1-adl-16",
+      "gmdcsa-s1-fall-01",
+      "gmdcsa-s1-fall-02",
+      "gmdcsa-s1-fall-03",
+      "gmdcsa-s1-fall-04",
+      "gmdcsa-s1-fall-05",
+      "gmdcsa-s1-fall-06",
+      "gmdcsa-s1-fall-07",
+      "gmdcsa-s1-fall-08",
+      "gmdcsa-s1-fall-09",
+      "gmdcsa-s1-fall-10",
+      "gmdcsa-s1-fall-11",
+      "gmdcsa-s1-fall-12",
+      "gmdcsa-s1-fall-13",
+      "gmdcsa-s1-fall-14",
+      "gmdcsa-s1-fall-15",
+      "gmdcsa-s1-fall-16",
+      "gmdcsa-s2-adl-01",
+      "gmdcsa-s2-adl-02",
+      "gmdcsa-s2-adl-03",
+      "gmdcsa-s2-adl-04",
+      "gmdcsa-s2-adl-05",
+      "gmdcsa-s2-adl-06",
+      "gmdcsa-s2-adl-07",
+      "gmdcsa-s2-adl-08",
+      "gmdcsa-s2-adl-09",
+      "gmdcsa-s2-adl-10",
+      "gmdcsa-s2-adl-11",
+      "gmdcsa-s2-adl-12",
+      "gmdcsa-s2-adl-13",
+      "gmdcsa-s2-adl-14",
+      "gmdcsa-s2-adl-15",
+      "gmdcsa-s2-adl-16",
+      "gmdcsa-s2-adl-17",
+      "gmdcsa-s2-adl-18",
+      "gmdcsa-s2-adl-19",
+      "gmdcsa-s2-adl-20",
+      "gmdcsa-s2-adl-21",
+      "gmdcsa-s2-adl-22",
+      "gmdcsa-s2-adl-23",
+      "gmdcsa-s2-fall-01",
+      "gmdcsa-s2-fall-02",
+      "gmdcsa-s2-fall-03",
+      "gmdcsa-s2-fall-04",
+      "gmdcsa-s2-fall-05",
+      "gmdcsa-s2-fall-06",
+      "gmdcsa-s2-fall-07",
+      "gmdcsa-s2-fall-08",
+      "gmdcsa-s2-fall-09",
+      "gmdcsa-s2-fall-10",
+      "gmdcsa-s2-fall-11",
+      "gmdcsa-s2-fall-12",
+      "gmdcsa-s2-fall-13",
+      "gmdcsa-s2-fall-14",
+      "gmdcsa-s2-fall-15",
+      "gmdcsa-s2-fall-16",
+      "gmdcsa-s2-fall-17",
+      "gmdcsa-s2-fall-18",
+      "gmdcsa-s2-fall-19",
+      "gmdcsa-s2-fall-20",
+      "gmdcsa-s2-fall-21",
+      "gmdcsa-s2-fall-22",
+      "gmdcsa-s2-fall-23",
+      "gmdcsa-s2-fall-24",
+      "gmdcsa-s2-fall-25",
+      "cauca-s10-fall-backwards",
+      "cauca-s10-fall-forward",
+      "cauca-s10-fall-left",
+      "cauca-s10-fall-right",
+      "cauca-s10-fall-sitting",
+      "cauca-s10-hop",
+      "cauca-s10-kneel",
+      "cauca-s10-pick-up-object",
+      "cauca-s10-sit-down",
+      "cauca-s10-walk",
+      "cauca-s2-fall-backwards",
+      "cauca-s2-fall-forward",
+      "cauca-s2-fall-left",
+      "cauca-s2-fall-right",
+      "cauca-s2-fall-sitting",
+      "cauca-s2-hop",
+      "cauca-s2-kneel",
+      "cauca-s2-pick-up-object",
+      "cauca-s2-sit-down",
+      "cauca-s2-walk",
+      "cauca-s3-fall-backwards",
+      "cauca-s3-fall-forward",
+      "cauca-s3-fall-left",
+      "cauca-s3-fall-right",
+      "cauca-s3-fall-sitting",
+      "cauca-s3-hop",
+      "cauca-s3-kneel",
+      "cauca-s3-pick-up-object",
+      "cauca-s3-sit-down",
+      "cauca-s3-walk",
+      "cauca-s4-fall-backwards",
+      "cauca-s4-fall-forward",
+      "cauca-s4-fall-left",
+      "cauca-s4-fall-right",
+      "cauca-s4-fall-sitting",
+      "cauca-s4-hop",
+      "cauca-s4-kneel",
+      "cauca-s4-pick-up-object",
+      "cauca-s4-sit-down",
+      "cauca-s4-walk",
+      "cauca-s5-fall-backwards",
+      "cauca-s5-fall-forward",
+      "cauca-s5-fall-left",
+      "cauca-s5-fall-right",
+      "cauca-s5-fall-sitting",
+      "cauca-s5-hop",
+      "cauca-s5-kneel",
+      "cauca-s5-pick-up-object",
+      "cauca-s5-sit-down",
+      "cauca-s5-walk",
+      "cauca-s6-fall-backwards",
+      "cauca-s6-fall-forward",
+      "cauca-s6-fall-left",
+      "cauca-s6-fall-right",
+      "cauca-s6-fall-sitting",
+      "cauca-s6-hop",
+      "cauca-s6-kneel",
+      "cauca-s6-pick-up-object",
+      "cauca-s6-sit-down",
+      "cauca-s6-walk",
+      "cauca-s7-fall-backwards",
+      "cauca-s7-fall-forward",
+      "cauca-s7-fall-left",
+      "cauca-s7-fall-right",
+      "cauca-s7-fall-sitting",
+      "cauca-s7-hop",
+      "cauca-s7-kneel",
+      "cauca-s7-pick-up-object",
+      "cauca-s7-sit-down",
+      "cauca-s7-walk",
+      "ursul-s3-fall-act1-b-1",
+      "ursul-s3-fall-act4-b-1",
+      "ursul-s3-fall-act8-f-1",
+      "ursul-s3-fall-act11-b-1",
+      "ursul-s3-adl-act13-b-1",
+      "ursul-s3-adl-act16-b-1",
+      "ursul-s3-adl-act20-b-1",
+      "ursul-s3-adl-act25-l-1",
+      "ursul-s4-fall-act1-b-1",
+      "ursul-s4-fall-act4-b-1",
+      "ursul-s4-fall-act8-b-1",
+      "ursul-s4-fall-act11-b-1",
+      "ursul-s4-adl-act13-b-1",
+      "ursul-s4-adl-act17-b-1",
+      "ursul-s4-adl-act21-b-1",
+      "ursul-s4-adl-act25-b-1",
+      "ursul-s5-fall-act1-b-1",
+      "ursul-s5-fall-act4-b-1",
+      "ursul-s5-fall-act8-b-1",
+      "ursul-s5-fall-act11-b-1",
+      "ursul-s5-adl-act13-b-1",
+      "ursul-s5-adl-act13-r-1",
+      "ursul-s5-adl-act15-f-1",
+      "ursul-s5-adl-act15-r-3",
+      "ursul-s6-fall-act1-b-1",
+      "ursul-s6-fall-act5-b-1",
+      "ursul-s6-fall-act8-b-1",
+      "ursul-s6-fall-act11-b-1",
+      "ursul-s6-adl-act13-b-1",
+      "ursul-s6-adl-act17-b-1",
+      "ursul-s6-adl-act21-b-1",
+      "ursul-s6-adl-act25-b-1",
+      "ursul-s7-fall-act1-b-1",
+      "ursul-s7-fall-act4-f-1",
+      "ursul-s7-fall-act8-b-1",
+      "ursul-s7-fall-act11-b-1",
+      "ursul-s7-adl-act13-b-1",
+      "ursul-s7-adl-act17-b-1",
+      "ursul-s7-adl-act21-b-1",
+      "ursul-s7-adl-act25-b-1",
+      "ursul-s9-fall-act1-b-1",
+      "ursul-s9-fall-act5-b-1",
+      "ursul-s9-fall-act8-b-1",
+      "ursul-s9-fall-act12-f-1",
+      "ursul-s9-adl-act13-b-1",
+      "ursul-s9-adl-act17-b-1",
+      "ursul-s9-adl-act21-b-1",
+      "ursul-s9-adl-act25-b-1",
+      "ursul-s13-fall-act1-b-1",
+      "ursul-s13-fall-act4-b-1",
+      "ursul-s13-fall-act8-b-1",
+      "ursul-s13-fall-act11-b-1",
+      "ursul-s13-adl-act13-b-1",
+      "ursul-s13-adl-act15-b-1",
+      "ursul-s13-adl-act21-b-1",
+      "ursul-s13-adl-act23-b-1",
+      "uma-adl-lying-down-and-getting-up-from-a-bed",
+      "uma-adl-walking"
+    ],
+    "selectionClipIds": [
+      "gmdcsa-s3-adl-01",
+      "gmdcsa-s3-adl-02",
+      "gmdcsa-s3-adl-03",
+      "gmdcsa-s3-adl-04",
+      "gmdcsa-s3-adl-05",
+      "gmdcsa-s3-adl-06",
+      "gmdcsa-s3-adl-07",
+      "gmdcsa-s3-adl-08",
+      "gmdcsa-s3-adl-09",
+      "gmdcsa-s3-adl-10",
+      "gmdcsa-s3-adl-11",
+      "gmdcsa-s3-adl-12",
+      "gmdcsa-s3-adl-13",
+      "gmdcsa-s3-adl-14",
+      "gmdcsa-s3-adl-15",
+      "gmdcsa-s3-adl-16",
+      "gmdcsa-s3-adl-17",
+      "gmdcsa-s3-adl-18",
+      "gmdcsa-s3-adl-19",
+      "gmdcsa-s3-adl-20",
+      "gmdcsa-s3-adl-21",
+      "gmdcsa-s3-adl-22",
+      "gmdcsa-s3-fall-01",
+      "gmdcsa-s3-fall-02",
+      "gmdcsa-s3-fall-03",
+      "gmdcsa-s3-fall-04",
+      "gmdcsa-s3-fall-05",
+      "gmdcsa-s3-fall-06",
+      "gmdcsa-s3-fall-07",
+      "gmdcsa-s3-fall-08",
+      "gmdcsa-s3-fall-09",
+      "gmdcsa-s3-fall-10",
+      "gmdcsa-s3-fall-11",
+      "gmdcsa-s3-fall-12",
+      "gmdcsa-s3-fall-13",
+      "gmdcsa-s3-fall-14",
+      "gmdcsa-s3-fall-15",
+      "gmdcsa-s3-fall-16",
+      "gmdcsa-s3-fall-17",
+      "gmdcsa-s3-fall-18",
+      "gmdcsa-s3-fall-19",
+      "gmdcsa-s3-fall-20",
+      "gmdcsa-s3-fall-21",
+      "gmdcsa-s4-adl-01",
+      "gmdcsa-s4-adl-02",
+      "gmdcsa-s4-adl-03",
+      "gmdcsa-s4-adl-04",
+      "gmdcsa-s4-adl-05",
+      "gmdcsa-s4-adl-06",
+      "gmdcsa-s4-adl-07",
+      "gmdcsa-s4-adl-08",
+      "gmdcsa-s4-adl-09",
+      "gmdcsa-s4-adl-10",
+      "gmdcsa-s4-adl-11",
+      "gmdcsa-s4-adl-12",
+      "gmdcsa-s4-adl-13",
+      "gmdcsa-s4-adl-14",
+      "gmdcsa-s4-adl-15",
+      "gmdcsa-s4-adl-16",
+      "gmdcsa-s4-adl-17",
+      "gmdcsa-s4-adl-18",
+      "gmdcsa-s4-adl-19",
+      "gmdcsa-s4-adl-20",
+      "gmdcsa-s4-fall-01",
+      "gmdcsa-s4-fall-02",
+      "gmdcsa-s4-fall-03",
+      "gmdcsa-s4-fall-04",
+      "gmdcsa-s4-fall-05",
+      "gmdcsa-s4-fall-06",
+      "gmdcsa-s4-fall-07",
+      "gmdcsa-s4-fall-08",
+      "gmdcsa-s4-fall-09",
+      "gmdcsa-s4-fall-10",
+      "gmdcsa-s4-fall-11",
+      "gmdcsa-s4-fall-12",
+      "gmdcsa-s4-fall-13",
+      "gmdcsa-s4-fall-14",
+      "gmdcsa-s4-fall-15",
+      "gmdcsa-s4-fall-16",
+      "gmdcsa-s4-fall-17",
+      "cauca-s1-fall-backwards",
+      "cauca-s1-fall-forward",
+      "cauca-s1-fall-left",
+      "cauca-s1-fall-right",
+      "cauca-s1-fall-sitting",
+      "cauca-s1-hop",
+      "cauca-s1-kneel",
+      "cauca-s1-pick-up-object",
+      "cauca-s1-sit-down",
+      "cauca-s1-walk",
+      "cauca-s8-fall-backwards",
+      "cauca-s8-fall-forward",
+      "cauca-s8-fall-left",
+      "cauca-s8-fall-right",
+      "cauca-s8-fall-sitting",
+      "cauca-s8-hop",
+      "cauca-s8-kneel",
+      "cauca-s8-pick-up-object",
+      "cauca-s8-sit-down",
+      "cauca-s8-walk",
+      "cauca-s9-fall-backwards",
+      "cauca-s9-fall-forward",
+      "cauca-s9-fall-left",
+      "cauca-s9-fall-right",
+      "cauca-s9-fall-sitting",
+      "cauca-s9-hop",
+      "cauca-s9-kneel",
+      "cauca-s9-pick-up-object",
+      "cauca-s9-sit-down",
+      "cauca-s9-walk",
+      "ursul-s8-fall-act1-b-1",
+      "ursul-s8-fall-act4-b-1",
+      "ursul-s8-fall-act8-b-1",
+      "ursul-s8-fall-act11-b-1",
+      "ursul-s8-adl-act13-b-1",
+      "ursul-s8-adl-act17-b-1",
+      "ursul-s8-adl-act21-b-1",
+      "ursul-s8-adl-act25-b-1",
+      "ursul-s10-fall-act1-b-1",
+      "ursul-s10-fall-act4-b-1",
+      "ursul-s10-fall-act8-b-1",
+      "ursul-s10-fall-act11-b-1",
+      "ursul-s10-adl-act13-b-1",
+      "ursul-s10-adl-act17-b-1",
+      "ursul-s10-adl-act21-b-1",
+      "ursul-s10-adl-act25-b-1",
+      "ursul-s14-fall-act1-b-1",
+      "ursul-s14-fall-act4-b-1",
+      "ursul-s14-fall-act8-b-1",
+      "ursul-s14-fall-act11-b-1",
+      "ursul-s14-adl-act13-b-1",
+      "ursul-s14-adl-act17-b-1",
+      "ursul-s14-adl-act21-b-1",
+      "ursul-s14-adl-act25-b-1",
+      "ursul-s20-fall-act1-b-1",
+      "ursul-s20-fall-act4-b-1",
+      "ursul-s20-fall-act8-b-1",
+      "ursul-s20-fall-act11-b-1",
+      "ursul-s20-adl-act13-b-1",
+      "ursul-s20-adl-act16-b-1",
+      "ursul-s20-adl-act22-b-1",
+      "ursul-s20-adl-act25-b-1",
+      "uma-adl-bending",
+      "uma-adl-climbing-stairs-down",
+      "uma-adl-climbing-stairs-up",
+      "uma-adl-hopping",
+      "uma-adl-jogging",
+      "uma-adl-sitting-down-and-up-on-from-a-chair",
+      "uma-fall-backwards",
+      "uma-fall-forward",
+      "uma-fall-lateral"
+    ],
+    "seed": 51107,
+    "supervisedSamples": 7239,
+    "training": "Native per-joint positions/masks at four causal times; observed hip motion; horizontal mirror augmentation; strong labels only; no imputed poses",
+    "selection": "Prefer strictly fewer misses AND false-warning clips than prior on development, with no increase in early warnings; required named regressions; otherwise diagnostic candidate only",
+    "excluded": "All cycle3/4 and EDF footage excluded from fitting and selection"
+  },
+  "deploy": false
+}

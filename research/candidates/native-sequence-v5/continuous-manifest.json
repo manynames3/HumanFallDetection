@@ -1,0 +1,791 @@
+{
+  "dataset": "EDF continuous RGB, all five subjects and two physical camera views",
+  "source": "https://zenodo.org/records/15494102",
+  "license": "CC BY 4.0",
+  "attribution": "Zhang, Zhong; Conly, Christopher; Athitsos, Vassilis (2014/2025)",
+  "samplingHz": 18,
+  "annotationSha256": "9bea0937f7d6abe36cb2efcd99a0388cf54f9f208f8474ea061061ff578733e9",
+  "centralSha256": "448b741085fb76dc5fdd29160fd67b78e5f13d73efa5b1cb2078dff4fadbb1e0",
+  "clips": [
+    {
+      "id": "edf-jianjun-view1",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view1",
+      "label": "fall",
+      "split": "external",
+      "path": "EDF/metadata/EDF/EDF/jianjun/jianjun/view1/rgb/jianjun_view1_rgb.mp4",
+      "url": "/tests/fixtures/generated/video-benchmark/EDF/metadata/EDF/EDF/jianjun/jianjun/view1/rgb/jianjun_view1_rgb.mp4",
+      "sha256": "e3f7d8f65bde887d35966109686f72844f42fdb4aaee790f9de7179385070738",
+      "sourceMember": "EDF/EDF/jianjun/jianjun/view1/rgb/jianjun_view1_rgb.mp4",
+      "sourceUrl": "https://zenodo.org/records/15494102",
+      "duration": 159.5,
+      "nativeFrames": 4785,
+      "sourceFps": 30,
+      "width": 320,
+      "height": 240,
+      "fallStart": 35.6,
+      "fallEnd": 116.86666666666666,
+      "events": [
+        {
+          "id": "jianjun_view1-fall-1",
+          "start": 35.6,
+          "processEnd": 36.53333333333333,
+          "sourceStartFrame": 1069,
+          "sourceEndFrame": 1097
+        },
+        {
+          "id": "jianjun_view1-fall-2",
+          "start": 44.5,
+          "processEnd": 45.766666666666666,
+          "sourceStartFrame": 1336,
+          "sourceEndFrame": 1374
+        },
+        {
+          "id": "jianjun_view1-fall-3",
+          "start": 55.43333333333333,
+          "processEnd": 57.1,
+          "sourceStartFrame": 1664,
+          "sourceEndFrame": 1714
+        },
+        {
+          "id": "jianjun_view1-fall-4",
+          "start": 68.43333333333334,
+          "processEnd": 69.96666666666667,
+          "sourceStartFrame": 2054,
+          "sourceEndFrame": 2100
+        },
+        {
+          "id": "jianjun_view1-fall-5",
+          "start": 82.4,
+          "processEnd": 83.9,
+          "sourceStartFrame": 2473,
+          "sourceEndFrame": 2518
+        },
+        {
+          "id": "jianjun_view1-fall-6",
+          "start": 92.26666666666667,
+          "processEnd": 94.03333333333333,
+          "sourceStartFrame": 2769,
+          "sourceEndFrame": 2822
+        },
+        {
+          "id": "jianjun_view1-fall-7",
+          "start": 105.36666666666666,
+          "processEnd": 107.03333333333333,
+          "sourceStartFrame": 3162,
+          "sourceEndFrame": 3212
+        },
+        {
+          "id": "jianjun_view1-fall-8",
+          "start": 115.03333333333333,
+          "processEnd": 116.86666666666666,
+          "sourceStartFrame": 3452,
+          "sourceEndFrame": 3507
+        }
+      ],
+      "sourceAnnotation": "Author fall-process frame ranges; 1-based contiguous RGB frames verified against original BIN sequence. Complete recording, no artificial concatenation."
+    },
+    {
+      "id": "edf-jianjun-view2",
+      "subject": "edf-jianjun",
+      "camera": "edf-kinect-view2",
+      "label": "fall",
+      "split": "external",
+      "path": "EDF/metadata/EDF/EDF/jianjun/jianjun/view2/rgb/jianjun_view2_rgb.mp4",
+      "url": "/tests/fixtures/generated/video-benchmark/EDF/metadata/EDF/EDF/jianjun/jianjun/view2/rgb/jianjun_view2_rgb.mp4",
+      "sha256": "efbffdf50251e706f65f1bc41fab74465299c8b3d90585c0cd5445c0117eb889",
+      "sourceMember": "EDF/EDF/jianjun/jianjun/view2/rgb/jianjun_view2_rgb.mp4",
+      "sourceUrl": "https://zenodo.org/records/15494102",
+      "duration": 148.766667,
+      "nativeFrames": 4463,
+      "sourceFps": 30,
+      "width": 320,
+      "height": 240,
+      "fallStart": 29.8,
+      "fallEnd": 110.76666666666667,
+      "events": [
+        {
+          "id": "jianjun_view2-fall-1",
+          "start": 29.8,
+          "processEnd": 31.3,
+          "sourceStartFrame": 895,
+          "sourceEndFrame": 940
+        },
+        {
+          "id": "jianjun_view2-fall-2",
+          "start": 38.93333333333333,
+          "processEnd": 40.43333333333333,
+          "sourceStartFrame": 1169,
+          "sourceEndFrame": 1214
+        },
+        {
+          "id": "jianjun_view2-fall-3",
+          "start": 49.96666666666667,
+          "processEnd": 51.8,
+          "sourceStartFrame": 1500,
+          "sourceEndFrame": 1555
+        },
+        {
+          "id": "jianjun_view2-fall-4",
+          "start": 62.93333333333333,
+          "processEnd": 64.46666666666667,
+          "sourceStartFrame": 1889,
+          "sourceEndFrame": 1935
+        },
+        {
+          "id": "jianjun_view2-fall-5",
+          "start": 76.3,
+          "processEnd": 77.8,
+          "sourceStartFrame": 2290,
+          "sourceEndFrame": 2335
+        },
+        {
+          "id": "jianjun_view2-fall-6",
+          "start": 86.06666666666666,
+          "processEnd": 88.1,
+          "sourceStartFrame": 2583,
+          "sourceEndFrame": 2644
+        },
+        {
+          "id": "jianjun_view2-fall-7",
+          "start": 99.23333333333333,
+          "processEnd": 101.03333333333333,
+          "sourceStartFrame": 2978,
+          "sourceEndFrame": 3032
+        },
+        {
+          "id": "jianjun_view2-fall-8",
+          "start": 109.1,
+          "processEnd": 110.76666666666667,
+          "sourceStartFrame": 3274,
+          "sourceEndFrame": 3324
+        }
+      ],
+      "sourceAnnotation": "Author fall-process frame ranges; 1-based contiguous RGB frames verified against original BIN sequence. Complete recording, no artificial concatenation."
+    },
+    {
+      "id": "edf-jinhui-view1",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view1",
+      "label": "fall",
+      "split": "external",
+      "path": "EDF/metadata/EDF/EDF/jinhui/jinhui/view1/rgb/jinhui_view1_rgb.mp4",
+      "url": "/tests/fixtures/generated/video-benchmark/EDF/metadata/EDF/EDF/jinhui/jinhui/view1/rgb/jinhui_view1_rgb.mp4",
+      "sha256": "0dddccb358ae263ef31cd6c457a29ba144172b30b8ff810d39e8a67784ad5515",
+      "sourceMember": "EDF/EDF/jinhui/jinhui/view1/rgb/jinhui_view1_rgb.mp4",
+      "sourceUrl": "https://zenodo.org/records/15494102",
+      "duration": 148.6,
+      "nativeFrames": 4458,
+      "sourceFps": 30,
+      "width": 320,
+      "height": 240,
+      "fallStart": 22.5,
+      "fallEnd": 98.5,
+      "events": [
+        {
+          "id": "jinhui_view1-fall-1",
+          "start": 22.5,
+          "processEnd": 24.6,
+          "sourceStartFrame": 676,
+          "sourceEndFrame": 739
+        },
+        {
+          "id": "jinhui_view1-fall-2",
+          "start": 32.8,
+          "processEnd": 34.6,
+          "sourceStartFrame": 985,
+          "sourceEndFrame": 1039
+        },
+        {
+          "id": "jinhui_view1-fall-3",
+          "start": 42.93333333333333,
+          "processEnd": 44.96666666666667,
+          "sourceStartFrame": 1289,
+          "sourceEndFrame": 1350
+        },
+        {
+          "id": "jinhui_view1-fall-4",
+          "start": 52.266666666666666,
+          "processEnd": 54.06666666666667,
+          "sourceStartFrame": 1569,
+          "sourceEndFrame": 1623
+        },
+        {
+          "id": "jinhui_view1-fall-5",
+          "start": 66.13333333333334,
+          "processEnd": 67.83333333333333,
+          "sourceStartFrame": 1985,
+          "sourceEndFrame": 2036
+        },
+        {
+          "id": "jinhui_view1-fall-6",
+          "start": 76.56666666666666,
+          "processEnd": 78.33333333333333,
+          "sourceStartFrame": 2298,
+          "sourceEndFrame": 2351
+        },
+        {
+          "id": "jinhui_view1-fall-7",
+          "start": 87.73333333333333,
+          "processEnd": 89.63333333333334,
+          "sourceStartFrame": 2633,
+          "sourceEndFrame": 2690
+        },
+        {
+          "id": "jinhui_view1-fall-8",
+          "start": 96.73333333333333,
+          "processEnd": 98.5,
+          "sourceStartFrame": 2903,
+          "sourceEndFrame": 2956
+        }
+      ],
+      "sourceAnnotation": "Author fall-process frame ranges; 1-based contiguous RGB frames verified against original BIN sequence. Complete recording, no artificial concatenation."
+    },
+    {
+      "id": "edf-jinhui-view2",
+      "subject": "edf-jinhui",
+      "camera": "edf-kinect-view2",
+      "label": "fall",
+      "split": "external",
+      "path": "EDF/metadata/EDF/EDF/jinhui/jinhui/view2/rgb/jinhui_view2_rgb.mp4",
+      "url": "/tests/fixtures/generated/video-benchmark/EDF/metadata/EDF/EDF/jinhui/jinhui/view2/rgb/jinhui_view2_rgb.mp4",
+      "sha256": "e1faf50136193c2e596a68de2ca10916f0ddfe00e8eda608d9c203ca325bd3de",
+      "sourceMember": "EDF/EDF/jinhui/jinhui/view2/rgb/jinhui_view2_rgb.mp4",
+      "sourceUrl": "https://zenodo.org/records/15494102",
+      "duration": 146.266667,
+      "nativeFrames": 4388,
+      "sourceFps": 30,
+      "width": 320,
+      "height": 240,
+      "fallStart": 27.666666666666668,
+      "fallEnd": 102.4,
+      "events": [
+        {
+          "id": "jinhui_view2-fall-1",
+          "start": 27.666666666666668,
+          "processEnd": 29.466666666666665,
+          "sourceStartFrame": 831,
+          "sourceEndFrame": 885
+        },
+        {
+          "id": "jinhui_view2-fall-2",
+          "start": 37.6,
+          "processEnd": 39.833333333333336,
+          "sourceStartFrame": 1129,
+          "sourceEndFrame": 1196
+        },
+        {
+          "id": "jinhui_view2-fall-3",
+          "start": 47.8,
+          "processEnd": 49.8,
+          "sourceStartFrame": 1435,
+          "sourceEndFrame": 1495
+        },
+        {
+          "id": "jinhui_view2-fall-4",
+          "start": 57.06666666666667,
+          "processEnd": 58.766666666666666,
+          "sourceStartFrame": 1713,
+          "sourceEndFrame": 1764
+        },
+        {
+          "id": "jinhui_view2-fall-5",
+          "start": 69.86666666666666,
+          "processEnd": 72,
+          "sourceStartFrame": 2097,
+          "sourceEndFrame": 2161
+        },
+        {
+          "id": "jinhui_view2-fall-6",
+          "start": 80.5,
+          "processEnd": 82.5,
+          "sourceStartFrame": 2416,
+          "sourceEndFrame": 2476
+        },
+        {
+          "id": "jinhui_view2-fall-7",
+          "start": 91.8,
+          "processEnd": 93.7,
+          "sourceStartFrame": 2755,
+          "sourceEndFrame": 2812
+        },
+        {
+          "id": "jinhui_view2-fall-8",
+          "start": 100.43333333333334,
+          "processEnd": 102.4,
+          "sourceStartFrame": 3014,
+          "sourceEndFrame": 3073
+        }
+      ],
+      "sourceAnnotation": "Author fall-process frame ranges; 1-based contiguous RGB frames verified against original BIN sequence. Complete recording, no artificial concatenation."
+    },
+    {
+      "id": "edf-peter-view1",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view1",
+      "label": "fall",
+      "split": "external",
+      "path": "EDF/metadata/EDF/EDF/peter/peter/view1/rgb/peter_view1_rgb.mp4",
+      "url": "/tests/fixtures/generated/video-benchmark/EDF/metadata/EDF/EDF/peter/peter/view1/rgb/peter_view1_rgb.mp4",
+      "sha256": "7765a9dbfb67b90130a7e5035d0ce14be41ab990113094c997f96bdb6b9225ec",
+      "sourceMember": "EDF/EDF/peter/peter/view1/rgb/peter_view1_rgb.mp4",
+      "sourceUrl": "https://zenodo.org/records/15494102",
+      "duration": 225,
+      "nativeFrames": 6750,
+      "sourceFps": 30,
+      "width": 320,
+      "height": 240,
+      "fallStart": 34.666666666666664,
+      "fallEnd": 159.2,
+      "events": [
+        {
+          "id": "peter_view1-fall-1",
+          "start": 34.666666666666664,
+          "processEnd": 36.3,
+          "sourceStartFrame": 1041,
+          "sourceEndFrame": 1090
+        },
+        {
+          "id": "peter_view1-fall-2",
+          "start": 45.3,
+          "processEnd": 47.3,
+          "sourceStartFrame": 1360,
+          "sourceEndFrame": 1420
+        },
+        {
+          "id": "peter_view1-fall-3",
+          "start": 57.36666666666667,
+          "processEnd": 59.233333333333334,
+          "sourceStartFrame": 1722,
+          "sourceEndFrame": 1778
+        },
+        {
+          "id": "peter_view1-fall-4",
+          "start": 68.46666666666667,
+          "processEnd": 70.43333333333334,
+          "sourceStartFrame": 2055,
+          "sourceEndFrame": 2114
+        },
+        {
+          "id": "peter_view1-fall-5",
+          "start": 101.83333333333333,
+          "processEnd": 103.3,
+          "sourceStartFrame": 3056,
+          "sourceEndFrame": 3100
+        },
+        {
+          "id": "peter_view1-fall-6",
+          "start": 112.63333333333334,
+          "processEnd": 114.13333333333334,
+          "sourceStartFrame": 3380,
+          "sourceEndFrame": 3425
+        },
+        {
+          "id": "peter_view1-fall-7",
+          "start": 145.06666666666666,
+          "processEnd": 147.2,
+          "sourceStartFrame": 4353,
+          "sourceEndFrame": 4417
+        },
+        {
+          "id": "peter_view1-fall-8",
+          "start": 157.4,
+          "processEnd": 159.2,
+          "sourceStartFrame": 4723,
+          "sourceEndFrame": 4777
+        }
+      ],
+      "sourceAnnotation": "Author fall-process frame ranges; 1-based contiguous RGB frames verified against original BIN sequence. Complete recording, no artificial concatenation."
+    },
+    {
+      "id": "edf-peter-view2",
+      "subject": "edf-peter",
+      "camera": "edf-kinect-view2",
+      "label": "fall",
+      "split": "external",
+      "path": "EDF/metadata/EDF/EDF/peter/peter/view2/rgb/peter_view2_rgb.mp4",
+      "url": "/tests/fixtures/generated/video-benchmark/EDF/metadata/EDF/EDF/peter/peter/view2/rgb/peter_view2_rgb.mp4",
+      "sha256": "c33a9e92d69584f1c1834686adcdf14e862425d1aec8106fc3428fd3167ac6f0",
+      "sourceMember": "EDF/EDF/peter/peter/view2/rgb/peter_view2_rgb.mp4",
+      "sourceUrl": "https://zenodo.org/records/15494102",
+      "duration": 209.433333,
+      "nativeFrames": 6283,
+      "sourceFps": 30,
+      "width": 320,
+      "height": 240,
+      "fallStart": 12.933333333333334,
+      "fallEnd": 137.36666666666667,
+      "events": [
+        {
+          "id": "peter_view2-fall-1",
+          "start": 12.933333333333334,
+          "processEnd": 14.4,
+          "sourceStartFrame": 389,
+          "sourceEndFrame": 433
+        },
+        {
+          "id": "peter_view2-fall-2",
+          "start": 23.733333333333334,
+          "processEnd": 25.466666666666665,
+          "sourceStartFrame": 713,
+          "sourceEndFrame": 765
+        },
+        {
+          "id": "peter_view2-fall-3",
+          "start": 35.7,
+          "processEnd": 37.3,
+          "sourceStartFrame": 1072,
+          "sourceEndFrame": 1120
+        },
+        {
+          "id": "peter_view2-fall-4",
+          "start": 46.96666666666667,
+          "processEnd": 48.46666666666667,
+          "sourceStartFrame": 1410,
+          "sourceEndFrame": 1455
+        },
+        {
+          "id": "peter_view2-fall-5",
+          "start": 80.13333333333334,
+          "processEnd": 81.5,
+          "sourceStartFrame": 2405,
+          "sourceEndFrame": 2446
+        },
+        {
+          "id": "peter_view2-fall-6",
+          "start": 90.5,
+          "processEnd": 92.13333333333334,
+          "sourceStartFrame": 2716,
+          "sourceEndFrame": 2765
+        },
+        {
+          "id": "peter_view2-fall-7",
+          "start": 123.56666666666666,
+          "processEnd": 125.66666666666667,
+          "sourceStartFrame": 3708,
+          "sourceEndFrame": 3771
+        },
+        {
+          "id": "peter_view2-fall-8",
+          "start": 135.4,
+          "processEnd": 137.36666666666667,
+          "sourceStartFrame": 4063,
+          "sourceEndFrame": 4122
+        }
+      ],
+      "sourceAnnotation": "Author fall-process frame ranges; 1-based contiguous RGB frames verified against original BIN sequence. Complete recording, no artificial concatenation."
+    },
+    {
+      "id": "edf-songsong-view1",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view1",
+      "label": "fall",
+      "split": "external",
+      "path": "EDF/metadata/EDF/EDF/songsong/songsong/view1/rgb/songsong_view1_rgb.mp4",
+      "url": "/tests/fixtures/generated/video-benchmark/EDF/metadata/EDF/EDF/songsong/songsong/view1/rgb/songsong_view1_rgb.mp4",
+      "sha256": "9ce35dbd4fdce45658d58f1c3ca42dfabeeb5b140841a94871142ee81c9b80e2",
+      "sourceMember": "EDF/EDF/songsong/songsong/view1/rgb/songsong_view1_rgb.mp4",
+      "sourceUrl": "https://zenodo.org/records/15494102",
+      "duration": 122.466667,
+      "nativeFrames": 3674,
+      "sourceFps": 30,
+      "width": 320,
+      "height": 240,
+      "fallStart": 13.1,
+      "fallEnd": 74.16666666666667,
+      "events": [
+        {
+          "id": "songsong_view1-fall-1",
+          "start": 13.1,
+          "processEnd": 14.733333333333333,
+          "sourceStartFrame": 394,
+          "sourceEndFrame": 443
+        },
+        {
+          "id": "songsong_view1-fall-2",
+          "start": 20.333333333333332,
+          "processEnd": 22.066666666666666,
+          "sourceStartFrame": 611,
+          "sourceEndFrame": 663
+        },
+        {
+          "id": "songsong_view1-fall-3",
+          "start": 29.433333333333334,
+          "processEnd": 31.2,
+          "sourceStartFrame": 884,
+          "sourceEndFrame": 937
+        },
+        {
+          "id": "songsong_view1-fall-4",
+          "start": 37.36666666666667,
+          "processEnd": 39.1,
+          "sourceStartFrame": 1122,
+          "sourceEndFrame": 1174
+        },
+        {
+          "id": "songsong_view1-fall-5",
+          "start": 47.9,
+          "processEnd": 49.6,
+          "sourceStartFrame": 1438,
+          "sourceEndFrame": 1489
+        },
+        {
+          "id": "songsong_view1-fall-6",
+          "start": 55.46666666666667,
+          "processEnd": 57,
+          "sourceStartFrame": 1665,
+          "sourceEndFrame": 1711
+        },
+        {
+          "id": "songsong_view1-fall-7",
+          "start": 65.36666666666666,
+          "processEnd": 66.96666666666667,
+          "sourceStartFrame": 1962,
+          "sourceEndFrame": 2010
+        },
+        {
+          "id": "songsong_view1-fall-8",
+          "start": 72.6,
+          "processEnd": 74.16666666666667,
+          "sourceStartFrame": 2179,
+          "sourceEndFrame": 2226
+        }
+      ],
+      "sourceAnnotation": "Author fall-process frame ranges; 1-based contiguous RGB frames verified against original BIN sequence. Complete recording, no artificial concatenation."
+    },
+    {
+      "id": "edf-songsong-view2",
+      "subject": "edf-songsong",
+      "camera": "edf-kinect-view2",
+      "label": "fall",
+      "split": "external",
+      "path": "EDF/metadata/EDF/EDF/songsong/songsong/view2/rgb/songsong_view2_rgb.mp4",
+      "url": "/tests/fixtures/generated/video-benchmark/EDF/metadata/EDF/EDF/songsong/songsong/view2/rgb/songsong_view2_rgb.mp4",
+      "sha256": "eb1a6e35f40ac249af99858da060682ce44b5a513b1487fd323ee03dfe4d5e83",
+      "sourceMember": "EDF/EDF/songsong/songsong/view2/rgb/songsong_view2_rgb.mp4",
+      "sourceUrl": "https://zenodo.org/records/15494102",
+      "duration": 121.866667,
+      "nativeFrames": 3656,
+      "sourceFps": 30,
+      "width": 320,
+      "height": 240,
+      "fallStart": 18.433333333333334,
+      "fallEnd": 78.93333333333334,
+      "events": [
+        {
+          "id": "songsong_view2-fall-1",
+          "start": 18.433333333333334,
+          "processEnd": 20.2,
+          "sourceStartFrame": 554,
+          "sourceEndFrame": 607
+        },
+        {
+          "id": "songsong_view2-fall-2",
+          "start": 25.666666666666668,
+          "processEnd": 27.5,
+          "sourceStartFrame": 771,
+          "sourceEndFrame": 826
+        },
+        {
+          "id": "songsong_view2-fall-3",
+          "start": 34.56666666666667,
+          "processEnd": 36.4,
+          "sourceStartFrame": 1038,
+          "sourceEndFrame": 1093
+        },
+        {
+          "id": "songsong_view2-fall-4",
+          "start": 42.53333333333333,
+          "processEnd": 44.166666666666664,
+          "sourceStartFrame": 1277,
+          "sourceEndFrame": 1326
+        },
+        {
+          "id": "songsong_view2-fall-5",
+          "start": 53,
+          "processEnd": 54.6,
+          "sourceStartFrame": 1591,
+          "sourceEndFrame": 1639
+        },
+        {
+          "id": "songsong_view2-fall-6",
+          "start": 60.43333333333333,
+          "processEnd": 61.93333333333333,
+          "sourceStartFrame": 1814,
+          "sourceEndFrame": 1859
+        },
+        {
+          "id": "songsong_view2-fall-7",
+          "start": 70.03333333333333,
+          "processEnd": 71.7,
+          "sourceStartFrame": 2102,
+          "sourceEndFrame": 2152
+        },
+        {
+          "id": "songsong_view2-fall-8",
+          "start": 77.3,
+          "processEnd": 78.93333333333334,
+          "sourceStartFrame": 2320,
+          "sourceEndFrame": 2369
+        }
+      ],
+      "sourceAnnotation": "Author fall-process frame ranges; 1-based contiguous RGB frames verified against original BIN sequence. Complete recording, no artificial concatenation."
+    },
+    {
+      "id": "edf-zhong-view1",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view1",
+      "label": "fall",
+      "split": "external",
+      "path": "EDF/metadata/EDF/EDF/zhong/zhong/view1/rgb/zhong_view1_rgb.mp4",
+      "url": "/tests/fixtures/generated/video-benchmark/EDF/metadata/EDF/EDF/zhong/zhong/view1/rgb/zhong_view1_rgb.mp4",
+      "sha256": "51e2ed5ca1f99b896ea812a3f2aab283ec39bfb9f116e939ca41405e2de63f59",
+      "sourceMember": "EDF/EDF/zhong/zhong/view1/rgb/zhong_view1_rgb.mp4",
+      "sourceUrl": "https://zenodo.org/records/15494102",
+      "duration": 207.133333,
+      "nativeFrames": 6214,
+      "sourceFps": 30,
+      "width": 320,
+      "height": 240,
+      "fallStart": 32.166666666666664,
+      "fallEnd": 169.43333333333334,
+      "events": [
+        {
+          "id": "zhong_view1-fall-1",
+          "start": 32.166666666666664,
+          "processEnd": 33.7,
+          "sourceStartFrame": 966,
+          "sourceEndFrame": 1012
+        },
+        {
+          "id": "zhong_view1-fall-2",
+          "start": 45.36666666666667,
+          "processEnd": 46.86666666666667,
+          "sourceStartFrame": 1362,
+          "sourceEndFrame": 1407
+        },
+        {
+          "id": "zhong_view1-fall-3",
+          "start": 60.3,
+          "processEnd": 62.03333333333333,
+          "sourceStartFrame": 1810,
+          "sourceEndFrame": 1862
+        },
+        {
+          "id": "zhong_view1-fall-4",
+          "start": 79.6,
+          "processEnd": 81.43333333333334,
+          "sourceStartFrame": 2389,
+          "sourceEndFrame": 2444
+        },
+        {
+          "id": "zhong_view1-fall-5",
+          "start": 108.73333333333333,
+          "processEnd": 110.23333333333333,
+          "sourceStartFrame": 3263,
+          "sourceEndFrame": 3308
+        },
+        {
+          "id": "zhong_view1-fall-6",
+          "start": 122.96666666666667,
+          "processEnd": 124.7,
+          "sourceStartFrame": 3690,
+          "sourceEndFrame": 3742
+        },
+        {
+          "id": "zhong_view1-fall-7",
+          "start": 154.06666666666666,
+          "processEnd": 155.46666666666667,
+          "sourceStartFrame": 4623,
+          "sourceEndFrame": 4665
+        },
+        {
+          "id": "zhong_view1-fall-8",
+          "start": 167.9,
+          "processEnd": 169.43333333333334,
+          "sourceStartFrame": 5038,
+          "sourceEndFrame": 5084
+        }
+      ],
+      "sourceAnnotation": "Author fall-process frame ranges; 1-based contiguous RGB frames verified against original BIN sequence. Complete recording, no artificial concatenation."
+    },
+    {
+      "id": "edf-zhong-view2",
+      "subject": "edf-zhong",
+      "camera": "edf-kinect-view2",
+      "label": "fall",
+      "split": "external",
+      "path": "EDF/metadata/EDF/EDF/zhong/zhong/view2/rgb/zhong_view2_rgb.mp4",
+      "url": "/tests/fixtures/generated/video-benchmark/EDF/metadata/EDF/EDF/zhong/zhong/view2/rgb/zhong_view2_rgb.mp4",
+      "sha256": "c0dd179367592b57dc88aaf0470d74533cfca24c3ce7291fe64b2c8c83e5af2b",
+      "sourceMember": "EDF/EDF/zhong/zhong/view2/rgb/zhong_view2_rgb.mp4",
+      "sourceUrl": "https://zenodo.org/records/15494102",
+      "duration": 202.333333,
+      "nativeFrames": 6070,
+      "sourceFps": 30,
+      "width": 320,
+      "height": 240,
+      "fallStart": 32.333333333333336,
+      "fallEnd": 168.33333333333334,
+      "events": [
+        {
+          "id": "zhong_view2-fall-1",
+          "start": 32.333333333333336,
+          "processEnd": 33.96666666666667,
+          "sourceStartFrame": 971,
+          "sourceEndFrame": 1020
+        },
+        {
+          "id": "zhong_view2-fall-2",
+          "start": 45.6,
+          "processEnd": 47.166666666666664,
+          "sourceStartFrame": 1369,
+          "sourceEndFrame": 1416
+        },
+        {
+          "id": "zhong_view2-fall-3",
+          "start": 60.666666666666664,
+          "processEnd": 62.3,
+          "sourceStartFrame": 1821,
+          "sourceEndFrame": 1870
+        },
+        {
+          "id": "zhong_view2-fall-4",
+          "start": 79.8,
+          "processEnd": 81.33333333333333,
+          "sourceStartFrame": 2395,
+          "sourceEndFrame": 2441
+        },
+        {
+          "id": "zhong_view2-fall-5",
+          "start": 108.23333333333333,
+          "processEnd": 109.9,
+          "sourceStartFrame": 3248,
+          "sourceEndFrame": 3298
+        },
+        {
+          "id": "zhong_view2-fall-6",
+          "start": 123,
+          "processEnd": 124.63333333333334,
+          "sourceStartFrame": 3691,
+          "sourceEndFrame": 3740
+        },
+        {
+          "id": "zhong_view2-fall-7",
+          "start": 153.4,
+          "processEnd": 154.96666666666667,
+          "sourceStartFrame": 4603,
+          "sourceEndFrame": 4650
+        },
+        {
+          "id": "zhong_view2-fall-8",
+          "start": 166.6,
+          "processEnd": 168.33333333333334,
+          "sourceStartFrame": 4999,
+          "sourceEndFrame": 5051
+        }
+      ],
+      "sourceAnnotation": "Author fall-process frame ranges; 1-based contiguous RGB frames verified against original BIN sequence. Complete recording, no artificial concatenation."
+    }
+  ]
+}

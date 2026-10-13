@@ -1,0 +1,18 @@
+{
+  "modelSha256": "e8b051fd838264f73fab95ba8aa0b6202e4a5e1aff61d456c7f80825979a66b3",
+  "recipeSha256": "97bd0b5c82461f4e01cef9a6a56a4606b44ead1881a35fb15435de210c1b1c50",
+  "evaluationSha256": "4b381eb7c40b278a89feef3e6bdc9e0eed2fd321f453297d6369be03a4c2c33f",
+  "policy": {
+    "windowSeconds": 0.6,
+    "evidenceSeconds": 0.15
+  },
+  "threshold": 0.98,
+  "codeHashes": {
+    "browser/pose-tracker-v6.js": "8f3d3ce5d244dea4b6bbada11137de36f87ffdce6d00b87ecb60adb9090418e3",
+    "tools/video_tcn_v6.mjs": "6080af5d561415d87a523eb8d037dbe5a498bd1a1318edf6987c780917577ca2",
+    "tools/prepare_tcn_cycle6.mjs": "3afe742d733e872e5e65d6f9afe64007e193605b5ba0737dca5d2ce6b821dea1",
+    "tools/train_tcn_cycle6.py": "e30cf804381b630bdf83b19a607efef54573dd7012a90eb233dc79be944781bf",
+    "tools/prepare_tcn_depth_control_v6.mjs": "bc437ab3abdab724416b333dd46d2496ff5cdd30b448ac21471ac0e7eeb38fed"
+  },
+  "deploy": false
+}

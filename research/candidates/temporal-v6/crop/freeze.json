@@ -1,0 +1,34 @@
+{
+  "archiveSha256": "cdf4e2382d6b90f3f172ebb878b81c10baf26d95ea7d1f35cb573e3684977d31",
+  "codeHashes": {
+    "browser/pose-tracker-v6.js": "8f3d3ce5d244dea4b6bbada11137de36f87ffdce6d00b87ecb60adb9090418e3",
+    "tools/video_sequence_v6.mjs": "093557ab974d99e931d5d6622ffc66c0e8da825543eaba678a90b1c7cfb23ade",
+    "tools/evaluate_cropped_cycle6.mjs": "49724010aabbf404887aa0c0b271b2684d338496eecfc3fe61261710b7ced8a5"
+  },
+  "variants": [
+    {
+      "name": "anchored",
+      "mode": "anchored"
+    },
+    {
+      "name": "history-only",
+      "mode": "anchored",
+      "historyOnly": true
+    },
+    {
+      "name": "no-anchor-control",
+      "mode": "unanchored"
+    }
+  ],
+  "policy": {
+    "windowSeconds": 0.6,
+    "evidenceSeconds": 0.15
+  },
+  "constants": {
+    "minimumTorsoFraction": 0.5,
+    "fullFrameAnchorSeconds": 1,
+    "threshold": 0.98
+  },
+  "designation": "Prespecified seen-data repair/ablation; no fitting or threshold selection; reserved Ursul remains unopened until primary passes",
+  "deploy": false
+}

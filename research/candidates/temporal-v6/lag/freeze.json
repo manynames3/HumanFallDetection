@@ -1,0 +1,26 @@
+{
+  "codeHashes": {
+    "browser/pose-tracker-v6.js": "8f3d3ce5d244dea4b6bbada11137de36f87ffdce6d00b87ecb60adb9090418e3",
+    "tools/video_sequence_lag_v6.mjs": "2960afbb3d965783404b861a0e5112dae39c5b7809fd7675db238a72c55d6afe",
+    "tools/evaluate_lag_cycle6.mjs": "aa1c556d2a9249a0683fff14bb79a5404aa1d81973863a1d2c14debb52c0ad90"
+  },
+  "variants": [
+    {
+      "name": "lag-only",
+      "mode": "strict",
+      "repairLag": true
+    },
+    {
+      "name": "anchored-plus-lag",
+      "mode": "anchored",
+      "repairLag": true
+    }
+  ],
+  "policy": {
+    "windowSeconds": 0.6,
+    "evidenceSeconds": 0.15
+  },
+  "lagRule": "Latest actual same-track observation at or before target lag; age < min(.12s, one observed frame period); no interpolation/current missing evidence",
+  "archiveSha256": "cdf4e2382d6b90f3f172ebb878b81c10baf26d95ea7d1f35cb573e3684977d31",
+  "deploy": false
+}

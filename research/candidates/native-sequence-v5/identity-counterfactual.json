@@ -1,0 +1,1877 @@
+{
+  "createdAt": "2026-10-13T08:16:19.118Z",
+  "modelSha256": "6fb1b556903633862710960fe2872def1b748488109873c86048282d0b83ec37",
+  "aggregate": {
+    "ordinaryIds": {
+      "events": 80,
+      "missed": 45,
+      "falseEpisodes": 13,
+      "normalWarningSeconds": 46.05555555555556
+    },
+    "constantId": {
+      "events": 80,
+      "missed": 44,
+      "falseEpisodes": 14,
+      "normalWarningSeconds": 46.94444444444444
+    }
+  },
+  "groups": [
+    {
+      "id": "edf-jianjun-view1",
+      "ordinaryIds": {
+        "events": 8,
+        "detected": 5,
+        "missed": 3,
+        "duringProcess": 5,
+        "falseEpisodes": 2,
+        "normalSeconds": 62.23333333333332,
+        "normalWarningSeconds": 5,
+        "alertEpisodes": 7,
+        "detections": [
+          {
+            "id": "jianjun_view1-fall-1",
+            "start": 35.6,
+            "processEnd": 36.53333333333333,
+            "detected": true,
+            "warningAt": 36.44444444444444,
+            "latency": 0.8444444444444414,
+            "duringProcess": true
+          },
+          {
+            "id": "jianjun_view1-fall-2",
+            "start": 44.5,
+            "processEnd": 45.766666666666666,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jianjun_view1-fall-3",
+            "start": 55.43333333333333,
+            "processEnd": 57.1,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jianjun_view1-fall-4",
+            "start": 68.43333333333334,
+            "processEnd": 69.96666666666667,
+            "detected": true,
+            "warningAt": 69.38888888888889,
+            "latency": 0.9555555555555486,
+            "duringProcess": true
+          },
+          {
+            "id": "jianjun_view1-fall-5",
+            "start": 82.4,
+            "processEnd": 83.9,
+            "detected": true,
+            "warningAt": 83.38888888888889,
+            "latency": 0.98888888888888,
+            "duringProcess": true
+          },
+          {
+            "id": "jianjun_view1-fall-6",
+            "start": 92.26666666666667,
+            "processEnd": 94.03333333333333,
+            "detected": true,
+            "warningAt": 93.38888888888889,
+            "latency": 1.12222222222222,
+            "duringProcess": true
+          },
+          {
+            "id": "jianjun_view1-fall-7",
+            "start": 105.36666666666666,
+            "processEnd": 107.03333333333333,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jianjun_view1-fall-8",
+            "start": 115.03333333333333,
+            "processEnd": 116.86666666666666,
+            "detected": true,
+            "warningAt": 116.33333333333333,
+            "latency": 1.2999999999999972,
+            "duringProcess": true
+          }
+        ],
+        "falseEpisodeStarts": [
+          128.16666666666666,
+          141.55555555555554
+        ],
+        "unmatchedEpisodeStarts": [
+          128.16666666666666,
+          141.55555555555554
+        ]
+      },
+      "constantId": {
+        "events": 8,
+        "detected": 5,
+        "missed": 3,
+        "duringProcess": 5,
+        "falseEpisodes": 2,
+        "normalSeconds": 62.23333333333332,
+        "normalWarningSeconds": 5,
+        "alertEpisodes": 7,
+        "detections": [
+          {
+            "id": "jianjun_view1-fall-1",
+            "start": 35.6,
+            "processEnd": 36.53333333333333,
+            "detected": true,
+            "warningAt": 36.44444444444444,
+            "latency": 0.8444444444444414,
+            "duringProcess": true
+          },
+          {
+            "id": "jianjun_view1-fall-2",
+            "start": 44.5,
+            "processEnd": 45.766666666666666,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jianjun_view1-fall-3",
+            "start": 55.43333333333333,
+            "processEnd": 57.1,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jianjun_view1-fall-4",
+            "start": 68.43333333333334,
+            "processEnd": 69.96666666666667,
+            "detected": true,
+            "warningAt": 69.38888888888889,
+            "latency": 0.9555555555555486,
+            "duringProcess": true
+          },
+          {
+            "id": "jianjun_view1-fall-5",
+            "start": 82.4,
+            "processEnd": 83.9,
+            "detected": true,
+            "warningAt": 83.38888888888889,
+            "latency": 0.98888888888888,
+            "duringProcess": true
+          },
+          {
+            "id": "jianjun_view1-fall-6",
+            "start": 92.26666666666667,
+            "processEnd": 94.03333333333333,
+            "detected": true,
+            "warningAt": 93.38888888888889,
+            "latency": 1.12222222222222,
+            "duringProcess": true
+          },
+          {
+            "id": "jianjun_view1-fall-7",
+            "start": 105.36666666666666,
+            "processEnd": 107.03333333333333,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jianjun_view1-fall-8",
+            "start": 115.03333333333333,
+            "processEnd": 116.86666666666666,
+            "detected": true,
+            "warningAt": 116.33333333333333,
+            "latency": 1.2999999999999972,
+            "duringProcess": true
+          }
+        ],
+        "falseEpisodeStarts": [
+          128.16666666666666,
+          141.55555555555554
+        ],
+        "unmatchedEpisodeStarts": [
+          128.16666666666666,
+          141.55555555555554
+        ]
+      }
+    },
+    {
+      "id": "edf-jianjun-view2",
+      "ordinaryIds": {
+        "events": 8,
+        "detected": 3,
+        "missed": 5,
+        "duringProcess": 3,
+        "falseEpisodes": 1,
+        "normalSeconds": 51.80000033333336,
+        "normalWarningSeconds": 0.8888888888888888,
+        "alertEpisodes": 4,
+        "detections": [
+          {
+            "id": "jianjun_view2-fall-1",
+            "start": 29.8,
+            "processEnd": 31.3,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jianjun_view2-fall-2",
+            "start": 38.93333333333333,
+            "processEnd": 40.43333333333333,
+            "detected": true,
+            "warningAt": 39.77777777777778,
+            "latency": 0.8444444444444485,
+            "duringProcess": true
+          },
+          {
+            "id": "jianjun_view2-fall-3",
+            "start": 49.96666666666667,
+            "processEnd": 51.8,
+            "detected": true,
+            "warningAt": 50.833333333333336,
+            "latency": 0.8666666666666671,
+            "duringProcess": true
+          },
+          {
+            "id": "jianjun_view2-fall-4",
+            "start": 62.93333333333333,
+            "processEnd": 64.46666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jianjun_view2-fall-5",
+            "start": 76.3,
+            "processEnd": 77.8,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jianjun_view2-fall-6",
+            "start": 86.06666666666666,
+            "processEnd": 88.1,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jianjun_view2-fall-7",
+            "start": 99.23333333333333,
+            "processEnd": 101.03333333333333,
+            "detected": true,
+            "warningAt": 100.22222222222223,
+            "latency": 0.9888888888888943,
+            "duringProcess": true
+          },
+          {
+            "id": "jianjun_view2-fall-8",
+            "start": 109.1,
+            "processEnd": 110.76666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [
+          125.61111111111111
+        ],
+        "unmatchedEpisodeStarts": [
+          125.61111111111111
+        ]
+      },
+      "constantId": {
+        "events": 8,
+        "detected": 3,
+        "missed": 5,
+        "duringProcess": 3,
+        "falseEpisodes": 1,
+        "normalSeconds": 51.80000033333336,
+        "normalWarningSeconds": 0.8888888888888888,
+        "alertEpisodes": 4,
+        "detections": [
+          {
+            "id": "jianjun_view2-fall-1",
+            "start": 29.8,
+            "processEnd": 31.3,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jianjun_view2-fall-2",
+            "start": 38.93333333333333,
+            "processEnd": 40.43333333333333,
+            "detected": true,
+            "warningAt": 39.77777777777778,
+            "latency": 0.8444444444444485,
+            "duringProcess": true
+          },
+          {
+            "id": "jianjun_view2-fall-3",
+            "start": 49.96666666666667,
+            "processEnd": 51.8,
+            "detected": true,
+            "warningAt": 50.833333333333336,
+            "latency": 0.8666666666666671,
+            "duringProcess": true
+          },
+          {
+            "id": "jianjun_view2-fall-4",
+            "start": 62.93333333333333,
+            "processEnd": 64.46666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jianjun_view2-fall-5",
+            "start": 76.3,
+            "processEnd": 77.8,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jianjun_view2-fall-6",
+            "start": 86.06666666666666,
+            "processEnd": 88.1,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jianjun_view2-fall-7",
+            "start": 99.23333333333333,
+            "processEnd": 101.03333333333333,
+            "detected": true,
+            "warningAt": 100.22222222222223,
+            "latency": 0.9888888888888943,
+            "duringProcess": true
+          },
+          {
+            "id": "jianjun_view2-fall-8",
+            "start": 109.1,
+            "processEnd": 110.76666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [
+          125.61111111111111
+        ],
+        "unmatchedEpisodeStarts": [
+          125.61111111111111
+        ]
+      }
+    },
+    {
+      "id": "edf-jinhui-view1",
+      "ordinaryIds": {
+        "events": 8,
+        "detected": 3,
+        "missed": 5,
+        "duringProcess": 3,
+        "falseEpisodes": 2,
+        "normalSeconds": 56.599999999999994,
+        "normalWarningSeconds": 5.5,
+        "alertEpisodes": 6,
+        "detections": [
+          {
+            "id": "jinhui_view1-fall-1",
+            "start": 22.5,
+            "processEnd": 24.6,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view1-fall-2",
+            "start": 32.8,
+            "processEnd": 34.6,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view1-fall-3",
+            "start": 42.93333333333333,
+            "processEnd": 44.96666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view1-fall-4",
+            "start": 52.266666666666666,
+            "processEnd": 54.06666666666667,
+            "detected": true,
+            "warningAt": 53.44444444444444,
+            "latency": 1.1777777777777771,
+            "duringProcess": true
+          },
+          {
+            "id": "jinhui_view1-fall-5",
+            "start": 66.13333333333334,
+            "processEnd": 67.83333333333333,
+            "detected": true,
+            "warningAt": 67,
+            "latency": 0.86666666666666,
+            "duringProcess": true
+          },
+          {
+            "id": "jinhui_view1-fall-6",
+            "start": 76.56666666666666,
+            "processEnd": 78.33333333333333,
+            "detected": true,
+            "warningAt": 77.72222222222223,
+            "latency": 1.1555555555555657,
+            "duringProcess": true
+          },
+          {
+            "id": "jinhui_view1-fall-7",
+            "start": 87.73333333333333,
+            "processEnd": 89.63333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view1-fall-8",
+            "start": 96.73333333333333,
+            "processEnd": 98.5,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [
+          18,
+          123.72222222222223
+        ],
+        "unmatchedEpisodeStarts": [
+          18,
+          108.05555555555556,
+          123.72222222222223
+        ]
+      },
+      "constantId": {
+        "events": 8,
+        "detected": 3,
+        "missed": 5,
+        "duringProcess": 3,
+        "falseEpisodes": 2,
+        "normalSeconds": 56.599999999999994,
+        "normalWarningSeconds": 5.5,
+        "alertEpisodes": 6,
+        "detections": [
+          {
+            "id": "jinhui_view1-fall-1",
+            "start": 22.5,
+            "processEnd": 24.6,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view1-fall-2",
+            "start": 32.8,
+            "processEnd": 34.6,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view1-fall-3",
+            "start": 42.93333333333333,
+            "processEnd": 44.96666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view1-fall-4",
+            "start": 52.266666666666666,
+            "processEnd": 54.06666666666667,
+            "detected": true,
+            "warningAt": 53.44444444444444,
+            "latency": 1.1777777777777771,
+            "duringProcess": true
+          },
+          {
+            "id": "jinhui_view1-fall-5",
+            "start": 66.13333333333334,
+            "processEnd": 67.83333333333333,
+            "detected": true,
+            "warningAt": 67,
+            "latency": 0.86666666666666,
+            "duringProcess": true
+          },
+          {
+            "id": "jinhui_view1-fall-6",
+            "start": 76.56666666666666,
+            "processEnd": 78.33333333333333,
+            "detected": true,
+            "warningAt": 77.72222222222223,
+            "latency": 1.1555555555555657,
+            "duringProcess": true
+          },
+          {
+            "id": "jinhui_view1-fall-7",
+            "start": 87.73333333333333,
+            "processEnd": 89.63333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view1-fall-8",
+            "start": 96.73333333333333,
+            "processEnd": 98.5,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [
+          18,
+          123.72222222222223
+        ],
+        "unmatchedEpisodeStarts": [
+          18,
+          108.05555555555556,
+          123.72222222222223
+        ]
+      }
+    },
+    {
+      "id": "edf-jinhui-view2",
+      "ordinaryIds": {
+        "events": 8,
+        "detected": 3,
+        "missed": 5,
+        "duringProcess": 3,
+        "falseEpisodes": 1,
+        "normalSeconds": 55.533333666666664,
+        "normalWarningSeconds": 3.7777777777777777,
+        "alertEpisodes": 4,
+        "detections": [
+          {
+            "id": "jinhui_view2-fall-1",
+            "start": 27.666666666666668,
+            "processEnd": 29.466666666666665,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view2-fall-2",
+            "start": 37.6,
+            "processEnd": 39.833333333333336,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view2-fall-3",
+            "start": 47.8,
+            "processEnd": 49.8,
+            "detected": true,
+            "warningAt": 48.833333333333336,
+            "latency": 1.0333333333333385,
+            "duringProcess": true
+          },
+          {
+            "id": "jinhui_view2-fall-4",
+            "start": 57.06666666666667,
+            "processEnd": 58.766666666666666,
+            "detected": true,
+            "warningAt": 58.27777777777778,
+            "latency": 1.2111111111111086,
+            "duringProcess": true
+          },
+          {
+            "id": "jinhui_view2-fall-5",
+            "start": 69.86666666666666,
+            "processEnd": 72,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view2-fall-6",
+            "start": 80.5,
+            "processEnd": 82.5,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view2-fall-7",
+            "start": 91.8,
+            "processEnd": 93.7,
+            "detected": true,
+            "warningAt": 93.05555555555556,
+            "latency": 1.25555555555556,
+            "duringProcess": true
+          },
+          {
+            "id": "jinhui_view2-fall-8",
+            "start": 100.43333333333334,
+            "processEnd": 102.4,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [
+          130
+        ],
+        "unmatchedEpisodeStarts": [
+          130
+        ]
+      },
+      "constantId": {
+        "events": 8,
+        "detected": 3,
+        "missed": 5,
+        "duringProcess": 3,
+        "falseEpisodes": 1,
+        "normalSeconds": 55.533333666666664,
+        "normalWarningSeconds": 3.7777777777777777,
+        "alertEpisodes": 4,
+        "detections": [
+          {
+            "id": "jinhui_view2-fall-1",
+            "start": 27.666666666666668,
+            "processEnd": 29.466666666666665,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view2-fall-2",
+            "start": 37.6,
+            "processEnd": 39.833333333333336,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view2-fall-3",
+            "start": 47.8,
+            "processEnd": 49.8,
+            "detected": true,
+            "warningAt": 48.833333333333336,
+            "latency": 1.0333333333333385,
+            "duringProcess": true
+          },
+          {
+            "id": "jinhui_view2-fall-4",
+            "start": 57.06666666666667,
+            "processEnd": 58.766666666666666,
+            "detected": true,
+            "warningAt": 58.27777777777778,
+            "latency": 1.2111111111111086,
+            "duringProcess": true
+          },
+          {
+            "id": "jinhui_view2-fall-5",
+            "start": 69.86666666666666,
+            "processEnd": 72,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view2-fall-6",
+            "start": 80.5,
+            "processEnd": 82.5,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "jinhui_view2-fall-7",
+            "start": 91.8,
+            "processEnd": 93.7,
+            "detected": true,
+            "warningAt": 93.05555555555556,
+            "latency": 1.25555555555556,
+            "duringProcess": true
+          },
+          {
+            "id": "jinhui_view2-fall-8",
+            "start": 100.43333333333334,
+            "processEnd": 102.4,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [
+          130
+        ],
+        "unmatchedEpisodeStarts": [
+          130
+        ]
+      }
+    },
+    {
+      "id": "edf-peter-view1",
+      "ordinaryIds": {
+        "events": 8,
+        "detected": 4,
+        "missed": 4,
+        "duringProcess": 4,
+        "falseEpisodes": 1,
+        "normalSeconds": 84.4666666666667,
+        "normalWarningSeconds": 6.944444444444445,
+        "alertEpisodes": 5,
+        "detections": [
+          {
+            "id": "peter_view1-fall-1",
+            "start": 34.666666666666664,
+            "processEnd": 36.3,
+            "detected": true,
+            "warningAt": 35.388888888888886,
+            "latency": 0.7222222222222214,
+            "duringProcess": true
+          },
+          {
+            "id": "peter_view1-fall-2",
+            "start": 45.3,
+            "processEnd": 47.3,
+            "detected": true,
+            "warningAt": 46.166666666666664,
+            "latency": 0.8666666666666671,
+            "duringProcess": true
+          },
+          {
+            "id": "peter_view1-fall-3",
+            "start": 57.36666666666667,
+            "processEnd": 59.233333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view1-fall-4",
+            "start": 68.46666666666667,
+            "processEnd": 70.43333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view1-fall-5",
+            "start": 101.83333333333333,
+            "processEnd": 103.3,
+            "detected": true,
+            "warningAt": 102.77777777777777,
+            "latency": 0.9444444444444429,
+            "duringProcess": true
+          },
+          {
+            "id": "peter_view1-fall-6",
+            "start": 112.63333333333334,
+            "processEnd": 114.13333333333334,
+            "detected": true,
+            "warningAt": 113.38888888888889,
+            "latency": 0.7555555555555458,
+            "duringProcess": true
+          },
+          {
+            "id": "peter_view1-fall-7",
+            "start": 145.06666666666666,
+            "processEnd": 147.2,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view1-fall-8",
+            "start": 157.4,
+            "processEnd": 159.2,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [
+          200.27777777777777
+        ],
+        "unmatchedEpisodeStarts": [
+          200.27777777777777
+        ]
+      },
+      "constantId": {
+        "events": 8,
+        "detected": 5,
+        "missed": 3,
+        "duringProcess": 4,
+        "falseEpisodes": 2,
+        "normalSeconds": 84.4666666666667,
+        "normalWarningSeconds": 7.055555555555555,
+        "alertEpisodes": 7,
+        "detections": [
+          {
+            "id": "peter_view1-fall-1",
+            "start": 34.666666666666664,
+            "processEnd": 36.3,
+            "detected": true,
+            "warningAt": 35.388888888888886,
+            "latency": 0.7222222222222214,
+            "duringProcess": true
+          },
+          {
+            "id": "peter_view1-fall-2",
+            "start": 45.3,
+            "processEnd": 47.3,
+            "detected": true,
+            "warningAt": 46.166666666666664,
+            "latency": 0.8666666666666671,
+            "duringProcess": true
+          },
+          {
+            "id": "peter_view1-fall-3",
+            "start": 57.36666666666667,
+            "processEnd": 59.233333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view1-fall-4",
+            "start": 68.46666666666667,
+            "processEnd": 70.43333333333334,
+            "detected": true,
+            "warningAt": 73.11111111111111,
+            "latency": 4.644444444444446,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view1-fall-5",
+            "start": 101.83333333333333,
+            "processEnd": 103.3,
+            "detected": true,
+            "warningAt": 102.77777777777777,
+            "latency": 0.9444444444444429,
+            "duringProcess": true
+          },
+          {
+            "id": "peter_view1-fall-6",
+            "start": 112.63333333333334,
+            "processEnd": 114.13333333333334,
+            "detected": true,
+            "warningAt": 113.38888888888889,
+            "latency": 0.7555555555555458,
+            "duringProcess": true
+          },
+          {
+            "id": "peter_view1-fall-7",
+            "start": 145.06666666666666,
+            "processEnd": 147.2,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view1-fall-8",
+            "start": 157.4,
+            "processEnd": 159.2,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [
+          181.11111111111111,
+          200.27777777777777
+        ],
+        "unmatchedEpisodeStarts": [
+          181.11111111111111,
+          200.27777777777777
+        ]
+      }
+    },
+    {
+      "id": "edf-peter-view2",
+      "ordinaryIds": {
+        "events": 8,
+        "detected": 1,
+        "missed": 7,
+        "duringProcess": 1,
+        "falseEpisodes": 1,
+        "normalSeconds": 68.99999966666667,
+        "normalWarningSeconds": 6.777777777777778,
+        "alertEpisodes": 3,
+        "detections": [
+          {
+            "id": "peter_view2-fall-1",
+            "start": 12.933333333333334,
+            "processEnd": 14.4,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view2-fall-2",
+            "start": 23.733333333333334,
+            "processEnd": 25.466666666666665,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view2-fall-3",
+            "start": 35.7,
+            "processEnd": 37.3,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view2-fall-4",
+            "start": 46.96666666666667,
+            "processEnd": 48.46666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view2-fall-5",
+            "start": 80.13333333333334,
+            "processEnd": 81.5,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view2-fall-6",
+            "start": 90.5,
+            "processEnd": 92.13333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view2-fall-7",
+            "start": 123.56666666666666,
+            "processEnd": 125.66666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view2-fall-8",
+            "start": 135.4,
+            "processEnd": 137.36666666666667,
+            "detected": true,
+            "warningAt": 136.77777777777777,
+            "latency": 1.3777777777777658,
+            "duringProcess": true
+          }
+        ],
+        "falseEpisodeStarts": [
+          190
+        ],
+        "unmatchedEpisodeStarts": [
+          60,
+          190
+        ]
+      },
+      "constantId": {
+        "events": 8,
+        "detected": 1,
+        "missed": 7,
+        "duringProcess": 1,
+        "falseEpisodes": 1,
+        "normalSeconds": 68.99999966666667,
+        "normalWarningSeconds": 6.888888888888889,
+        "alertEpisodes": 3,
+        "detections": [
+          {
+            "id": "peter_view2-fall-1",
+            "start": 12.933333333333334,
+            "processEnd": 14.4,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view2-fall-2",
+            "start": 23.733333333333334,
+            "processEnd": 25.466666666666665,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view2-fall-3",
+            "start": 35.7,
+            "processEnd": 37.3,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view2-fall-4",
+            "start": 46.96666666666667,
+            "processEnd": 48.46666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view2-fall-5",
+            "start": 80.13333333333334,
+            "processEnd": 81.5,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view2-fall-6",
+            "start": 90.5,
+            "processEnd": 92.13333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view2-fall-7",
+            "start": 123.56666666666666,
+            "processEnd": 125.66666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "peter_view2-fall-8",
+            "start": 135.4,
+            "processEnd": 137.36666666666667,
+            "detected": true,
+            "warningAt": 136.77777777777777,
+            "latency": 1.3777777777777658,
+            "duringProcess": true
+          }
+        ],
+        "falseEpisodeStarts": [
+          190
+        ],
+        "unmatchedEpisodeStarts": [
+          60,
+          190
+        ]
+      }
+    },
+    {
+      "id": "edf-songsong-view1",
+      "ordinaryIds": {
+        "events": 8,
+        "detected": 4,
+        "missed": 4,
+        "duringProcess": 3,
+        "falseEpisodes": 3,
+        "normalSeconds": 45.400000333333324,
+        "normalWarningSeconds": 8.88888888888889,
+        "alertEpisodes": 8,
+        "detections": [
+          {
+            "id": "songsong_view1-fall-1",
+            "start": 13.1,
+            "processEnd": 14.733333333333333,
+            "detected": true,
+            "warningAt": 15.88888888888889,
+            "latency": 2.7888888888888896,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view1-fall-2",
+            "start": 20.333333333333332,
+            "processEnd": 22.066666666666666,
+            "detected": true,
+            "warningAt": 21.38888888888889,
+            "latency": 1.0555555555555571,
+            "duringProcess": true
+          },
+          {
+            "id": "songsong_view1-fall-3",
+            "start": 29.433333333333334,
+            "processEnd": 31.2,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view1-fall-4",
+            "start": 37.36666666666667,
+            "processEnd": 39.1,
+            "detected": true,
+            "warningAt": 38.333333333333336,
+            "latency": 0.9666666666666686,
+            "duringProcess": true
+          },
+          {
+            "id": "songsong_view1-fall-5",
+            "start": 47.9,
+            "processEnd": 49.6,
+            "detected": true,
+            "warningAt": 49.05555555555556,
+            "latency": 1.1555555555555586,
+            "duringProcess": true
+          },
+          {
+            "id": "songsong_view1-fall-6",
+            "start": 55.46666666666667,
+            "processEnd": 57,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view1-fall-7",
+            "start": 65.36666666666666,
+            "processEnd": 66.96666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view1-fall-8",
+            "start": 72.6,
+            "processEnd": 74.16666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [
+          4.888888888888889,
+          95.22222222222223,
+          121.94444444444444
+        ],
+        "unmatchedEpisodeStarts": [
+          4.888888888888889,
+          87.05555555555556,
+          95.22222222222223,
+          121.94444444444444
+        ]
+      },
+      "constantId": {
+        "events": 8,
+        "detected": 4,
+        "missed": 4,
+        "duringProcess": 4,
+        "falseEpisodes": 3,
+        "normalSeconds": 45.400000333333324,
+        "normalWarningSeconds": 9.555555555555555,
+        "alertEpisodes": 7,
+        "detections": [
+          {
+            "id": "songsong_view1-fall-1",
+            "start": 13.1,
+            "processEnd": 14.733333333333333,
+            "detected": true,
+            "warningAt": 14.11111111111111,
+            "latency": 1.011111111111111,
+            "duringProcess": true
+          },
+          {
+            "id": "songsong_view1-fall-2",
+            "start": 20.333333333333332,
+            "processEnd": 22.066666666666666,
+            "detected": true,
+            "warningAt": 21.38888888888889,
+            "latency": 1.0555555555555571,
+            "duringProcess": true
+          },
+          {
+            "id": "songsong_view1-fall-3",
+            "start": 29.433333333333334,
+            "processEnd": 31.2,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view1-fall-4",
+            "start": 37.36666666666667,
+            "processEnd": 39.1,
+            "detected": true,
+            "warningAt": 38.333333333333336,
+            "latency": 0.9666666666666686,
+            "duringProcess": true
+          },
+          {
+            "id": "songsong_view1-fall-5",
+            "start": 47.9,
+            "processEnd": 49.6,
+            "detected": true,
+            "warningAt": 49.05555555555556,
+            "latency": 1.1555555555555586,
+            "duringProcess": true
+          },
+          {
+            "id": "songsong_view1-fall-6",
+            "start": 55.46666666666667,
+            "processEnd": 57,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view1-fall-7",
+            "start": 65.36666666666666,
+            "processEnd": 66.96666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view1-fall-8",
+            "start": 72.6,
+            "processEnd": 74.16666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [
+          4.888888888888889,
+          87.05555555555556,
+          121.94444444444444
+        ],
+        "unmatchedEpisodeStarts": [
+          4.888888888888889,
+          87.05555555555556,
+          121.94444444444444
+        ]
+      }
+    },
+    {
+      "id": "edf-songsong-view2",
+      "ordinaryIds": {
+        "events": 8,
+        "detected": 3,
+        "missed": 5,
+        "duringProcess": 3,
+        "falseEpisodes": 0,
+        "normalSeconds": 45.36666700000001,
+        "normalWarningSeconds": 0,
+        "alertEpisodes": 3,
+        "detections": [
+          {
+            "id": "songsong_view2-fall-1",
+            "start": 18.433333333333334,
+            "processEnd": 20.2,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view2-fall-2",
+            "start": 25.666666666666668,
+            "processEnd": 27.5,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view2-fall-3",
+            "start": 34.56666666666667,
+            "processEnd": 36.4,
+            "detected": true,
+            "warningAt": 35.5,
+            "latency": 0.93333333333333,
+            "duringProcess": true
+          },
+          {
+            "id": "songsong_view2-fall-4",
+            "start": 42.53333333333333,
+            "processEnd": 44.166666666666664,
+            "detected": true,
+            "warningAt": 43.611111111111114,
+            "latency": 1.0777777777777828,
+            "duringProcess": true
+          },
+          {
+            "id": "songsong_view2-fall-5",
+            "start": 53,
+            "processEnd": 54.6,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view2-fall-6",
+            "start": 60.43333333333333,
+            "processEnd": 61.93333333333333,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view2-fall-7",
+            "start": 70.03333333333333,
+            "processEnd": 71.7,
+            "detected": true,
+            "warningAt": 71.22222222222223,
+            "latency": 1.188888888888897,
+            "duringProcess": true
+          },
+          {
+            "id": "songsong_view2-fall-8",
+            "start": 77.3,
+            "processEnd": 78.93333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [],
+        "unmatchedEpisodeStarts": []
+      },
+      "constantId": {
+        "events": 8,
+        "detected": 3,
+        "missed": 5,
+        "duringProcess": 3,
+        "falseEpisodes": 0,
+        "normalSeconds": 45.36666700000001,
+        "normalWarningSeconds": 0,
+        "alertEpisodes": 3,
+        "detections": [
+          {
+            "id": "songsong_view2-fall-1",
+            "start": 18.433333333333334,
+            "processEnd": 20.2,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view2-fall-2",
+            "start": 25.666666666666668,
+            "processEnd": 27.5,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view2-fall-3",
+            "start": 34.56666666666667,
+            "processEnd": 36.4,
+            "detected": true,
+            "warningAt": 35.5,
+            "latency": 0.93333333333333,
+            "duringProcess": true
+          },
+          {
+            "id": "songsong_view2-fall-4",
+            "start": 42.53333333333333,
+            "processEnd": 44.166666666666664,
+            "detected": true,
+            "warningAt": 43.611111111111114,
+            "latency": 1.0777777777777828,
+            "duringProcess": true
+          },
+          {
+            "id": "songsong_view2-fall-5",
+            "start": 53,
+            "processEnd": 54.6,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view2-fall-6",
+            "start": 60.43333333333333,
+            "processEnd": 61.93333333333333,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "songsong_view2-fall-7",
+            "start": 70.03333333333333,
+            "processEnd": 71.7,
+            "detected": true,
+            "warningAt": 71.22222222222223,
+            "latency": 1.188888888888897,
+            "duringProcess": true
+          },
+          {
+            "id": "songsong_view2-fall-8",
+            "start": 77.3,
+            "processEnd": 78.93333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [],
+        "unmatchedEpisodeStarts": []
+      }
+    },
+    {
+      "id": "edf-zhong-view1",
+      "ordinaryIds": {
+        "events": 8,
+        "detected": 5,
+        "missed": 3,
+        "duringProcess": 5,
+        "falseEpisodes": 1,
+        "normalSeconds": 53.86666633333331,
+        "normalWarningSeconds": 6.888888888888889,
+        "alertEpisodes": 6,
+        "detections": [
+          {
+            "id": "zhong_view1-fall-1",
+            "start": 32.166666666666664,
+            "processEnd": 33.7,
+            "detected": true,
+            "warningAt": 33.333333333333336,
+            "latency": 1.1666666666666714,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view1-fall-2",
+            "start": 45.36666666666667,
+            "processEnd": 46.86666666666667,
+            "detected": true,
+            "warningAt": 46.44444444444444,
+            "latency": 1.0777777777777757,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view1-fall-3",
+            "start": 60.3,
+            "processEnd": 62.03333333333333,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "zhong_view1-fall-4",
+            "start": 79.6,
+            "processEnd": 81.43333333333334,
+            "detected": true,
+            "warningAt": 80.55555555555556,
+            "latency": 0.9555555555555628,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view1-fall-5",
+            "start": 108.73333333333333,
+            "processEnd": 110.23333333333333,
+            "detected": true,
+            "warningAt": 109.94444444444444,
+            "latency": 1.2111111111111086,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view1-fall-6",
+            "start": 122.96666666666667,
+            "processEnd": 124.7,
+            "detected": true,
+            "warningAt": 124.38888888888889,
+            "latency": 1.4222222222222172,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view1-fall-7",
+            "start": 154.06666666666666,
+            "processEnd": 155.46666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "zhong_view1-fall-8",
+            "start": 167.9,
+            "processEnd": 169.43333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [
+          190.72222222222223
+        ],
+        "unmatchedEpisodeStarts": [
+          190.72222222222223
+        ]
+      },
+      "constantId": {
+        "events": 8,
+        "detected": 5,
+        "missed": 3,
+        "duringProcess": 5,
+        "falseEpisodes": 1,
+        "normalSeconds": 53.86666633333331,
+        "normalWarningSeconds": 6.888888888888889,
+        "alertEpisodes": 6,
+        "detections": [
+          {
+            "id": "zhong_view1-fall-1",
+            "start": 32.166666666666664,
+            "processEnd": 33.7,
+            "detected": true,
+            "warningAt": 33.333333333333336,
+            "latency": 1.1666666666666714,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view1-fall-2",
+            "start": 45.36666666666667,
+            "processEnd": 46.86666666666667,
+            "detected": true,
+            "warningAt": 46.388888888888886,
+            "latency": 1.0222222222222186,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view1-fall-3",
+            "start": 60.3,
+            "processEnd": 62.03333333333333,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "zhong_view1-fall-4",
+            "start": 79.6,
+            "processEnd": 81.43333333333334,
+            "detected": true,
+            "warningAt": 80.55555555555556,
+            "latency": 0.9555555555555628,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view1-fall-5",
+            "start": 108.73333333333333,
+            "processEnd": 110.23333333333333,
+            "detected": true,
+            "warningAt": 109.94444444444444,
+            "latency": 1.2111111111111086,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view1-fall-6",
+            "start": 122.96666666666667,
+            "processEnd": 124.7,
+            "detected": true,
+            "warningAt": 124.38888888888889,
+            "latency": 1.4222222222222172,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view1-fall-7",
+            "start": 154.06666666666666,
+            "processEnd": 155.46666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "zhong_view1-fall-8",
+            "start": 167.9,
+            "processEnd": 169.43333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [
+          190.72222222222223
+        ],
+        "unmatchedEpisodeStarts": [
+          190.72222222222223
+        ]
+      }
+    },
+    {
+      "id": "edf-zhong-view2",
+      "ordinaryIds": {
+        "events": 8,
+        "detected": 4,
+        "missed": 4,
+        "duringProcess": 3,
+        "falseEpisodes": 1,
+        "normalSeconds": 50.33333300000001,
+        "normalWarningSeconds": 1.3888888888888888,
+        "alertEpisodes": 7,
+        "detections": [
+          {
+            "id": "zhong_view2-fall-1",
+            "start": 32.333333333333336,
+            "processEnd": 33.96666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "zhong_view2-fall-2",
+            "start": 45.6,
+            "processEnd": 47.166666666666664,
+            "detected": true,
+            "warningAt": 46.888888888888886,
+            "latency": 1.2888888888888843,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view2-fall-3",
+            "start": 60.666666666666664,
+            "processEnd": 62.3,
+            "detected": true,
+            "warningAt": 61.77777777777778,
+            "latency": 1.1111111111111143,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view2-fall-4",
+            "start": 79.8,
+            "processEnd": 81.33333333333333,
+            "detected": true,
+            "warningAt": 83.72222222222223,
+            "latency": 3.9222222222222314,
+            "duringProcess": false
+          },
+          {
+            "id": "zhong_view2-fall-5",
+            "start": 108.23333333333333,
+            "processEnd": 109.9,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "zhong_view2-fall-6",
+            "start": 123,
+            "processEnd": 124.63333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "zhong_view2-fall-7",
+            "start": 153.4,
+            "processEnd": 154.96666666666667,
+            "detected": true,
+            "warningAt": 154.5,
+            "latency": 1.0999999999999943,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view2-fall-8",
+            "start": 166.6,
+            "processEnd": 168.33333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [
+          191.61111111111111
+        ],
+        "unmatchedEpisodeStarts": [
+          39.22222222222222,
+          178.16666666666666,
+          191.61111111111111
+        ]
+      },
+      "constantId": {
+        "events": 8,
+        "detected": 4,
+        "missed": 4,
+        "duringProcess": 3,
+        "falseEpisodes": 1,
+        "normalSeconds": 50.33333300000001,
+        "normalWarningSeconds": 1.3888888888888888,
+        "alertEpisodes": 7,
+        "detections": [
+          {
+            "id": "zhong_view2-fall-1",
+            "start": 32.333333333333336,
+            "processEnd": 33.96666666666667,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "zhong_view2-fall-2",
+            "start": 45.6,
+            "processEnd": 47.166666666666664,
+            "detected": true,
+            "warningAt": 46.888888888888886,
+            "latency": 1.2888888888888843,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view2-fall-3",
+            "start": 60.666666666666664,
+            "processEnd": 62.3,
+            "detected": true,
+            "warningAt": 61.77777777777778,
+            "latency": 1.1111111111111143,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view2-fall-4",
+            "start": 79.8,
+            "processEnd": 81.33333333333333,
+            "detected": true,
+            "warningAt": 83.72222222222223,
+            "latency": 3.9222222222222314,
+            "duringProcess": false
+          },
+          {
+            "id": "zhong_view2-fall-5",
+            "start": 108.23333333333333,
+            "processEnd": 109.9,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "zhong_view2-fall-6",
+            "start": 123,
+            "processEnd": 124.63333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          },
+          {
+            "id": "zhong_view2-fall-7",
+            "start": 153.4,
+            "processEnd": 154.96666666666667,
+            "detected": true,
+            "warningAt": 154.5,
+            "latency": 1.0999999999999943,
+            "duringProcess": true
+          },
+          {
+            "id": "zhong_view2-fall-8",
+            "start": 166.6,
+            "processEnd": 168.33333333333334,
+            "detected": false,
+            "warningAt": null,
+            "latency": null,
+            "duringProcess": false
+          }
+        ],
+        "falseEpisodeStarts": [
+          191.61111111111111
+        ],
+        "unmatchedEpisodeStarts": [
+          39.22222222222222,
+          178.16666666666666,
+          191.61111111111111
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Diagnostic after opening the holdout; not another independent evaluation.",
+    "Both arms exclude multi-pose frames and use identical v4-smoothed joints; no pose interpolation.",
+    "Constant ID is a counterfactual, not verified identity ground truth. An isolated background pose can still be a different person.",
+    "Absences longer than 0.5 seconds still expire motion history. This does not measure a fully corrected landmark/occlusion system.",
+    "Do not compare the restricted ordinary-ID baseline directly to the full candidate score."
+  ],
+  "deploy": false
+}

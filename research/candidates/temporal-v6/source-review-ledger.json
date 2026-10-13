@@ -1,0 +1,566 @@
+{
+  "designation": "AI-assisted source review, selected seen failures/controls, not independent human annotations",
+  "cases": [
+    {
+      "label": "C01",
+      "start": 109.94444444444444,
+      "end": 114.94444444444444,
+      "times": [
+        109.94444444444444,
+        110.77777777777777,
+        111.61111111111111,
+        112.44444444444444,
+        113.27777777777777,
+        114.11111111111111
+      ],
+      "clipId": "edf-songsong-view1",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "5b32b627cb318d68c14490457bfd3a164eb33a50d05a5ef75dbf4c9c91bcc089"
+    },
+    {
+      "label": "C02",
+      "start": 176.83333333333334,
+      "end": 181.83333333333334,
+      "times": [
+        176.83333333333334,
+        177.66666666666666,
+        178.5,
+        179.33333333333334,
+        180.16666666666666,
+        181
+      ],
+      "clipId": "edf-peter-view2",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "52adf78b539581c2f5ac9cab1a3199187bff0529766c68dd6d58061f7ebb2cd8"
+    },
+    {
+      "label": "C03",
+      "start": 15.5,
+      "end": 20.5,
+      "times": [
+        15.5,
+        16.333333333333332,
+        17.166666666666668,
+        18,
+        18.833333333333332,
+        19.666666666666668
+      ],
+      "clipId": "edf-jinhui-view1",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "72c2cc1fc581093005ac0c3840da6227d44302b3624473d6475cbadcd8e01a1f"
+    },
+    {
+      "label": "C04",
+      "start": 131.86666666666667,
+      "end": 136.86666666666667,
+      "times": [
+        131.83333333333334,
+        132.66666666666666,
+        133.5,
+        134.33333333333334,
+        135.16666666666666,
+        136
+      ],
+      "clipId": "edf-jianjun-view1",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "7045f25012ca076ea86020f288d297f54f5321d11e9e9b34f68d8314ec431907"
+    },
+    {
+      "label": "C05",
+      "start": 197.77777777777777,
+      "end": 202.77777777777777,
+      "times": [
+        197.77777777777777,
+        198.61111111111111,
+        199.38888888888889,
+        200.27777777777777,
+        201.11111111111111,
+        201.88888888888889
+      ],
+      "clipId": "edf-peter-view1",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "367b2972bf256000e4d7d6ac934cf977ed392cfc38133e0fa1a57028225a54d3"
+    },
+    {
+      "label": "C06",
+      "start": 2.3888888888888893,
+      "end": 7.388888888888889,
+      "times": [
+        2.388888888888889,
+        3.2222222222222223,
+        4.055555555555555,
+        4.888888888888889,
+        5.722222222222222,
+        6.555555555555555
+      ],
+      "clipId": "edf-songsong-view1",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "a4fa3a241c0077d61ef68dcff35a958ab8bbc74061513c026412b63b976975a7"
+    },
+    {
+      "label": "C07",
+      "start": 139.05555555555554,
+      "end": 144.05555555555554,
+      "times": [
+        139.05555555555554,
+        139.88888888888889,
+        140.66666666666666,
+        141.55555555555554,
+        142.38888888888889,
+        143.16666666666666
+      ],
+      "clipId": "edf-jianjun-view1",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "8cb2bb093a0f149246e732f1d9e6fe8c84449df69c77bae4e54a7bef8c645635"
+    },
+    {
+      "label": "C08",
+      "start": 125.76666666666667,
+      "end": 130.76666666666665,
+      "times": [
+        125.72222222222223,
+        126.55555555555556,
+        127.38888888888889,
+        128.22222222222223,
+        129.05555555555554,
+        129.88888888888889
+      ],
+      "clipId": "edf-jianjun-view2",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "8ed04b86b6013cb041307fa0e89b7ffc250cdbb57525c26caca0d9c3673f3306"
+    },
+    {
+      "label": "C09",
+      "start": 189.11111111111111,
+      "end": 194.11111111111111,
+      "times": [
+        189.11111111111111,
+        189.94444444444446,
+        190.77777777777777,
+        191.61111111111111,
+        192.44444444444446,
+        193.27777777777777
+      ],
+      "clipId": "edf-zhong-view2",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "29623b5123190605e949e61c0fa12c069b1e575bd869a6c4e828adeafd28e0ce"
+    },
+    {
+      "label": "C10",
+      "start": 187.5,
+      "end": 192.5,
+      "times": [
+        187.5,
+        188.33333333333334,
+        189.16666666666666,
+        190,
+        190.83333333333334,
+        191.66666666666666
+      ],
+      "clipId": "edf-peter-view2",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "cbcd2cac05c0407f882f800275534f97f977aa08b43f1da10449e25727b78f21"
+    },
+    {
+      "label": "C11",
+      "start": 188.22222222222223,
+      "end": 193.22222222222223,
+      "times": [
+        188.22222222222223,
+        189.05555555555554,
+        189.88888888888889,
+        190.72222222222223,
+        191.55555555555554,
+        192.38888888888889
+      ],
+      "clipId": "edf-zhong-view1",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "8015bf56c686e0dd9829bbb799fe7306bf8beab8e4e7a8dcefdfb44b342fdebd"
+    },
+    {
+      "label": "C12",
+      "start": 177.5,
+      "end": 182.5,
+      "times": [
+        177.5,
+        178.33333333333334,
+        179.16666666666666,
+        180,
+        180.83333333333334,
+        181.66666666666666
+      ],
+      "clipId": "edf-peter-view1",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "7b6cec3d8d82519f744de40d837d44c8ef4746b09b709d65967cfa1870d5cc0e"
+    },
+    {
+      "label": "C13",
+      "start": 92.72222222222223,
+      "end": 97.72222222222223,
+      "times": [
+        92.72222222222223,
+        93.55555555555556,
+        94.38888888888889,
+        95.22222222222223,
+        96.05555555555556,
+        96.88888888888889
+      ],
+      "clipId": "edf-songsong-view1",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "27f48f6918f898f76844d36a4dedab47e84fcdc4aa7837a9ff11c826a09c7c0f"
+    },
+    {
+      "label": "C14",
+      "start": 117.466667,
+      "end": 122.466667,
+      "times": [
+        117.44444444444444,
+        118.27777777777777,
+        119.11111111111111,
+        119.94444444444444,
+        120.77777777777777,
+        121.61111111111111
+      ],
+      "clipId": "edf-songsong-view1",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "04cf26fed21c73c5a401f3818c5669559236352b08c720458c2b3299f464b066"
+    },
+    {
+      "label": "C15",
+      "start": 127.5,
+      "end": 132.5,
+      "times": [
+        127.5,
+        128.33333333333334,
+        129.16666666666666,
+        130,
+        130.83333333333334,
+        131.66666666666666
+      ],
+      "clipId": "edf-jinhui-view2",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "7a6d72d37fee60193c8f427fae533693ed78b03530cbb8d3b13ede2eb4595622"
+    },
+    {
+      "label": "C16",
+      "start": 121.22222222222223,
+      "end": 126.22222222222223,
+      "times": [
+        121.22222222222223,
+        122.05555555555556,
+        122.88888888888889,
+        123.72222222222223,
+        124.55555555555556,
+        125.38888888888889
+      ],
+      "clipId": "edf-jinhui-view1",
+      "eventId": null,
+      "kind": "mined-normal-warning",
+      "sourceImageSha256": "da50e3935933ad551736bcd4a9bec1b7546badd52c129843aaa7fb24ace5f218"
+    },
+    {
+      "label": "C17",
+      "start": 9.933333333333334,
+      "end": 19.4,
+      "times": [
+        9.88888888888889,
+        11.5,
+        13.055555555555555,
+        14.666666666666666,
+        16.22222222222222,
+        17.77777777777778
+      ],
+      "clipId": "edf-peter-view2",
+      "eventId": "peter_view2-fall-1",
+      "kind": "author-fall",
+      "sourceImageSha256": "973c6bfb4847e257dd4baca689a84e89cf2e427aa0e4d06a3e4a965a667d6405"
+    },
+    {
+      "label": "C18",
+      "start": 77.13333333333334,
+      "end": 86.5,
+      "times": [
+        77.11111111111111,
+        78.66666666666667,
+        80.22222222222223,
+        81.77777777777777,
+        83.33333333333333,
+        84.88888888888889
+      ],
+      "clipId": "edf-peter-view2",
+      "eventId": "peter_view2-fall-5",
+      "kind": "author-fall",
+      "sourceImageSha256": "9f039bcfc0df21e619912a09cc184a24d42ae0a00077801517d7d52fa933e275"
+    },
+    {
+      "label": "C19",
+      "start": 120.56666666666666,
+      "end": 130.66666666666669,
+      "times": [
+        120.55555555555556,
+        122.22222222222223,
+        123.88888888888889,
+        125.61111111111111,
+        127.27777777777777,
+        128.94444444444446
+      ],
+      "clipId": "edf-peter-view2",
+      "eventId": "peter_view2-fall-7",
+      "kind": "author-fall",
+      "sourceImageSha256": "d4f6656b6dbb9d228f443f41ffe71b1ac6335f4274aae4877dbc147af33d1e85"
+    },
+    {
+      "label": "C20",
+      "start": 52.43333333333333,
+      "end": 62.1,
+      "times": [
+        52.388888888888886,
+        54,
+        55.611111111111114,
+        57.22222222222222,
+        58.833333333333336,
+        60.44444444444444
+      ],
+      "clipId": "edf-jianjun-view1",
+      "eventId": "jianjun_view1-fall-3",
+      "kind": "author-fall",
+      "sourceImageSha256": "ce0dafdb84aafde0daf0bd6f619f963dd0923b26014201a824815c42a5f91782"
+    },
+    {
+      "label": "C21",
+      "start": 73.3,
+      "end": 82.8,
+      "times": [
+        73.27777777777777,
+        74.83333333333333,
+        76.44444444444444,
+        78,
+        79.61111111111111,
+        81.16666666666667
+      ],
+      "clipId": "edf-jianjun-view2",
+      "eventId": "jianjun_view2-fall-5",
+      "kind": "author-fall",
+      "sourceImageSha256": "389a505e245c947d25615c5a3da5cb3de0b58fa0d7afa5cc2da50f3e6a00fc2d"
+    },
+    {
+      "label": "C22",
+      "start": 83.06666666666666,
+      "end": 93.1,
+      "times": [
+        83.05555555555556,
+        84.72222222222223,
+        86.38888888888889,
+        88.05555555555556,
+        89.72222222222223,
+        91.38888888888889
+      ],
+      "clipId": "edf-jianjun-view2",
+      "eventId": "jianjun_view2-fall-6",
+      "kind": "author-fall",
+      "sourceImageSha256": "ae5b6dd00fcfc221155a5b47e6cd3ede51640c3b7909ed7c1840e021a70622e2"
+    },
+    {
+      "label": "C23",
+      "start": 102.36666666666666,
+      "end": 112.03333333333333,
+      "times": [
+        102.33333333333333,
+        103.94444444444444,
+        105.55555555555556,
+        107.16666666666667,
+        108.77777777777777,
+        110.38888888888889
+      ],
+      "clipId": "edf-jianjun-view1",
+      "eventId": "jianjun_view1-fall-7",
+      "kind": "author-fall",
+      "sourceImageSha256": "6c90fcea7f483dacc850825327a07f6bba567aed75b68a65646df5d574f9573a"
+    },
+    {
+      "label": "C24",
+      "start": 59.93333333333333,
+      "end": 69.46666666666667,
+      "times": [
+        59.888888888888886,
+        61.5,
+        63.111111111111114,
+        64.66666666666667,
+        66.27777777777777,
+        67.83333333333333
+      ],
+      "clipId": "edf-jianjun-view2",
+      "eventId": "jianjun_view2-fall-4",
+      "kind": "author-fall",
+      "sourceImageSha256": "965b90141b749b7557ffb8b7d471fc9ce46898c8d7df6d6f166408af79f2e727"
+    },
+    {
+      "label": "C25",
+      "start": 19.5,
+      "end": 29.6,
+      "times": [
+        19.5,
+        21.166666666666668,
+        22.833333333333332,
+        24.5,
+        26.22222222222222,
+        27.88888888888889
+      ],
+      "clipId": "edf-jinhui-view1",
+      "eventId": "jinhui_view1-fall-1",
+      "kind": "author-fall",
+      "sourceImageSha256": "2c841321651f1be18c12e94a80d42c42a084c37eb952bcda2f9f962ff65bcee7"
+    },
+    {
+      "label": "C26",
+      "start": 24.666666666666668,
+      "end": 34.46666666666667,
+      "times": [
+        24.666666666666668,
+        26.27777777777778,
+        27.88888888888889,
+        29.555555555555557,
+        31.166666666666668,
+        32.833333333333336
+      ],
+      "clipId": "edf-jinhui-view2",
+      "eventId": "jinhui_view2-fall-1",
+      "kind": "author-fall",
+      "sourceImageSha256": "1bf2922150a84c17338c429ac52df52c4dac7ec218ab0ef97b4386eb6c57384e"
+    },
+    {
+      "label": "C27",
+      "start": 34.6,
+      "end": 44.833333333333336,
+      "times": [
+        34.55555555555556,
+        36.27777777777778,
+        38,
+        39.666666666666664,
+        41.388888888888886,
+        43.111111111111114
+      ],
+      "clipId": "edf-jinhui-view2",
+      "eventId": "jinhui_view2-fall-2",
+      "kind": "author-fall",
+      "sourceImageSha256": "ede812574edb67e06484233501b997cd971fd21bdc28a5e7662869e42b61d991"
+    },
+    {
+      "label": "C28",
+      "start": 97.43333333333334,
+      "end": 107.4,
+      "times": [
+        97.38888888888889,
+        99.05555555555556,
+        100.72222222222223,
+        102.38888888888889,
+        104.05555555555556,
+        105.72222222222223
+      ],
+      "clipId": "edf-jinhui-view2",
+      "eventId": "jinhui_view2-fall-8",
+      "kind": "author-fall",
+      "sourceImageSha256": "517a3a0893857751896703fdfe7a14961043b2e1d50c34d62515759e940ebb1c"
+    },
+    {
+      "label": "C29",
+      "start": 32.6,
+      "end": 41.53333333333333,
+      "times": [
+        32.55555555555556,
+        34.05555555555556,
+        35.55555555555556,
+        37.05555555555556,
+        38.55555555555556,
+        40
+      ],
+      "clipId": "edf-jianjun-view1",
+      "eventId": "jianjun_view1-fall-1",
+      "kind": "author-fall",
+      "sourceImageSha256": "f22692695b23e6516969a17a450a303f10be3fe6e06e3a52e09374e04af2f5b6"
+    },
+    {
+      "label": "C30",
+      "start": 65.43333333333334,
+      "end": 74.96666666666667,
+      "times": [
+        65.38888888888889,
+        67,
+        68.61111111111111,
+        70.16666666666667,
+        71.77777777777777,
+        73.33333333333333
+      ],
+      "clipId": "edf-jianjun-view1",
+      "eventId": "jianjun_view1-fall-4",
+      "kind": "author-fall",
+      "sourceImageSha256": "aa2c2fb531be6755da2930209614d0de8f850db07a531dce4adc303f010f63d5"
+    },
+    {
+      "label": "C31",
+      "start": 79.4,
+      "end": 88.9,
+      "times": [
+        79.38888888888889,
+        80.94444444444444,
+        82.55555555555556,
+        84.11111111111111,
+        85.72222222222223,
+        87.27777777777777
+      ],
+      "clipId": "edf-jianjun-view1",
+      "eventId": "jianjun_view1-fall-5",
+      "kind": "author-fall",
+      "sourceImageSha256": "bddd11d5b3a38625f688bf499449af16e0489451e33b6c55103b4ded87572c02"
+    },
+    {
+      "label": "C32",
+      "start": 22.8920255,
+      "end": 27.8920255,
+      "times": [
+        22.88888888888889,
+        23.72222222222222,
+        24.555555555555557,
+        25.38888888888889,
+        26.22222222222222,
+        27.055555555555557
+      ],
+      "clipId": "uma-adl-walking",
+      "eventId": null,
+      "kind": "author-ordinary-activity",
+      "sourceImageSha256": "19adc98802b6ae6a202e1ef1ad33dbe6c7633a0b766c3573ed083d8bd18ab0fa"
+    },
+    {
+      "label": "C33",
+      "start": 23.309109,
+      "end": 28.309109,
+      "times": [
+        23.27777777777778,
+        24.11111111111111,
+        24.944444444444443,
+        25.77777777777778,
+        26.61111111111111,
+        27.444444444444443
+      ],
+      "clipId": "uma-adl-lying-down-and-getting-up-from-a-bed",
+      "eventId": null,
+      "kind": "author-ordinary-activity",
+      "sourceImageSha256": "d0bdcd585bde63e0273b18165e684fca90315cbf56064e53b5b4224961eb4adb"
+    }
+  ]
+}

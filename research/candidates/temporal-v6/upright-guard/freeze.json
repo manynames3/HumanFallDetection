@@ -1,0 +1,29 @@
+{
+  "configs": [
+    {
+      "name": "depth",
+      "modelSha256": "8a5cfb0caf95ba243f9e18b4597a5ad8bb5c059255f3f80d551514b2bc6a12fc",
+      "removeDepth": false,
+      "threshold": 0.98
+    },
+    {
+      "name": "no-depth",
+      "modelSha256": "e8b051fd838264f73fab95ba8aa0b6202e4a5e1aff61d456c7f80825979a66b3",
+      "removeDepth": true,
+      "threshold": 0.98
+    }
+  ],
+  "codeHashes": {
+    "browser/pose-tracker-v6.js": "8f3d3ce5d244dea4b6bbada11137de36f87ffdce6d00b87ecb60adb9090418e3",
+    "tools/video_policy_v4.mjs": "c648a16826fc30eaa84810b7682f93ff4556f88383e22776132e69d6c4467884",
+    "tools/video_tcn_v6.mjs": "6080af5d561415d87a523eb8d037dbe5a498bd1a1318edf6987c780917577ca2",
+    "tools/video_tcn_guard_v6.mjs": "f3eac19fee06e0f5946237320c503937384db05dc48e06ccb2dbd1baffda3cd3",
+    "tools/evaluate_tcn_guard_cycle6.mjs": "fc98810b2c1570e89fa64eae9e756715a5479254c1146da3912cdc08829e139a"
+  },
+  "policy": {
+    "windowSeconds": 0.6,
+    "evidenceSeconds": 0.15
+  },
+  "guard": "Existing bodyObservation upright stance with both complete observed leg chains; no new numerical cutoffs; current upright evidence resets classifier evidence, no state/alert rename",
+  "deploy": false
+}

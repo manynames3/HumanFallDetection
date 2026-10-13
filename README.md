@@ -8,6 +8,7 @@ and person-down warnings to a fork of the original MIT-licensed HumanFallDetecti
 
 [Open the web app](https://carewatch-v2.pages.dev/) ·
 [Browser implementation guide](BROWSER_V2.md) ·
+[Improvements, evidence and limitations](docs/reliability-history.md) ·
 [C4 architecture](docs/architecture.md) ·
 [Architecture decision](docs/adr/0001-browser-v2-on-device-inference.md)
 
@@ -103,6 +104,64 @@ separate reliability gates before promotion; model names or test counts are not 
 - [ADR 0001: static, on-device browser inference](docs/adr/0001-browser-v2-on-device-inference.md)
 - [Implementation, provenance and QA](BROWSER_V2.md)
 - [In-app model, privacy and limitations](browser/about.html)
+
+## Improvements over time
+
+Browser features and offline detection candidates are different tracks. “Implemented”
+does not mean a candidate is deployed or its reliability is established.
+
+| Date / phase | What changed and why | Status / lesson |
+| --- | --- | --- |
+| Oct 2, 2026: browser foundation | Ported the retained MIT classifier to JavaScript; added on-device camera inference, per-person overlays and local warnings without a proprietary camera SDK. | Browser implementation. MediaPipe replaces the upstream pose pipeline, so upstream accuracy does not transfer. |
+| Oct 2–3: person-down and transition paths | Added startup-already-down and standing/sitting-to-down checks because observing a skeleton or missing the fall transition must not automatically mean “safe.” Added diagnostics and made room marking optional. | Browser implementation. Posture is not proof of impact or floor contact; intentional lying can warn. |
+| Oct 12: interface | Applied Supreme AI Ventures branding, a camera-first layout, independent overlay controls, accessible warning text and collapsed advanced settings. | Browser implementation; visual polish is not detection validation. |
+| Oct 12–13: research cycles 1–2 | Built real decoded-video benchmarks, expanded to 359 clips and trained temporal/articulated candidates with grouped data splits. | Some small fresh tests improved, but walking, bed movement, short clips and different views still failed. No candidate promotion. |
+| Oct 13: cycles 3–4 | Investigated duplicate poses and identity-reset cascades; added observed-evidence safeguards and compared rule/learned fusion approaches. | A specific lifecycle defect was repaired in research. Broader tracking and missed-fall regressions remained; no promotion. |
+| Oct 13: cycle 5 | Made replay resumable and hash-verified; trained native-joint sequence models and tested uninterrupted recordings instead of only isolated clips. | Development gains failed the new continuous-recording test. Frozen models/results retained; no promotion. |
+| Oct 13: cycle 6 | Added source-first audit tools, Codex/Claude sampled-frame review, bounded cropped-track/lag controls, actual causal temporal-model training and optimizer/RNG resume tests. | Continuous-development counts improved, but broader false alarms worsened. Controls and higher cutoffs failed the joint gate; no promotion. |
+
+### Latest measured result — not release qualification
+
+The new offline 5,809-parameter temporal convolutional model is compared below with
+the frozen native-joint research baseline, **not presented as the live app's model**.
+
+| Previously seen evaluation set | Misses: baseline → new model | False warnings: baseline → new model |
+| --- | ---: | ---: |
+| EDF continuous recordings, 18 Hz | 44 → 26 of 80 camera-events | 16 → 12 episodes |
+| Original 359 clips | 38 → 33 of 176 fall clips | 4 → 12 of 183 ordinary-activity clips |
+
+The EDF rows represent 40 staged falls paired across two views, not 80 independent
+falls; reviewed normal exposure is only 9.58 camera-minutes. The new model uses some
+EDF participants for fitting, so its aggregate is development evidence. On the seen
+participant excluded from fitting/selection, false episodes tie at 18 Hz and worsen
+from 2 to 3 at 6 Hz. Walking also regresses. **Deployment remains blocked.**
+
+The [full reliability history](docs/reliability-history.md) documents specific failure
+situations, comparable results, why approaches were rejected, what remains unmeasured,
+and the distinction between classifier warnings, benchmark episodes and UI notifications.
+Passing software tests, a higher confidence cutoff or a successful skeleton overlay
+does not replace independent fall/false-alarm evaluation.
+
+### Specific situations to understand
+
+- **Outside-frame, cropped or obscured falls:** the body/floor may be invisible, or
+  core joints may disappear just when the person falls. Missing data is not counted
+  as positive fall evidence.
+- **Walking, crouching, kneeling, bed entry and recovery:** ordinary low movements
+  can resemble falling. Optional furniture exclusions can help in a particular room,
+  but can also suppress a real fall inside the excluded area.
+- **Repeated falls close together:** the benchmark can merge warnings into an earlier
+  episode. Recovery-aware event separation and actual notification telemetry are
+  still needed; this is not proof that the live UI loses a notification.
+- **Already down when the camera starts:** the separate person-down path can warn,
+  but cannot establish that an earlier fall occurred or distinguish all intentional lying.
+- **Multiple people, low analysis rates and changing views:** identity, pose continuity
+  and warnings can change. There is no validated minimum/maximum distance, camera-model
+  coverage, night/blanket performance or unattended phone/background monitoring guarantee.
+
+See [situation-specific limitations and evidence](docs/reliability-history.md#situation-specific-limitations)
+before interpreting the demo as a monitoring product. The live detector is unchanged
+by these research results.
 
 ## Original Python research project
 
