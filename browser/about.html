@@ -30,6 +30,10 @@
       <li><strong>Not a safety system.</strong> It contacts no one and works only while this page is open and visible.</li>
     </ul>
 
+    <h2>Carewatch and the research project</h2>
+    <p>Carewatch is the camera-first browser application on the <a href="https://github.com/manynames3/HumanFallDetection/tree/browser-v2"><code>browser-v2</code> branch</a>, with an interface by Supreme AI Ventures. It combines on-device pose/classifier inference with separate automatic person-down and movement checks, optional room tuning, skeleton/box overlays, and local warnings. No proprietary camera SDK is required: camera support depends on what your browser exposes. Direct RTSP/IP-camera ingestion and cross-camera identity matching are not implemented here.</p>
+    <p>The repository’s default <a href="https://github.com/manynames3/HumanFallDetection/tree/master"><code>master</code> branch</a> contains the original Python research track. Its multi-camera capabilities and published results should not be assumed to apply to Carewatch. See the <a href="https://github.com/manynames3/HumanFallDetection/blob/browser-v2/README.md">branch guide</a> and <a href="https://github.com/manynames3/HumanFallDetection/blob/browser-v2/docs/architecture.md">architecture documentation</a>. Offline candidate models are not automatically part of this site.</p>
+
     <h2>What runs on your device</h2>
     <p>This is a browser adaptation of <a href="https://github.com/taufeeque9/HumanFallDetection">HumanFallDetection</a> by Mohammad Taufeeque and Samad Koita, based on commit <code>0f9fa006</code>. Its original trained two-layer, 48-unit LSTM weights are retained. Its five pose/motion features and fall-warning filter are ported to JavaScript.</p>
     <p>The original Python OpenPifPaf pose estimator is replaced with Google MediaPipe Pose Landmarker Lite for browser compatibility. Pose confidence, bounding boxes, tracking, camera frame rates, and missing-body handling differ. Therefore this adaptation does not inherit any published accuracy result. It has not been validated for real-world safety monitoring.</p>

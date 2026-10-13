@@ -3,18 +3,22 @@
 This fork retains the original MIT HumanFallDetection Python source and weights.
 The separate `browser/` application is designed for static Cloudflare Pages,
 without authentication, camera uploads, recordings, or an inference backend.
-The existing person-down-core pilot is not changed by this fork.
+
+[Branch guide](README.md) · [C4 architecture](docs/architecture.md) ·
+[On-device inference ADR](docs/adr/0001-browser-v2-on-device-inference.md)
 
 ## Current release
 
 Live web app: https://carewatch-v2.pages.dev/
 
-The browser UI, feature port, trained LSTM port, worker integration, twenty-two
-detector tests, and eight UI-helper/contract tests are implemented. MediaPipe Tasks Vision 0.10.32 is pinned and
+The browser UI, feature port, trained LSTM port, worker integration, detector tests
+and UI-helper/contract tests are implemented. MediaPipe Tasks Vision 0.10.32 is pinned and
 approved; the runtime and model are packaged as same-origin static assets.
-The real browser worker passed 40 recurrent pose/classifier frames, and the full
+Previous runtime QA exercised 40 recurrent pose/classifier frames in the real worker, and the full
 UI ran on a clearly labeled public-image MediaStream under production CSP.
 This is runtime validation, not physical-camera qualification or fall accuracy.
+Offline candidate trackers and trained fusion models are separate development work;
+they are not imported by the current worker or automatically included in a release.
 
 ## Design
 
@@ -99,8 +103,9 @@ asset, linked from a small "by Supreme AI Ventures" attribution; Carewatch keeps
 
 ## Verification
 
-The UI refresh passes 30 Node tests (22 detector, 8 UI/contract), build and syntax
-checks. Browser QA under production CSP used labeled public-image and synthetic
+The UI refresh has detector and UI-helper/contract tests; run `npm test` for the
+current checkout's results rather than treating a historical test count as a reliability metric.
+Previous browser QA under production CSP used labeled public-image and synthetic
 fixtures: permission denial, active Start/Stop, independent overlay/mirror toggles,
 fullscreen warning visibility, dismissal and a drawn furniture exclusion. Layout
 has no horizontal overflow at 320px or 390px. Desktop and phone previews were
@@ -131,6 +136,10 @@ any other checkpoint. The manifest records upstream commit, tensor layout, and
 derived binary hash. Browser inference has no PyTorch or ONNX dependency.
 
 ## Build and deploy
+
+Building is not release approval. Do not deploy an offline detection candidate until
+its reliability gates and release review have passed. The documentation/branding changes
+do not authorize changing the live detector.
 
 ```sh
 npm ci
