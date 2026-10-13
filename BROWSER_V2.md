@@ -18,7 +18,7 @@ This is runtime validation, not physical-camera qualification or fall accuracy.
 
 ## Design
 
-- Experimental posture/transition checks are separate from the original LSTM
+- Rule-based posture/transition checks are separate from the original LSTM
   and run by default without room marking. Users may optionally draw floor
   polygons and bed/sofa exclusions on the camera view. Session-only zones
   clear on Stop, camera change, page hide, or changed camera aspect ratio.
@@ -32,7 +32,7 @@ This is runtime validation, not physical-camera qualification or fall accuracy.
   collapsed vertical body span and torso rotation selects the transition path.
   Two seconds of observed down evidence then triggers "Possible fall". A single
   frame or a brief low movement does not trigger this path. Thresholds are
-  experimental defaults, not clinically validated response times.
+  current defaults, not clinically validated response times.
 - Brief unclear/missing observations up to 0.75 seconds preserve evidence but
   add no time. Long gaps, exclusions, region edits, new IDs, and sustained
   recovery reset it. Exclusions suppress displayed warnings from either path;
@@ -86,11 +86,11 @@ asset, linked from a small "by Supreme AI Ventures" attribution; Carewatch keeps
   placement tips, optional room tuning and diagnostics sit in collapsed `<details>`.
 - State is shown by text plus a dot tone (`#status[data-tone]`): off, waiting for
   permission, loading detector, looking, tracking, evaluating, warning, error. Tracking
-  is never labelled safe. Privacy and experimental/no-emergency-service copy is always
+  is never labelled safe. Privacy and detection-limit/no-emergency-service copy is always
   visible beside the controls.
 - The warning (`#alert`, `role="alert"`) is fixed above the iOS safe area, red, and sits
   inside `#viewer` so it also shows in full-screen view. Dismiss only hides it.
-  Fullscreen also retains an experimental/no-emergency-dispatch notice.
+  Fullscreen also retains a local-alerts/no-emergency-dispatch notice.
 - Full screen of the camera view (`browser/ui.js`) is feature-detected and hidden where
   unsupported (e.g. iPhone Safari). It is only offered while the camera is active and is
   exited on Stop. `tests/ui.test.js` covers the helper.

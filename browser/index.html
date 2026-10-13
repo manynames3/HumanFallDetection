@@ -16,7 +16,7 @@
     <header class="topbar">
       <div class="identity">
         <a class="product" href="./" aria-label="Carewatch, camera workspace"><img class="mark" src="./assets/carewatch-mark.svg" alt="" width="28" height="28"><span>Carewatch</span></a>
-        <span class="tag">Experimental</span>
+        <span class="tag">On-device</span>
       </div>
       <nav class="topnav" aria-label="Site">
         <a class="navlink" href="./about.html">Limits &amp; licenses</a>
@@ -37,7 +37,7 @@
         <p id="message" role="status" aria-live="polite" class="message">Camera access starts only when you choose.</p>
         <ul class="assurance">
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5.5c0 4.2 2.8 7.6 7 9.5 4.2-1.9 7-5.3 7-9.5V6z"/></svg><p><strong>Private.</strong> Frames stay on this device. No upload or recording.</p></li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5v.01"/></svg><p><strong>Experimental.</strong> May miss falls or raise false alarms. No emergency dispatch or remote alerts. Keep this page visible.</p></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5v.01"/></svg><p><strong>Know the limits.</strong> May miss falls or raise false alarms. No emergency dispatch or remote alerts. Keep this page visible.</p></li>
         </ul>
       </section>
 
@@ -58,10 +58,10 @@
             <p class="hint">Place the camera still, with the whole body and nearby floor in view.</p>
           </div>
         </div>
-        <div class="viewer-foot"><span id="people">0 people tracked</span><span class="fullscreen-only">Experimental · no emergency dispatch</span><span id="coverage">Not monitoring</span></div>
+        <div class="viewer-foot"><span id="people">0 people tracked</span><span class="fullscreen-only">Local alerts · no emergency dispatch</span><span id="coverage">Not monitoring</span></div>
         <section id="alert" class="alert" hidden role="alert">
           <svg class="alert-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 2.8 19.5h18.4zM12 10v4.5M12 17.2v.01"/></svg>
-          <div class="alert-text"><strong id="alert-title">Possible fall detected</strong><p id="alert-description">This is an experimental model prediction. Check on the person; it is not a confirmed emergency.</p></div>
+          <div class="alert-text"><strong id="alert-title">Possible fall detected</strong><p id="alert-description">This is a model prediction. Check on the person; it is not a confirmed emergency.</p></div>
           <button id="dismiss" class="btn alert-dismiss" type="button">Dismiss alert</button>
         </section>
       </section>
@@ -105,7 +105,7 @@
             <summary>Detection details <span class="opt">why no warning?</span></summary>
             <div class="disclosure-body">
               <div class="legend"><span><i class="dot ok"></i>Tracking</span><span><i class="dot watch"></i>Evaluating</span><span><i class="dot danger"></i>Possible fall</span></div>
-              <p>Posture labels and movement warnings are experimental rules separate from the trained classifier. Raw scores are not probabilities. Lying is not proof of floor contact or a fall. Neither check proves safety.</p>
+              <p>Posture labels and movement warnings use rules separate from the trained classifier. Raw scores are not probabilities. Lying is not proof of floor contact or a fall. Neither check proves safety.</p>
               <div id="diagnostics">Start the camera to see per-person evidence.</div>
             </div>
           </details>

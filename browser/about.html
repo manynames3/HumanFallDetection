@@ -14,7 +14,7 @@
   <header class="topbar">
     <div class="identity">
       <a class="product" href="./" aria-label="Carewatch, back to camera"><img class="mark" src="./assets/carewatch-mark.svg" alt="" width="28" height="28"><span>Carewatch</span></a>
-      <span class="tag">Experimental</span>
+      <span class="tag">On-device</span>
     </div>
     <nav class="topnav" aria-label="Site">
       <a class="maker" href="https://supremeaiventures.dev/" target="_blank" rel="noopener noreferrer"><span>by</span><img src="./assets/supreme-ai-logo.svg" alt="Supreme AI Ventures" width="117" height="20"></a>
@@ -23,10 +23,10 @@
   <main class="prose">
     <a class="back" href="./">← Back to camera</a>
     <h1>Model, privacy &amp; limitations</h1>
-    <p class="lede">Carewatch is an experimental prototype. It is not validated for safety monitoring and is not an emergency service.</p>
+    <p class="lede">Carewatch analyses camera video on your device. It is not validated for safety monitoring and is not an emergency service.</p>
     <ul class="facts">
       <li><strong>On-device.</strong> Camera images and predictions stay in your browser.</li>
-      <li><strong>Experimental.</strong> It can miss falls and raise false alarms. No accuracy result is claimed.</li>
+      <li><strong>Detection limits.</strong> It can miss falls and raise false alarms. No accuracy result is claimed.</li>
       <li><strong>Not a safety system.</strong> It contacts no one and works only while this page is open and visible.</li>
     </ul>
 
@@ -35,11 +35,11 @@
     <p>The original Python OpenPifPaf pose estimator is replaced with Google MediaPipe Pose Landmarker Lite for browser compatibility. Pose confidence, bounding boxes, tracking, camera frame rates, and missing-body handling differ. Therefore this adaptation does not inherit any published accuracy result. It has not been validated for real-world safety monitoring.</p>
 
     <h2>What the overlays mean</h2>
-    <p>Teal means a body is tracked or a posture is inferred, not that the person is safe. Standing and Sitting are experimental geometry labels, not trained class names. Gray means warming up or insufficient pose information. Amber means evaluating movement or accumulating down-posture evidence. Red means a possible fall or sustained-down warning. Tracking IDs are temporary, not personal identities. Hidden limbs are not reconstructed.</p>
+    <p>Teal means a body is tracked or a posture is inferred, not that the person is safe. Standing and Sitting are geometry-based labels, not trained class names. Gray means warming up or insufficient pose information. Amber means evaluating movement or accumulating down-posture evidence. Red means a possible fall or sustained-down warning. Tracking IDs are temporary, not personal identities. Hidden limbs are not reconstructed.</p>
     <p>The model has seven internal activity classes, with class zero treated as fall by the upstream application. Raw model outputs are not calibrated probabilities. The browser reports each tracked person separately, unlike the original first-person-only display logic. Brief missing observations may preserve tracking/posture evidence without adding evidence time; longer gaps reset it. Hidden head landmarks pause the LSTM while independently valid torso/leg checks continue.</p>
 
     <h2>Automatic movement checks and optional room tuning</h2>
-    <p>Separate experimental rules run without room marking. A stable standing/sitting baseline followed by rapid hip drop, reduced vertical body span, torso rotation and 2 seconds of observed down posture can trigger Possible fall. Eight seconds of sustained down evidence can trigger Person may be down, even without seeing a transition. Brief unclear frames pause evidence instead of immediately erasing it. These timings and thresholds are not validated safety guarantees.</p>
+    <p>Separate movement rules run without room marking. A stable standing/sitting baseline followed by rapid hip drop, reduced vertical body span, torso rotation and 2 seconds of observed down posture can trigger Possible fall. Eight seconds of sustained down evidence can trigger Person may be down, even without seeing a transition. Brief unclear frames pause evidence instead of immediately erasing it. These timings and thresholds are not validated safety guarantees.</p>
     <p>A horizontal torso alone is not enough: visible leg geometry and body proportions also matter. This is a 2D posture estimate, not impact or floor-contact detection. Intentional lying on the floor, bed or sofa may trigger a warning. Optional furniture exclusions can suppress warnings when the torso overlaps the region; optional floor regions limit posture checks. Regions clear when the session ends and must be redrawn after camera movement. Camera movement without an aspect-ratio change is not automatically detected. Wrong regions can suppress a real event. Diagnostics expose evidence and blocking reasons, not proof of safety.</p>
 
     <h2>Camera &amp; privacy</h2>

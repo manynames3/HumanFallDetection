@@ -91,7 +91,7 @@ function onResult(data){
     const title=falls.length?'Possible fall detected':'Person may be down—check on them';
     status(title,'alert');
     const newFall=keys.some(key=>!alerted.has(key));keys.forEach(key=>alerted.add(key));
-    if(newFall){$('alert-title').textContent=title;$('alert-description').textContent=falls.length?(falls.some(p=>p.down?.state==='possible-fall')?'A rapid standing/sitting-to-down transition was followed by 2 seconds of observed down posture. Check on the person; impact and floor contact are not confirmed.':'Experimental classifier warning. Check on the person; this is not a confirmed emergency.'):'A down posture persisted for 8 seconds of observed evidence. This may also be intentional lying, including on furniture. Check on the person; a fall is not confirmed.';$('alert').hidden=false;}
+    if(newFall){$('alert-title').textContent=title;$('alert-description').textContent=falls.length?(falls.some(p=>p.down?.state==='possible-fall')?'A rapid standing/sitting-to-down transition was followed by 2 seconds of observed down posture. Check on the person; impact and floor contact are not confirmed.':'Model warning. Check on the person; this is not a confirmed emergency.'):'A down posture persisted for 8 seconds of observed evidence. This may also be intentional lying, including on furniture. Check on the person; a fall is not confirmed.';$('alert').hidden=false;}
     if(newFall&&$('sound').checked&&lastResult-lastTone>10000){tone();lastTone=lastResult;}
   }else if(evaluating)status('Evaluating movement','watch');
   else if(warming)status('Learning movement','busy');
